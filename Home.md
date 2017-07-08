@@ -7,7 +7,7 @@ See https://github.com/CICE-Consortium/About-Us/README.md for basic information 
 ## Organization  and Governance
 Documents governing the Consortium and its processes are available from the [About-Us repository](https://github.com/CICE-Consortium/About-Us).  Our open-source codes are covered by a standard 3-clause BSD license.  In addition, our [Distribution Policy](https://github.com/CICE-Consortium/About-Us/blob/master/DistributionPolicy.pdf) protects intellectual property rights for shared development code before it is released via a public repository.
 
-(link to new wiki page for organization description incl org chart, functional design)
+[Organization and Functional Design](https://github.com/CICE-Consortium/About-Us/wiki/Organization)
 
 ## Code repositories   
 - https://github.com/CICE-Consortium/CICE   
