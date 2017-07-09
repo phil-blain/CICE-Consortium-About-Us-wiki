@@ -3,6 +3,7 @@
 *This page is under construction, as is the code, documentation, and testing infrastructure*
 
 See https://github.com/CICE-Consortium/About-Us/README.md for basic information about the Consortium.   
+The original CICE web site is still available [here](http://oceans11.lanl.gov/trac/CICE/wiki).
 
 ## Organization  and Governance
 Documents governing the Consortium and its processes are available from the [About-Us repository](https://github.com/CICE-Consortium/About-Us).  Our open-source codes are covered by a standard 3-clause BSD license.  In addition, our [Distribution Policy](https://github.com/CICE-Consortium/About-Us/blob/master/DistributionPolicy.pdf) protects intellectual property rights for shared development code before it is released via a public repository.
@@ -22,9 +23,8 @@ Code documentation is included within each code repository, and links to data an
 **Community Liaison**: Alice DuVivier, National Center for Atmospheric Research, duvivier at ucar.edu  
 **Lead Coordinator**: Elizabeth Hunke, Los Alamos National Laboratory, eclare at lanl.gov
 
-## FAQ  
-(link to new wiki page)   
-[old version](http://oceans11.lanl.gov/trac/CICE/wiki/FrequentlyAskedQuestions)
+## Frequently Asked Questions  
+[FAQ](https://github.com/CICE-Consortium/About-Us/wiki/FAQ)  
 
 ## Instructions for code developers  
 [Consortium Process Workflow](https://docs.google.com/document/d/1BfgRrPMjBXeDGBXS5jRsiJo5tvYdUms8zUEFmTj-IP0/edit?usp=sharing)   
