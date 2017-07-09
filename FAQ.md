@@ -17,7 +17,7 @@ My diagnostics file contains a warning that the initial temperature is too warm.
      Tmlt= -7.660018851607993E-002
      Corrected quantities
      zqin=  -331501.184635007     
-    ## ##  zTin= -7.660018876641461E-002
+     zTin= -7.660018876641461E-002
 
 **A**: In order to ensure conservation of energy and salt content, the advection routines will occasionally limit changes to either enthalpy or bulk salinity. The mushy thermodynamics routine determines temperature from both enthalpy and bulk salinity. Since the limiting changes performed in the advection routine are not applied consistently (from a mushy physics point of view) to both enthalpy and bulk salinity, the resulting temperature may be changed to be greater than the limit allowed in the thermodynamics routines. If this situation is detected, the code corrects the enthalpy so the temperature is below the limiting value. Conservation of energy is ensured by placing the excess energy in the ocean. The code also writes a warning that this has occurred to the diagnostics file, as in the example above. This situation only occurs with the mushy thermodynamics (ktherm=2) and should only occur very infrequently and have a minimal effect on results. The addition of the heat to the ocean may reduce ice formation by a small amount afterwards.
 
