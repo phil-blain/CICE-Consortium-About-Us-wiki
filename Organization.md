@@ -1,18 +1,20 @@
-*Under construction:  images need to be stored somewhere else and linked here*
+## [Three Slides](ftp://ftp.cgd.ucar.edu/archive/Model-Data/CICE/documents/OverviewSlides.pdf) provide an overview of the Consortium's mission, how it functions within the community, and how it is organized.
 
-##  How the Consortium functions within the community
+### 1. Our mission 
 
-This diagram (LINK) illustrates how the Consortium will function within the community.
+Community collaboration has been critical for development of the CICE model.
+In late 2016 a core group of CICE developers stood up an interagency and international CICE Consortium to enhance sea ice model development throughout the sea ice community. This consortium formalizes longstanding collaborations and makes our connections with the operational community explicit in our goals of accelerating both scientific development and the transfer of new developments into operational models. Each agency provides in-kind support through FTE contributions to the Consortium.
+
+### 2.  How the Consortium functions within the community
+
 The Consortium is in the blue box. Research and Development occurs outside the Consortium, in the community, and the
-Consortium provides a pathway and support for contributions from community (including Consortium Members themselves)
-by coordinating code improvements and confidence testing on which agencies can base decisions for code acceptance in their models. Scientific review is done by community in publicly accessible (released) code, leading to further development
+Consortium provides a pathway and support for contributions from the community (including Consortium Members themselves)
+by coordinating code improvements and confidence testing on which agencies can base decisions for code acceptance in their models. Scientific review is done by community in publicly accessible (released) code, leading to further development.
 
 
-## Consortium Organization
+### 3. Consortium Organization
 
-An organizational chart (LINK) for the Consortium shows the Executive Oversight Board in tan, Lead and Co-lead Coordinators and the Software Engineer in blue, and the six Teams with Team Leads in green.
+The organizational chart for the Consortium shows the Executive Oversight Board in tan, Lead and Co-lead Coordinators and the Software Engineer in blue, and the six Teams with Team Leads in green.  Teams are grouped by topics that
+agencies/institutions have the most experience with or interest in. Team leads coordinate work to be done by that team and with other teams as needed, while the Lead Coordinator and Software Engineer provide overall guidance and assistance.
 
-The higher-level, colored boxes indicate more of an oversight or coordinating role. Responsibility for the “hands-on” work resides in the white task boxes and includes consulting with contributors, testing changes, reading code, looking for efficiency gains, improving user friendliness, etc. for code changes generated within the Consortium structure (e.g. bug fixes) and for contributed code. The Lead Coordinators and Team Leads should also be involved with the code, both in an advisory role (to make sure the changes don’t break the model for other teams or the rest of the community) and directly (the more eyes, the better).
-
-New code contributions must have already undergone testing (grey box), but coordination with other Teams should already also have occurred during the development process.
 
