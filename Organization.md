@@ -1,4 +1,4 @@
-## [Three Slides](ftp://ftp.cgd.ucar.edu/archive/Model-Data/CICE/documents/OverviewSlides.pdf) provide an overview of the Consortium's mission, how it functions within the community, and how it is organized.
+## [Three Slides](ftp://ftp.cgd.ucar.edu/archive/Model-Data/CICE/documents/OverviewSlidesDetails.pdf) provide an overview of the Consortium's mission, how it functions within the community, and how it is organized.
 
 ### 1. Our mission 
 
@@ -14,7 +14,12 @@ by coordinating code improvements and confidence testing on which agencies can b
 
 ### 3. Consortium Organization
 
-The organizational chart for the Consortium shows the Executive Oversight Board in tan, Lead and Co-lead Coordinators and the Software Engineer in blue, and the six Teams with Team Leads in green.  Teams are grouped by topics that
-agencies/institutions have the most experience with or interest in. Team leads coordinate work to be done by that team and with other teams as needed, while the Lead Coordinator and Software Engineer provide overall guidance and assistance.
+The organizational chart for the Consortium shows the Executive Oversight Board in tan, Lead and Co-lead Coordinators and the Software Engineer in blue, and the six Teams with Team Leads in green.  
+
+The colored boxes indicate more of an oversight or coordinating role.  Team leads coordinate work to be done by that team and with other teams as needed, while the Lead Coordinator and Software Engineer provide overall guidance and assistance.  Responsibility for the “hands-on” work resides in the white task boxes and includes consulting with contributors, testing changes, reading code, looking for efficiency gains, improving user friendliness, etc. for code changes generated within the Consortium and for contributed code. 
+
+New code contributions must have already undergone testing (grey box), but coordination with other Teams should also have occurred during the development process. 
+
+The column package portion of the code is 'Icepack'. The dynamical core is 'CICEdyn' and the rest of the CICE model, including infrastructure and CICEdyn but not Icepack, is 'CICEcore'. 
 
 
