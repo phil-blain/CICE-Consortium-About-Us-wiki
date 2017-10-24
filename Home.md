@@ -1,4 +1,4 @@
-# Welcome to the CICE-Consortium!  
+# Welcome to the CICE Consortium!  
 
 *This page is under construction, as is the code, documentation, and testing infrastructure*
 
