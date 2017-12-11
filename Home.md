@@ -1,7 +1,5 @@
 # Welcome to the CICE Consortium!  
 
-*This page is under construction, as is the code, documentation, and testing infrastructure*
-
 See https://github.com/CICE-Consortium/About-Us/README.md for basic information about the Consortium.   
 The original CICE web site is still available [here](http://oceans11.lanl.gov/trac/CICE/wiki) but is expected to disappear, imminently.
 
