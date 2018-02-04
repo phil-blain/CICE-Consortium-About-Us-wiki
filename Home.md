@@ -8,9 +8,10 @@ Documents governing the Consortium and its processes are available from the [Abo
 
 [Organization and Functional Design](https://github.com/CICE-Consortium/About-Us/wiki/Organization)
 
-## Code repositories   
+## Code and documentation repositories   
 - https://github.com/CICE-Consortium/CICE   
 - https://github.com/CICE-Consortium/Icepack  
+- https://github.com/CICE-Consortium/Test-Results  
 - https://github.com/CICE-Consortium/CICE-svn-trunk     
 
 The column physics portion of the code is 'Icepack'. The rest of the CICE model, including infrastructure and the dynamical core but not Icepack, is contained in the CICE repository as 'CICEcore'.   CICE includes Icepack as a git submodule.
@@ -31,12 +32,10 @@ Code documentation is included within each code repository, and links to data an
 See also the primary code repository wikis for specific instructions:  [CICE](https://github.com/CICE-Consortium/CICE/wiki) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki).  
 
 ## Testing
-Information is available for both [CICE](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Testing-Icepack).
+Information is available for both [CICE](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Testing-Icepack).  Results from our test suites are posted [here](https://github.com/CICE-Consortium/Test-Results).
 
-## Release Notes  
-Release info is available from the [CICE wiki](https://github.com/CICE-Consortium/CICE/wiki).     
-[CICE v4](https://github.com/CICE-Consortium/CICE/wiki/Release-Notes,-CICE-v4)     
-[CICE v5](https://github.com/CICE-Consortium/CICE/wiki/Release-Notes,-CICE-v5)     
+## Releases  
+Release info is available from the primary [CICE](https://github.com/CICE-Consortium/CICE/wiki) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki) wikis, including lists of important updates to the code since the last numbered release.  Releases prior to CICE v6 are available from the [CICE-svn-trunk](https://github.com/CICE-Consortium/CICE-svn-trunk) repository, including [tarballs and release notes](https://github.com/CICE-Consortium/CICE-svn-trunk/wiki/Releases).
 
 ## Users and publications  
 [CICE v1 through v5](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5)
