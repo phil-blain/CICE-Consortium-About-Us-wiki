@@ -1,3 +1,42 @@
+# Table of Contents
+[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#introduction)  
+[**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#general-recommendations)    
+[**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#overview)   
+[**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#local-initialization)   
+[**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#forks)   
+* Setting up Forks    
+* Updating your Fork    
+* Collaborators    
+
+[**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#clone-commit-branch)   
+* Creating a Sandbox (clone)    
+* Commit    
+* Branch    
+
+[Pushing and Pulling](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#pushing-and-pulling)   
+* Remotes    
+* Push    
+* Pull    
+* Pull Requests (PR)    
+
+[Submodules](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#submodules)   
+* Overview    
+* To Modify Icepack code inside CICE    
+* Modify and Commit Icepack Changes    
+* Update the Icepack Version in CICE    
+* To Completely Remove and Replace the Icepack Repository in CICE    
+
+[Information](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#information)   
+* Status    
+* Diff    
+* Log    
+
+[Appendix A: Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-a-table-of-useful-git-commands--git-command)   
+[Appendix B: Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-b-best-practices)   
+[Appendix C: Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-c-terms)   
+
+***
+
 # Introduction
 This document provides a simplified overview of git and how to use it within CICE-Consortium development.  In most cases, it does not fully represent the details and complexity associated with git.  It should provide a starting point for working in the CICE-Consortium, and it will hopefully encourage users to look for more detailed documentation on the web.  This document is not a substitute for a proper and detailed git user guide.  
 
@@ -401,10 +440,12 @@ If you want a useful graphical summary of the log, try
  | pull request | A request to merge changes from one repo to another.  AKA PR. |
 
 # Appendix B: Best Practices
+* Create a fresh clone and branch for each batch of changes that will be submitted in separate PRs, if a previous PR might not be executed before work begins on the next one.
+* Update your fork from the main Consortium repositories. 
+* Always develop on a branch, then later merge (or pull request) to master.
+* Use “git status” often.
+* Use “git remote -v” often.
 * Always commit with a reasonably detailed and clear commit message.
-* Use “git status” often
-* Use “git remote -v” often
-* Do not develop on master, always develop on a branch, then later merge (or pull request) to master.
 
 # Appendix C: Terms
 _Branch_ - A pointer to a parallel development in a repository    
