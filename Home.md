@@ -27,7 +27,7 @@ Code documentation is included within each code repository, and links to data an
 
 ## Instructions for code developers  
 [Consortium Process Workflow](https://docs.google.com/document/d/1BfgRrPMjBXeDGBXS5jRsiJo5tvYdUms8zUEFmTj-IP0/edit?usp=sharing)   
-[Git Workflow and Developer's Guide](https://docs.google.com/document/d/1rR6WAvZQT9iAMUp-m_HZ06AUCCI19mguFialsMCYs9o/edit?usp=sharing)     
+[Git Workflow Guidance](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)     
 [Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf)   
 See also the primary code repository wikis for specific instructions:  [CICE](https://github.com/CICE-Consortium/CICE/wiki) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki).  
 
