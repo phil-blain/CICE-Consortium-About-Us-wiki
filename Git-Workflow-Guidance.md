@@ -375,4 +375,50 @@ If you want a useful graphical summary of the log, try
       git log --graph --oneline --decorate
 
 
+***
+
+# Appendix A: Table of useful git commands  (git [command])
+
+ | [command] | Description |
+ | --------- | ----------- |
+ | status    | Provides summary of status of sandbox |
+ | diff    | Provides list of changes in current sandbox, lots of options for doing diffs with other repo versions.|
+ | remote [-v] [add] | 	Lists/Sets remote repositories in a sandbox |
+ | pull | Download changes to local sandbox (== fetch + merge) |
+ | push | Upload changes |
+ | clone | Initialize a local repo/sandbox |
+ | update | Pull updates into the local sandbox |
+ | commit | Copy changes into the local sandbox repository |
+ | submodule | 	Many options, useful for working with submodules |
+ | checkout | Switch to another version/branch |
+ | branch | Create a branch or list branches |
+ | tag -a | Create a tag or list tags |
+ | log | Provide a summary of commits |
+ | add | Defines which files will be committed |
+ | rm | Removes a file from the repo |
+ | fetch | Download changes to local repo |
+ | merge | Merge changes from local repo to sandbox |
+ | pull request | A request to merge changes from one repo to another.  AKA PR. |
+
+# Appendix B: Best Practices
+* Always commit with a reasonably detailed and clear commit message.
+* Use “git status” often
+* Use “git remote -v” often
+* Do not develop on master, always develop on a branch, then later merge (or pull request) to master.
+
+# Appendix C: Terms
+_Branch_ - A pointer to a parallel development in a repository    
+_Checkout_ - When you switch to a branch in your local repository    
+_Commit_ - When you copy changes into your local repository    
+_Clone_ - When you copy a github repository into a local sandbox    
+_Fetch_ - When you update your local repository from an external repository    
+_Fork_ - When you copy a repository within github from one github project to another    
+_Master_ - The main or trunk branch in a github repository    
+_Merge_ - Merging changes from your local repository to your sandbox    
+_Pull_ - When you copy changes out of an external repository to your local repository and merge those changes into your local sandbox.  This is a combination of fetch and merge    
+_Pull Request_ - A github operation to request an update to an upstream repository    
+_Push_ - When you copy changes into a github repository    
+_Sandbox_ - Your local checkout with or without local modifications    
+_Submodule_ - An external repository included in another repository    
+_Tag_ - The ability to explicitly name a specific version of the module in a repository    
 
