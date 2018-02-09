@@ -250,13 +250,13 @@ If you want to update your master fork with changes from the CICE-Consortium mas
 
       git checkout master
       git remote add upstream https://github.com/CICE-Consortium/CICE
-      git pull upstream master   (pulls master from upstream repo to your local repo and sandbox)
-      git push origin master    (pushes the master from your local repo to your fork)
+      git pull upstream master (pulls upstream repo master to local repo, sandbox)
+      git push origin master (pushes your local repo master to your fork)
 
 To then update your branch to the latest changes on the master, you would do
 
-      git checkout mybranch                                     (switch to mybranch)
-      git pull origin master     (pull/merge updates from the fork/origin master to your branch)
+      git checkout mybranch
+      git pull origin master (merge updates from fork/origin master to mybranch)
   test
       git add    (if any local changes were made)
       git commit  (if any local changes were made)
@@ -303,7 +303,7 @@ When Icepack is downloaded as part of CICE, the Icepack version will be a detach
          HEAD detached at 192fbaa
          nothing to commit, working directory clean
 
-Icepack is pointing to something in the CICE-Consortium Repository, even if you checked Icepack out of your fork.  If you need to modify Icepack, the first thing to do is to switch the Icepack submodule to the head of a branch in your fork.  To do this, you need to modify the submodule repository, update the submodule version to your fork master, update the fork master to make sure you are using the latest version of the Consortium Icepack code, then switch to a branch in your fork.  Make sure your fork master is up to date with the Consortium master and if not, do this for Icepack.   LINK THIS
+Icepack is pointing to something in the CICE-Consortium Repository, even if you checked Icepack out of your fork.  If you need to modify Icepack, the first thing to do is to switch the Icepack submodule to the head of a branch in your fork.  To do this, you need to modify the submodule repository, update the submodule version to your fork master, update the fork master to make sure you are using the latest version of the Consortium Icepack code, then switch to a branch in your fork.  Make sure your fork master is up to date with the Consortium master and if not, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#updating-your-fork).
 
       cd CICE
       git config --file=.gitmodules -l
