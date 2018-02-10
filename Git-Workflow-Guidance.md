@@ -21,10 +21,10 @@
 
 [**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#submodules)   
 * Overview    
-* To Modify Icepack code inside CICE    
+* Modify Icepack code inside CICE    
 * Modify and Commit Icepack Changes    
 * Update the Icepack Version in CICE    
-* To Completely Remove and Replace the Icepack Repository in CICE    
+* Completely Remove and Replace the Icepack Submodule in CICE    
 
 [**Information**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#information)   
 * Status    
@@ -73,7 +73,7 @@ Before using git on any platform, it’s useful to set a few things.  Execute th
 You only need to set these once for each independent platform, they will be stored in the file ~/.gitconfig
 
 # Forks
-## Setting up Forks
+## Setting Up Forks
 
 
 Users should create personal forks of CICE and Icepack to carry out any development of the CICE or Icepack source code.  To create a fork (you do this once), 
@@ -87,7 +87,7 @@ Each repository (CICE and Icepack) have to be forked separately and users are en
 
 We encourage development on branches in forks and for the fork master to generally remain up to date with the Consortium version.  This makes it easier to branch in the fork from a Consortium version of master.
 
-## Updating your Fork
+## Updating Your Fork
 
 We’re getting a little ahead with respect to documentation but to update your fork from an upstream source, pull from the CICE-Consortium (or another repository) to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like
 
@@ -290,7 +290,7 @@ To execute a pull request,
 
 Icepack is a submodule of CICE.  Submodules are pointers to specific versions of an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  If you are working in the Icepack repository in stand-alone mode, you can ignore this and follow the documentation above.  But there are a few extra steps if you are modifying Icepack in the CICE code.
 
-## To Modify Icepack code inside CICE
+## Modify Icepack Code Inside CICE
 
 When Icepack is downloaded as part of CICE, the Icepack version will be a detached HEAD.  Without going into too much detail, that means it’s not in a state where it can be modified and committed.  It’s pointing to a specific version of Icepack, not to a branch.
 
@@ -371,7 +371,7 @@ The exact commands and sequence will vary a bit depending what you want to do.  
 
 By using this approach, only at the final CICE commit is the Icepack submodule updated.  There may be times where this is not adequate, but as a default, it’s probably the easiest way to carry out development of Icepack and CICE in parallel.
 
-## To Completely Remove and Replace the Icepack Submodule in CICE
+## Completely Remove and Replace the Icepack Submodule in CICE
 
 This is not something you should normally have to do, but just in case,
 
@@ -416,7 +416,7 @@ If you want a useful graphical summary of the log, try
 
 ***
 
-# Appendix A: Table of useful git commands  (git [command])
+# Appendix A: Table of Useful git Commands  (git [command])
 
  | [command] | Description |
  | --------- | ----------- |
