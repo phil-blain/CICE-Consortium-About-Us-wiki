@@ -3,6 +3,7 @@
 [[EVP time steps|https://github.com/CICE-Consortium/About-Us/FAQ/#evp-time-steps]]    
 [[Boundaries|https://github.com/CICE-Consortium/About-Us/FAQ/#boundaries]]   
 [[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]]    
+[[Consortium membership|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]    
 
 ### Enthalpy corrections   
 My diagnostics file contains a warning that the initial temperature is too warm. The code recovers, but what is happening here?
@@ -46,10 +47,25 @@ I had a question regarding the implementation of your elastic-viscous-plastic (E
 
 Hunke, E. C. Viscous-Plastic Sea Ice Dynamics with the EVP Model: Linearization Issues. Journal of Computational Physics, 170, 18–38, 2001.
 
-A: Extra elastic wave damping was available through the namelist variable evp_damping in CICE versions 4.0 and 4.1 (add it to ice_in and set it to true). The parameter 'C' in the paper is set via 'rcon' in the code (rcon=2*C*E0*dt/dte2). In general this option should not be used; in most cases the undamped elastic waves are not detrimental to the solution, as far as we know, while the extra damping can affect the solution elsewhere. Rigid ice is the exception, of course.
+**A:** Extra elastic wave damping was available through the namelist variable evp_damping in CICE versions 4.0 and 4.1 (add it to ice_in and set it to true). The parameter 'C' in the paper is set via 'rcon' in the code (rcon=2*C*E0*dt/dte2). In general this option should not be used; in most cases the undamped elastic waves are not detrimental to the solution, as far as we know, while the extra damping can affect the solution elsewhere. Rigid ice is the exception, of course.
 
 The evp_damping option has been removed from CICE v5.0, due to the confusion surrounding it. Another method, developed by Sylvain Bouillon et al., has been added. See the CICE documentation cicedoc.pdf for details.
 
 Bouillon, S., T. Fichefet, V. Legat, and G. Madec. The revised elastic-viscous-plastic method. Ocean Modelling, submitted, 2013.
 
 Rigid ice will be very difficult to simulate using any viscous-plastic-based model, including EVP. The reason is that the basic, plastic model becomes singular (the viscosities become infinite) exactly when the ice becomes rigid, that is, when the strain rates become zero. Hibler chose to regularize that singularity by making the ice highly viscous. In EVP, the essential regularization adds elastic waves instead. In either case, the simulated ice is not allowed to completely stop; in the VP case, the ice creeps viscously, while in the EVP case, it has elastic waves running around. Turning on evp_damping will help reduce those elastic waves, but you will not be able to make the ice completely stop using a VP-type model, except perhaps with massive computing cycles to get the velocity below round-off. 
+
+### Consortium membership
+Who can be a CICE Consortium Member?
+
+**A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2017, Consortium Members are
+
+DOE Los Alamos National Laboratory  
+DoD Naval Postgraduate School  
+DoD Naval Research Laboratory, Stennis Space Center  
+Environment and Climate Change Canada  
+NOAA Geophysical Fluid Dynamics Laboratory  
+NOAA National Weather Service  
+NSF National Center for Atmospheric Research
+
+CICE developers who are not affiliated with Consortium Members will be able to access the code and contribute their developments for use by the community, via the Consortium's procedures and with help from Consortium Members. The role of the Consortium is not to develop the model, but to aid the community in its development of the code. Consortium Members may also develop the code under non-Consortium funding streams.
