@@ -9,7 +9,7 @@ In late 2016 a core group of CICE developers stood up an interagency and interna
 
 The Consortium is in the blue box. Research and Development occurs outside the Consortium, in the community, and the
 Consortium provides a pathway and support for contributions from the community (including Consortium Members themselves)
-by coordinating code improvements and confidence testing on which agencies can base decisions for code acceptance in their models. Scientific review is done by community in publicly accessible (released) code, leading to further development.
+by coordinating code improvements and confidence testing on which agencies can base decisions for code acceptance in their models. Scientific review is done by the community in publicly accessible (released) code, leading to further development.
 
 
 ### 3. Consortium Organization
