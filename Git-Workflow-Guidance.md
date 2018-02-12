@@ -54,6 +54,8 @@ _Never push changes to your fork master, only to branches._
 Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
 
+See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf).
+
 # Overview
 CICE consists of a top level driver and dynamical core plus the Icepack code which is included as a git submodule.  Because Icepack is a submodule of CICE, Icepack and CICE development are handled somewhat independently with respect to the github repositories even though development and testing may be done together and in the same sandbox.  
 
