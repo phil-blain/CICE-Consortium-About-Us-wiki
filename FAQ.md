@@ -2,7 +2,7 @@
 [[Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/FAQ/#enthalpy-corrections]]   
 [[EVP time steps|https://github.com/CICE-Consortium/About-Us/FAQ/#evp-time-steps]]    
 [[Boundaries|https://github.com/CICE-Consortium/About-Us/FAQ/#boundaries]]   
-[[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]] 
+[[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]]    
 [[Time to compile|https://github.com/CICE-Consortium/About-Us/FAQ/#time-to-compile]]       
 [[Consortium membership|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]    
 
