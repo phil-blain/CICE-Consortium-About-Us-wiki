@@ -2,7 +2,8 @@
 [[Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/FAQ/#enthalpy-corrections]]   
 [[EVP time steps|https://github.com/CICE-Consortium/About-Us/FAQ/#evp-time-steps]]    
 [[Boundaries|https://github.com/CICE-Consortium/About-Us/FAQ/#boundaries]]   
-[[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]]    
+[[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]] 
+[[Time to compile|https://github.com/CICE-Consortium/About-Us/FAQ/#time-to-compile]]       
 [[Consortium membership|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]    
 
 ### Enthalpy corrections   
@@ -54,6 +55,11 @@ The evp_damping option has been removed from CICE v5.0, due to the confusion sur
 Bouillon, S., T. Fichefet, V. Legat, and G. Madec. The revised elastic-viscous-plastic method. Ocean Modelling, submitted, 2013.
 
 Rigid ice will be very difficult to simulate using any viscous-plastic-based model, including EVP. The reason is that the basic, plastic model becomes singular (the viscosities become infinite) exactly when the ice becomes rigid, that is, when the strain rates become zero. Hibler chose to regularize that singularity by making the ice highly viscous. In EVP, the essential regularization adds elastic waves instead. In either case, the simulated ice is not allowed to completely stop; in the VP case, the ice creeps viscously, while in the EVP case, it has elastic waves running around. Turning on evp_damping will help reduce those elastic waves, but you will not be able to make the ice completely stop using a VP-type model, except perhaps with massive computing cycles to get the velocity below round-off. 
+
+### Time to compile
+The entire code recompiles every time I build, even though I only made one change, and this takes a long time.  How do I make it compile more quickly?
+
+**A:**  Change ICE_CLEANBUILD from true to false in CICE.settings or Icepack.settings.  These scripts are located in /configuration/scripts, or you can change them for an individual case in the case directory.
 
 ### Consortium membership
 Who can be a CICE Consortium Member?
