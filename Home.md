@@ -32,7 +32,7 @@ Code documentation is included within each code repository, and links to data an
 See also the primary code repository wikis for specific instructions:  [CICE](https://github.com/CICE-Consortium/CICE/wiki) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki).  
 
 ## Testing
-Information is available for both [CICE](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Testing-Icepack).  Results from our test suites are posted in the [Test-Results](https://github.com/CICE-Consortium/Test-Results) repository.
+Information is available for both [CICE](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Testing-Icepack).  Results from our test suites are posted in the [Test-Results wiki](https://github.com/CICE-Consortium/Test-Results/wiki).
 
 ## Releases  
 Release info is available from the primary [CICE](https://github.com/CICE-Consortium/CICE/wiki) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki) wikis, including lists of important updates to the code since the last numbered release.  Releases prior to CICE v6 are available from the [CICE-svn-trunk](https://github.com/CICE-Consortium/CICE-svn-trunk) repository, including [tarballs and release notes](https://github.com/CICE-Consortium/CICE-svn-trunk/wiki/Releases).
