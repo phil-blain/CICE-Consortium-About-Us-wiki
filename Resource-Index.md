@@ -50,14 +50,14 @@ _**Publications**_
 
 ### Model Testing
 _**CICE**_
-* [Input data](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) - info on how to download data from ftp site
-* [Porting](http://cice-consortium-cice.readthedocs.io/en/master/index.html) - see online user's guide
-* [Testing](http://cice-consortium-cice.readthedocs.io/en/master/index.html) - see online user's guide
+* [Input data](https://github.com/CICE-Consortium/CICE/wiki/CICE-Input-Data) - info on how to download data from ftp site
+* [Porting](http://cice-consortium-cice.readthedocs.io/en/master/user_guide/ug_running.html#porting) - see online user's guide
+* [Testing](http://cice-consortium-cice.readthedocs.io/en/master/user_guide/ug_testing.html) - see online user's guide
 
 _**Icepack**_ 
-* [Input data](https://github.com/CICE-Consortium/Icepack/wiki/Testing-Icepack) - info on how to download data from ftp site
-* [Porting](http://cice-consortium-cice.readthedocs.io/en/master/index.html) - see online user's guide
-* [Testing](http://cice-consortium-cice.readthedocs.io/en/master/index.html) - see online user's guide
+* [Input data](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Input-Data) - info on how to download data from ftp site
+* [Porting](http://cice-consortium-icepack.readthedocs.io/en/master/user_guide/ug_running.html#porting) - see online user's guide
+* [Testing](http://cice-consortium-icepack.readthedocs.io/en/master/user_guide/ug_testing.html) - see online user's guide
 
 _**Test Results**_
 * [Test Results](https://github.com/CICE-Consortium/Test-Results/wiki) - posted to github wiki page (work in progress)
