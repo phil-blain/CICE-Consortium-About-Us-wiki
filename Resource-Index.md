@@ -33,8 +33,14 @@ _**CICE**_
 _**Icepack**_
 * [DOI (Digital Object Identifier)](https://zenodo.org/record/1213463) - for citation of code, see zenodo
 * [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-icepack/) - location of Icepack documentation
-* Icepack master documentation [(html)](http://cice-consortium-icepack.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-icepack/master/cice-consortium-icepack.pdf) - living documentation from current Icepack master
 * Icepack release documentation [(html)](https://readthedocs.org/projects/cice-consortium-icepack/) [(pdf)](https://readthedocs.org/projects/cice-consortium-icepack/downloads/) - static documentation from prior releases
+* Icepack master documentation [(html)](http://cice-consortium-icepack.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-icepack/master/cice-consortium-icepack.pdf) - living documentation from current Icepack master
+  - [Quick Start](http://cice-consortium-icepack.readthedocs.io/en/master/intro/quickstart.html), which has instructions for running the model. 
+  - [Science guide](http://cice-consortium-icepack.readthedocs.io/en/master/science_guide/index.html)
+  - [User guide](http://cice-consortium-icepack.readthedocs.io/en/master/user_guide/index.html) with instructions for setting up standard tests (e.g. regression, restart).
+  - [Developer guide](http://cice-consortium-icepack.readthedocs.io/en/master/developer_guide/index.html) 
+  - [Index](http://cice-consortium-icepack.readthedocs.io/en/master/icepack_index.html)
+  - Note that the documentation Table of Contents can be accessed at any point by clicking the upper left hand "Icepack x.x.xx documentation" link.**
 
 _**Updating Documentation**_
 * [Documentation System](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/dg_documentation.html)  - information on how to document CICE or Icepack model development 
