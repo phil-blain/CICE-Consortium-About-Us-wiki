@@ -7,10 +7,11 @@
 
 ### Repository Information
 _**CICE**_
-[CICE github repository](https://github.com/CICE-Consortium/CICE)
-[CICE releases](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and related information (documentation, DOI, etc.)
-[CICE tags](https://github.com/CICE-Consortium/CICE/tags)
-[CICE version 5 and prior](https://github.com/CICE-Consortium/CICE-svn-trunk)
+
+[CICE github repository](https://github.com/CICE-Consortium/CICE)   
+[CICE releases](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and related information (documentation, DOI, etc.)   
+[CICE tags](https://github.com/CICE-Consortium/CICE/tags)   
+[CICE version 5 and prior](https://github.com/CICE-Consortium/CICE-svn-trunk)   
 
 _**Icepack**_
 * [Icepack github repository](https://github.com/CICE-Consortium/Icepack)
