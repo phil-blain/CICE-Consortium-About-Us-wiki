@@ -1,6 +1,9 @@
 ## Topics
 * [Repository Information](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#repository-information)
 * [Model Documentation](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-documentation)
+* [Model Testing](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing)
+* [About the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#about-the-consortium)
+* [Information for Developers](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#information-for-developers)
 
 ### Repository Information
 _**CICE**_
@@ -15,7 +18,6 @@ _**Icepack**_
 * [Icepack tags](https://github.com/CICE-Consortium/Icepack/tags) - location of all Icepack tags
 
 ### Model Documentation
-
 _**CICE**_
 * [DOI (Digital Object Identifier)](https://zenodo.org/record/1205675) - for citation of code, see zenodo
 * [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/) - location of CICE documentation
@@ -35,7 +37,6 @@ _**Publications**_
 * List of publications - TBD
 
 ### Model Testing
-
 _**CICE**_
 * [Input data](https://github.com/CICE-Consortium/CICE/wiki/Testing-CICE) - info on how to download data from ftp site
 * [Porting](http://cice-consortium-cice.readthedocs.io/en/master/index.html) - see online user's guide
