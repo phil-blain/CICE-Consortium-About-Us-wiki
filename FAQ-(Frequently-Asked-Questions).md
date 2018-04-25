@@ -12,7 +12,7 @@
 ### Consortium contact
 How do I contact the Consortium?
 
-**A:** You may contact the Consortium and interact with the community through the Community Liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
+**A:** You may contact the Consortium and interact with the community through the community liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
 
 ### Consortium membership
 Who can be a CICE Consortium Member?
