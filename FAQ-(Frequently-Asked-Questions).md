@@ -1,13 +1,13 @@
 ## Topics
 
-[[Contact the Consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-contact]]
-[[Contribute to the Consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]] 
-[[Access to the consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]
-[[Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/FAQ/#enthalpy-corrections]]   
-[[EVP time steps|https://github.com/CICE-Consortium/About-Us/FAQ/#evp-time-steps]]    
-[[Boundaries|https://github.com/CICE-Consortium/About-Us/FAQ/#boundaries]]   
-[[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]]    
-[[Time to compile|https://github.com/CICE-Consortium/About-Us/FAQ/#time-to-compile]]       
+[[Contact the Consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-contact]]
+[[Contribute to the Consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership]] 
+[[Access to the consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership]]
+[[Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#enthalpy-corrections]]   
+[[EVP time steps|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#evp-time-steps]]    
+[[Boundaries|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#boundaries]]   
+[[Rigid ice|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#rigid-ice]]    
+[[Time to compile|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#time-to-compile]]       
 
 ### Consortium contact
 How do I contact the Consortium?
