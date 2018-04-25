@@ -1,6 +1,3 @@
-### Overview of CICE
-* [Overview](https://github.com/CICE-Consortium/CICE/wiki) - overview of the CICE model and documentation
-
 ### Repository Information
 _**CICE**_
 * [CICE github repo](https://github.com/CICE-Consortium/CICE) - location of repository
