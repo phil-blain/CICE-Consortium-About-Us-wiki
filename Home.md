@@ -1,5 +1,3 @@
-*This page is under construction, as is the code, documentation, and testing infrastructure*
-
 # **Welcome to the CICE Consortium!**
 The CICE Consortium is a group of stakeholders and primary developers of the Los Alamos sea ice model (CICE), formed to maintain the current CICE model for existing and new users, to incorporate and maintain new research and development, and to accelerate scientific sea ice model development and its transfer into operational use. 
 
