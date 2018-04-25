@@ -1,10 +1,33 @@
 ## Topics
+
+[[Contact the Consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-contact]]
+[[Contribute to the Consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]] 
+[[Access to the consortium|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]
 [[Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/FAQ/#enthalpy-corrections]]   
 [[EVP time steps|https://github.com/CICE-Consortium/About-Us/FAQ/#evp-time-steps]]    
 [[Boundaries|https://github.com/CICE-Consortium/About-Us/FAQ/#boundaries]]   
 [[Rigid ice|https://github.com/CICE-Consortium/About-Us/FAQ/#rigid-ice]]    
 [[Time to compile|https://github.com/CICE-Consortium/About-Us/FAQ/#time-to-compile]]       
-[[Consortium membership|https://github.com/CICE-Consortium/About-Us/FAQ/#Consortium-membership]]    
+
+### Consortium contact
+How do I contact the Consortium?
+
+**A:** You may contact the Consortium and interact with the community through the Community Liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
+
+### Consortium membership
+Who can be a CICE Consortium Member?
+
+**A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2017, Consortium Members are
+
+DOE Los Alamos National Laboratory  
+DoD Naval Postgraduate School  
+DoD Naval Research Laboratory, Stennis Space Center  
+Environment and Climate Change Canada  
+NOAA Geophysical Fluid Dynamics Laboratory  
+NOAA National Weather Service  
+NSF National Center for Atmospheric Research
+
+CICE developers who are not affiliated with Consortium Members will be able to access the code and contribute their developments for use by the community, via the Consortium's procedures and with help from Consortium Members. The role of the Consortium is not to develop the model, but to aid the community in its development of the code. Consortium Members may also develop the code under non-Consortium funding streams.
 
 ### Enthalpy corrections   
 My diagnostics file contains a warning that the initial temperature is too warm. The code recovers, but what is happening here?
@@ -60,18 +83,3 @@ Rigid ice will be very difficult to simulate using any viscous-plastic-based mod
 The entire code recompiles every time I build, even though I only made one change, and this takes a long time.  How do I make it compile more quickly?
 
 **A:**  Change ICE_CLEANBUILD from true to false in CICE.settings or Icepack.settings.  These scripts are located in /configuration/scripts, or you can change them for an individual case in the case directory.
-
-### Consortium membership
-Who can be a CICE Consortium Member?
-
-**A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2017, Consortium Members are
-
-DOE Los Alamos National Laboratory  
-DoD Naval Postgraduate School  
-DoD Naval Research Laboratory, Stennis Space Center  
-Environment and Climate Change Canada  
-NOAA Geophysical Fluid Dynamics Laboratory  
-NOAA National Weather Service  
-NSF National Center for Atmospheric Research
-
-CICE developers who are not affiliated with Consortium Members will be able to access the code and contribute their developments for use by the community, via the Consortium's procedures and with help from Consortium Members. The role of the Consortium is not to develop the model, but to aid the community in its development of the code. Consortium Members may also develop the code under non-Consortium funding streams.
