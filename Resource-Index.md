@@ -31,7 +31,7 @@ CICE documentation updated with the current CICE master [(html)](http://cice-con
   - [User guide](http://cice-consortium-cice.readthedocs.io/en/master/user_guide/index.html) with instructions for setting up standard tests (e.g. regression, restart)
   - [Developer guide](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-cice.readthedocs.io/en/master/cice_index.html)
-  - The documentation Table of Contents can be accessed at any point by clicking the upper left hand "CICE x.x.xx documentation" link.**
+  - The Table of Contents can be accessed from the "CICE x.x.xx documentation" link at upper left, on any page.
 
 _**Icepack**_
 
@@ -44,7 +44,7 @@ Icepack documentation updated with the current Icepack master [(html)](http://ci
   - [User guide](http://cice-consortium-icepack.readthedocs.io/en/master/user_guide/index.html) with instructions for setting up standard tests (e.g. regression, restart)
   - [Developer guide](http://cice-consortium-icepack.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-icepack.readthedocs.io/en/master/icepack_index.html)
-  - The documentation Table of Contents can be accessed at any point by clicking the upper left hand "Icepack x.x.xx documentation" link.**
+  - The Table of Contents can be accessed from the "Icepack x.x.xx documentation" link at upper left, on any page.
 
 _**Updating Documentation**_
 
