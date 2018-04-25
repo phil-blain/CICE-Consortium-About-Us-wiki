@@ -76,4 +76,4 @@ _**Test Results**_
 * [Consortium Process Workflow](https://docs.google.com/document/d/1BfgRrPMjBXeDGBXS5jRsiJo5tvYdUms8zUEFmTj-IP0/edit?usp=sharing)    
 * [Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf)   
 * [git workflow and developers guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) - information about how to use git with CICE 
-* [Release Process](https://github.com/CICE-Consortium/CICE/wiki/Release-Process) - steps for release
+* [Release Process](https://github.com/CICE-Consortium/About-Us/wiki/Release-Process) - steps for release
