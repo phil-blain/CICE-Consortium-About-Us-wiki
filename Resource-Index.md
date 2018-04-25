@@ -8,13 +8,13 @@
 ### Repository Information
 _**CICE**_
 * [CICE github repo](https://github.com/CICE-Consortium/CICE) - location of repository
-* [CICE releases](https://github.com/CICE-Consortium/CICE/wiki/Release-Index) - location of list of formal releases and related information
+* [CICE releases](https://github.com/CICE-Consortium/CICE/wiki/CICE-Versions-Index-(post-version-6)) - location of list of formal releases and related information
 * [CICE tags](https://github.com/CICE-Consortium/CICE/tags) - location of all CICE tags
 * [CICEV5 and prior](https://github.com/CICE-Consortium/CICE-svn-trunk) - pre CICE-Consortium versions
 
 _**Icepack**_
 * [Icepack github repo](https://github.com/CICE-Consortium/Icepack) - location of repository
-* [Icepack releases](https://github.com/CICE-Consortium/Icepack/wiki/Release-Index) - location of list of formal releases and related information
+* [Icepack releases](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Versions-Index) - location of list of formal releases and related information
 * [Icepack tags](https://github.com/CICE-Consortium/Icepack/tags) - location of all Icepack tags
 
 ### Model Documentation
