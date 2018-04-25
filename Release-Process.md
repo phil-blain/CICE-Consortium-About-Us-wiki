@@ -10,7 +10,7 @@ CICE Release Process
   * Update README.md
   * Update version in doc/source/conf.py version/release and version.txt
   * Push changes to branch/master
-  * Create release notes at https://github.com/CICE-Consortium/CICE/wiki/Recent-changes
+  * Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
   * Generate and check html and pdf documentation via readthedocs
   * Generate test results and post to wiki. Use --bgen with the full release name
 
