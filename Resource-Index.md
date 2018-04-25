@@ -7,20 +7,20 @@
 
 ### Repository Information
 _**CICE**_
-* [CICE github repo](https://github.com/CICE-Consortium/CICE) - location of repository
-* [CICE releases](https://github.com/CICE-Consortium/CICE/wiki/CICE-Versions-Index-(post-version-6)) - index of formal releases and related information (documentation, DOI, etc.)
-* [CICE tags](https://github.com/CICE-Consortium/CICE/tags) - location of all CICE tags
-* [CICEV5 and prior](https://github.com/CICE-Consortium/CICE-svn-trunk) - pre CICE-Consortium versions
+[CICE github repository](https://github.com/CICE-Consortium/CICE)
+[CICE releases](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and related information (documentation, DOI, etc.)
+[CICE tags](https://github.com/CICE-Consortium/CICE/tags)
+[CICE version 5 and prior](https://github.com/CICE-Consortium/CICE-svn-trunk)
 
 _**Icepack**_
-* [Icepack github repo](https://github.com/CICE-Consortium/Icepack) - location of repository
-* [Icepack releases](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Versions-Index) - index of formal releases and related information (documentation, DOI, etc.)
-* [Icepack tags](https://github.com/CICE-Consortium/Icepack/tags) - location of all Icepack tags
+* [Icepack github repository](https://github.com/CICE-Consortium/Icepack)
+* [Icepack releases](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index) and related information (documentation, DOI, etc.)
+* [Icepack tags](https://github.com/CICE-Consortium/Icepack/tags)
 
 ### Model Documentation
 _**CICE**_
-* [DOI (Digital Object Identifier)](https://zenodo.org/record/1205675) - for citation of code, see zenodo
-* [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/) - location of CICE documentation
+* [DOI (Digital Object Identifier)](https://zenodo.org/record/1205675) and how to cite the code
+* [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/) CICE documentation home
 * CICE release documentation [(html)](https://readthedocs.org/projects/cice-consortium-cice/) [(pdf)](https://readthedocs.org/projects/cice-consortium-cice/downloads/) - static documentation from prior releases
 * CICE master documentation [(html)](http://cice-consortium-cice.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-cice/master/cice-consortium-cice.pdf) - living documentation from current CICE master
   - [Quick Start](http://cice-consortium-cice.readthedocs.io/en/master/intro/quickstart.html), which has instructions for running the model. 
@@ -31,8 +31,8 @@ _**CICE**_
   - Note that the documentation Table of Contents can be accessed at any point by clicking the upper left hand "CICE x.x.xx documentation" link.**
 
 _**Icepack**_
-* [DOI (Digital Object Identifier)](https://zenodo.org/record/1213463) - for citation of code, see zenodo
-* [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-icepack/) - location of Icepack documentation
+* [DOI (Digital Object Identifier)](https://zenodo.org/record/1213463) and how to cite the code
+* [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-icepack/) Icepack documentation home
 * Icepack release documentation [(html)](https://readthedocs.org/projects/cice-consortium-icepack/) [(pdf)](https://readthedocs.org/projects/cice-consortium-icepack/downloads/) - static documentation from prior releases
 * Icepack master documentation [(html)](http://cice-consortium-icepack.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-icepack/master/cice-consortium-icepack.pdf) - living documentation from current Icepack master
   - [Quick Start](http://cice-consortium-icepack.readthedocs.io/en/master/intro/quickstart.html), which has instructions for running the model. 
