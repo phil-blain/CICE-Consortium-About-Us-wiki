@@ -46,7 +46,7 @@ _**Updating Documentation**_
 * [Documentation System](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/dg_documentation.html)  - information on how to document CICE or Icepack model development 
 
 _**Publications**_
-* [List of publications](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations)
+* [List of publications](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations) that use CICE, Icepack, or a component of either model
 
 ### Model Testing
 _**CICE**_
