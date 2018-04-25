@@ -21,8 +21,14 @@ _**Icepack**_
 _**CICE**_
 * [DOI (Digital Object Identifier)](https://zenodo.org/record/1205675) - for citation of code, see zenodo
 * [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/) - location of CICE documentation
-* CICE master documentation [(html)](http://cice-consortium-cice.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-cice/master/cice-consortium-cice.pdf) - living documentation from current CICE master
 * CICE release documentation [(html)](https://readthedocs.org/projects/cice-consortium-cice/) [(pdf)](https://readthedocs.org/projects/cice-consortium-cice/downloads/) - static documentation from prior releases
+* CICE master documentation [(html)](http://cice-consortium-cice.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-cice/master/cice-consortium-cice.pdf) - living documentation from current CICE master
+  - [Quick Start](http://cice-consortium-cice.readthedocs.io/en/master/intro/quickstart.html), which has instructions for running the model. 
+  - [Science guide](http://cice-consortium-cice.readthedocs.io/en/master/science_guide/index.html)
+  - [User guide](http://cice-consortium-cice.readthedocs.io/en/master/user_guide/index.html) with instructions for setting up standard tests (e.g. regression, restart).
+  - [Developer guide](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/index.html) 
+  - [Index](http://cice-consortium-cice.readthedocs.io/en/master/cice_index.html)
+  - Note that the documentation Table of Contents can be accessed at any point by clicking the upper left hand "CICE x.x.xx documentation" link.**
 
 _**Icepack**_
 * [DOI (Digital Object Identifier)](https://zenodo.org/record/1213463) - for citation of code, see zenodo
