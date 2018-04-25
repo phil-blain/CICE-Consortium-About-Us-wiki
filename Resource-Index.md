@@ -1,3 +1,7 @@
+## Topics
+* [Repository Information](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index/#Repository-Information)
+* [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership)
+
 ### Repository Information
 _**CICE**_
 * [CICE github repo](https://github.com/CICE-Consortium/CICE) - location of repository
