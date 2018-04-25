@@ -1,6 +1,6 @@
 ## Topics
-* [Repository Information](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index/#Repository-Information)
-* [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership)
+* [Repository Information](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#repository-information)
+* [Model Documentation](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-documentation)
 
 ### Repository Information
 _**CICE**_
