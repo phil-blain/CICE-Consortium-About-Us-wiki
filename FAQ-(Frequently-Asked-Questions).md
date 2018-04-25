@@ -1,6 +1,5 @@
 ## Topics
-
-[[ Contact the Consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-contact ]]
+[Contact the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-contact)
 [[ Contribute to the Consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership ]] 
 [[ Access to the consortium|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#Consortium-membership ]]
 [[ Enthalpy corrections|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#enthalpy-corrections ]]   
