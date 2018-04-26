@@ -5,6 +5,9 @@
 * [About the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#about-the-consortium)
 * [Information for Developers](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#information-for-developers)
 
+### FAQ (Frequently Asked Questions)
+[FAQ](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))
+
 ### Repository Information
 _**CICE**_
 
