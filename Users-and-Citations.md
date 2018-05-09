@@ -10,27 +10,27 @@ _Please help!_  The reference list is incomplete.  We request citations for peer
 
  ### List of Countries ###
 
-[Argentina](https://github.com/CICE-Consortium/CICE/wiki/Users-and-Citations,-CICE-v1-through-v5#argentina)\
-[Australia](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#australia)\
-[Belgium](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#belgium)\
-[Brazil](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#brazil)\
-[Canada](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#canada)\
-[Chile](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#chile)\
-[China](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#china)\
-[Denmark](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#denmark)\
-[Finland](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#finland)\
-[France](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#france)\
-[Germany](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#germany)\
-[India](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#india)\
-[Italy](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#italy)\
-[Japan](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#japan)\
-[Korea](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#korea)\
-[Norway](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#norway)\
-[Poland](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#poland)\
-[Russia](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#russia)\
-[Sweden](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#sweden)\
-[United Kingdom](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#united-kingdom)\
-[United States](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#united-states)
+[Argentina](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#argentina)\
+[Australia](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#australia)\
+[Belgium](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#belgium)\
+[Brazil](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#brazil)\
+[Canada](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#canada)\
+[Chile](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#chile)\
+[China](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#china)\
+[Denmark](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#denmark)\
+[Finland](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#finland)\
+[France](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#france)\
+[Germany](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#germany)\
+[India](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#india)\
+[Italy](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#italy)\
+[Japan](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#japan)\
+[Korea](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#korea)\
+[Norway](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#norway)\
+[Poland](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#poland)\
+[Russia](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#russia)\
+[Sweden](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#sweden)\
+[United Kingdom](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#united-kingdom)\
+[United States](https://github.com/CICE-Consortium/About-Us/wiki/Users-and-Citations#united-states)
 
 ---------
 
