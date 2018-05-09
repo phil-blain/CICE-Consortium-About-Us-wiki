@@ -1,15 +1,15 @@
-**_SHOULD WE INCLUDE THE THREE SLIDES AS FIGURES IN THE WIKI??_**
-
-## [Three Slides](ftp://ftp.cgd.ucar.edu/archive/Model-Data/CICE/documents/OverviewSlidesDetails.pdf) provide an overview of the Consortium's mission, how it functions within the community, and how it is organized.
-
 Our open-source codes are covered by a standard 3-clause BSD license.  PDFs with our policies on governance, distribution, development practices, and policies are available: https://github.com/CICE-Consortium/About-Us.  Our [Distribution Policy](https://github.com/CICE-Consortium/About-Us/blob/master/DistributionPolicy.pdf) protects intellectual property rights for shared development code before it is released via a public repository.
 
 ### 1. Our mission 
+
+[[/images/consortium1.png|Goals of the Consortium]]
 
 Community collaboration has been critical for development of the CICE model.
 In late 2016 a core group of CICE developers stood up an interagency and international CICE Consortium to enhance sea ice model development throughout the sea ice community. This consortium formalizes longstanding collaborations and makes our connections with the operational community explicit in our goals of accelerating both scientific development and the transfer of new developments into operational models. Each agency provides in-kind support through FTE contributions to the Consortium.
 
 ### 2.  How the Consortium functions within the community
+
+[[/images/consortium2.png|Consortium Function]]
 
 The Consortium is in the blue box. Research and Development occurs outside the Consortium, in the community, and the
 Consortium provides a pathway and support for contributions from the community (including Consortium Members themselves)
@@ -17,6 +17,9 @@ by coordinating code improvements and confidence testing on which agencies can b
 
 
 ### 3. Consortium Organization
+
+[[/images/consortium3.png|Consortium Organization]]
+
 
 The organizational chart for the Consortium shows the Executive Oversight Board in tan, Lead and Co-lead Coordinators and the Software Engineer in blue, and the six Teams with Team Leads in green.  
 
