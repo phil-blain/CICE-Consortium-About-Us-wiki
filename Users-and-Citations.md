@@ -10,7 +10,7 @@ _Please help!_  The reference list is incomplete.  We request citations for peer
 
  ### List of Countries ###
 
-[Argentina](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#argentina)\
+[Argentina](https://github.com/CICE-Consortium/CICE/wiki/Users-and-Citations,-CICE-v1-through-v5#argentina)\
 [Australia](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#australia)\
 [Belgium](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#belgium)\
 [Brazil](https://github.com/CICE-Consortium/CICE/wiki/Users,-CICE-v1-through-v5#brazil)\
