@@ -17,7 +17,8 @@ CICE Release Process
 * Create release branch in repository if needed.  Naming convention is CICEm.n
 * Create release specific tables on wiki
 * Git Tag the release. Naming convention is CICEm.n.p
-* Generate documentation at readthedocs (automated?)
+* Generate documentation at readthedocs
+  * activate the tag under "versions", may need to trigger a build of the master docs for the tag to appear
 * Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases
 * Add links in appropriate places on github where to find the release and tar file
 * Post science results as needed
