@@ -4,6 +4,7 @@
 * [Model Testing](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing)
 * [About the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#about-the-consortium)
 * [Information for Developers](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#information-for-developers)
+* [Zenodo CICE Community](https://zenodo.org/communities/cice-consortium/?page=1&size=20)
 
 ### FAQ (Frequently Asked Questions)
 [FAQ](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))
