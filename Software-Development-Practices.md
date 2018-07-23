@@ -1,6 +1,6 @@
 CICE Consortium Member representatives and community developers should strive to incorporate these practices throughout the development process, to the extent possible:
 
-**Process**
+# **Process**
 * Define tasks of team members ahead of time, including coordination roles
 * Utilize a common communication space for chats and discussions
 * Work in shared repositories
@@ -34,8 +34,7 @@ CICE Consortium Member representatives and community developers should strive to
   * Changes needed in test coverage
 * Tag and release code frequently
 
-
-**Coding Standard**
+# **Coding Standard**
 * Choose a simple design
 * Adhere to the current coding and naming conventions
   * See the CICE module ice_state.F90 for category conventions
