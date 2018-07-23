@@ -1,6 +1,6 @@
 # Table of Contents
 [**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#introduction)  
-[**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#general-recommendations)    
+[**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#general-recommendations)    
 [**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#overview)   
 [**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#local-initialization)   
 [**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#forks)   
