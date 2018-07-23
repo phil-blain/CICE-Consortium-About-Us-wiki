@@ -51,14 +51,14 @@ Always branch from master unless you specifically want changes from another bran
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-* _Update your development branch on your fork to the current version of the CICE Consortium's master branch._
+* _Before a Pull Request (PR), update your development branch to the CICE Consortium's master branch._
+
+* _Break your PRs into multiple pieces if there are multiple groups of changes._ This is especially important if some changes are bit-for-bit and others are not. 
+
+* _Before submitting a PR run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
 
 * Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
-
-* _Break your Pull Requests (PRs) into multiple pieces if there are multiple groups of changes._ This is especially important if some changes are bit-for-bit and others are not. 
-
-* _Before submitting a PR run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
 
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf).
 
