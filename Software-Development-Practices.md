@@ -5,7 +5,7 @@ CICE Consortium Member representatives and community developers should strive to
 * Utilize a common communication space for chats and discussions
 * Work in shared repositories
 * Adhere to the documentation strategy
-** Provide concise comments throughout the code
+~~ Provide concise comments throughout the code
 ** Write readable guides for build/run and a scientific overview
 ** Deposit namelist settings, confidence scores and other documentation for tested and validated configurations in the repository 
 ** Document and track requirements and issues
