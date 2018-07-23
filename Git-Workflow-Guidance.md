@@ -41,17 +41,17 @@
 This document provides a simplified overview of git and how to use it within CICE-Consortium development.  In most cases, it does not fully represent the details and complexity associated with git.  It should provide a starting point for working in the CICE-Consortium, and it will hopefully encourage users to look for more detailed documentation on the web.  This document is not a substitute for a proper and detailed git user guide.  
 
 # General Recommendations
-_Create your own forks for each repository._
+* _Create your own forks for each repository._
 
-Keep your fork master consistent with the Consortium master:
+* Keep your fork master consistent with the Consortium master:
 _pull from the Consortium master and push to your fork_  
 
-Work on branches in your sandbox, not on master.
+* Work on branches in your sandbox, not on master.
 Always branch from master unless you specifically want changes from another branch in the new branch.
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
+* Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
 
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf).
