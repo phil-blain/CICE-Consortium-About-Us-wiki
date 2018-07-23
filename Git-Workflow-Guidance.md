@@ -54,6 +54,11 @@ _Never push changes to your fork master, only to branches._
 * Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
 
+* When submitting a Pull Request (PR) to the Consortium, please follow these steps: 
+1. _Update your development branch on your fork to the current version of the CICE Consortium's master branch._
+2. _Run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
+3. _Break your PR's into multiple pieces if there are multiple groups of changes._ This is especially important if some changes are bit-for-bit and others are not.
+
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf).
 
 # Overview
