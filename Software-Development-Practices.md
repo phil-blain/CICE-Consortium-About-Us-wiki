@@ -57,20 +57,12 @@ CICE Consortium Member representatives and community developers should strive to
 |CICE and Icepack file naming convention| |
 |---|---|
 |CICEcore modules|ice_*.F90|
+|CICEcore namelist|ice_in|
+|Icepack driver modules|icepack_drv*.F90|
+|Icepack namelist|icepack_in|
+|Icepack interface modules|icepack_intfc*.F90|
+|Icepack modules|icepack_*.F90|
 
-
-
-
-CICEcore namelist
-ice_in
-Icepack driver modules
-icepack_drv*.F90
-Icepack namelist
-icepack_in
-Icepack interface modules
-icepack_intfc*.F90
-Icepack modules
-icepack_*.F90
 
 Document history
 16 January 2017:  Initial draft 
