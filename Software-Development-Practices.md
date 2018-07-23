@@ -53,11 +53,14 @@ CICE Consortium Member representatives and community developers should strive to
 * Maintain bit-for-bit output from the default configuration (to the extent possible) via namelist flags
 * Maintain global conservation of heat, water, salt
 
-CICE and Icepack file naming convention
+# **File Naming Convention**
+|CICE and Icepack file naming convention| |
+|---|---|
+|CICEcore modules|ice_*.F90|
 
 
-CICEcore modules
-ice_*.F90
+
+
 CICEcore namelist
 ice_in
 Icepack driver modules
