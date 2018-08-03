@@ -1,39 +1,39 @@
 # Table of Contents
-[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#introduction)  
+[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction)  
 [**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#general-recommendations)    
-[**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#overview)   
-[**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#local-initialization)   
-[**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#forks)   
+[**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overview)   
+[**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-initialization)   
+[**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#forks)   
 * Setting up Forks    
 * Updating your Fork    
 * Collaborators    
 
-[**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#clone-commit-branch)   
+[**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
 * Creating a Sandbox (clone)    
 * Commit    
 * Branch    
 
-[**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#pushing-and-pulling)   
+[**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
 * Remotes    
 * Push    
 * Pull    
 * Pull Requests (PR)    
 
-[**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#submodules)   
+[**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodules)   
 * Overview    
 * Modify Icepack code inside CICE    
 * Modify and Commit Icepack Changes    
 * Update the Icepack Version in CICE    
 * Completely Remove and Replace the Icepack Submodule in CICE    
 
-[**Information**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#information)   
+[**Information**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#information)   
 * Status    
 * Diff    
 * Log    
 
-[**Appendix A:** Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-a-table-of-useful-git-commands--git-command)   
-[**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-b-best-practices)   
-[**Appendix C:** Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#appendix-c-terms)   
+[**Appendix A:** Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands--git-command)   
+[**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-b-best-practices)   
+[**Appendix C:** Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-c-terms)   
 
 ***
 
