@@ -8,6 +8,7 @@ CICE Release Process
   * code changes
   * Update doc/source/intro/major_updates.rst
   * Update version via cice.setup --setvers and commit/push
+     * Note that this will automatically change the documentation versioning. No manual changes are necessary.
   * Push changes to branch/master
   * Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
   * Generate and check html and pdf documentation via readthedocs
