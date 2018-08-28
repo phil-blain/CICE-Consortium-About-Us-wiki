@@ -71,7 +71,7 @@ The following code acceptance testing criteria **must** be completed for conside
       2. If all tests PASS, then run the CICE quick_suite with at least one compiler; all tests must PASS.
 
    * *CICE contributions:*
-      1. If there are changes in Icepack, perform step 1 above.
+      1. If there are changes in Icepack, perform step 'i' above.
       2. Run the CICE base_suite with at least 1 compiler; all tests must PASS.
       3. If all tests do not pass, then perform QC testing to classify the changes
 
