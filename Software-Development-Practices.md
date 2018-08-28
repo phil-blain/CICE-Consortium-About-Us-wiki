@@ -65,10 +65,12 @@ CICE Consortium Member representatives and community developers should strive to
 
 # **Required Testing**
 The following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
-   *Icepack-only contribution:*
+
+   * *Icepack-only contribution:*
       1. Code contributor must run the Icepack base_suite with at least 1 compiler; all tests must PASS.
       2. If all tests PASS, then run the CICE quick_suite with at least one compiler; all tests must PASS.
-   * CICE contributions:*
+
+   * *CICE contributions:*
       1. If there are changes in Icepack, perform step 1 above.
       2. Run the CICE base_suite with at least 1 compiler; all tests must PASS.
       3. If all tests do not pass, then perform QC testing to classify the changes
