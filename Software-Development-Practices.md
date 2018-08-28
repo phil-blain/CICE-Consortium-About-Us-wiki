@@ -63,22 +63,15 @@ CICE Consortium Member representatives and community developers should strive to
 |Icepack interface modules|icepack_intfc*.F90|
 |Icepack modules|icepack_*.F90|
 
-# **File Naming Convention**
-Code acceptance testing criteria (for consideration of a PR)
-
-Icepack-only contribution:
-
-Code contributor must run the Icepack base_suite with at least 1 compiler; all tests must PASS.
-
-If all tests PASS, then run the CICE quick_suite with at least one compiler; all tests must PASS.
-
-CICE contributions:
-
-If there are changes in Icepack, perform step 1 above.
-
-Run the CICE base_suite with at least 1 compiler; all tests must PASS.
-
-If all tests do not pass, then perform QC testing to classify the changes
+# **Required Testing**
+The following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
+   *Icepack-only contribution:*
+      1. Code contributor must run the Icepack base_suite with at least 1 compiler; all tests must PASS.
+      2. If all tests PASS, then run the CICE quick_suite with at least one compiler; all tests must PASS.
+   * CICE contributions:*
+      1. If there are changes in Icepack, perform step 1 above.
+      2. Run the CICE base_suite with at least 1 compiler; all tests must PASS.
+      3. If all tests do not pass, then perform QC testing to classify the changes
 
 In some instances, a new physics parameterization etc. may require a more thorough investigation of the model output to determine if the model is performing appropriately.
 
