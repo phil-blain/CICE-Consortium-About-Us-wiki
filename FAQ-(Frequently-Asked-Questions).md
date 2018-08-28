@@ -1,6 +1,6 @@
 ## Topics
 * [Contact the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-contact)
-* [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership)
+* [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)#contributing-to-the-consortium)
 * [Access to the consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership)
 * [Enthalpy corrections](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#enthalpy-corrections)
 * [[EVP time steps|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#evp-time-steps]]    
@@ -14,8 +14,11 @@ How do I contact the Consortium?
 **A:** You may contact the Consortium and interact with the community through the community liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
 
 ### Contributing to the Consortium
-**Required Testing**
-The following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
+How do I contribute to the Consortium?
+
+**A:** If you would like to contribute to CICE development and are *not* a [Consortium Member](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership), you will be able to access the code and contribute developments for use by the community, via the Consortium's procedures and with help from Consortium Members. Please see the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index) that provides links on Information for Developers. 
+
+Also please note that the following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
 
    * *Icepack-only contribution:*
       1. Code contributor must run the Icepack base_suite with at least 1 compiler; all tests must PASS.
