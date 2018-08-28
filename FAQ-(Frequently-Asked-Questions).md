@@ -13,6 +13,21 @@ How do I contact the Consortium?
 
 **A:** You may contact the Consortium and interact with the community through the community liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
 
+### Contributing to the Consortium
+# **Required Testing**
+The following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
+
+   * *Icepack-only contribution:*
+      1. Code contributor must run the Icepack base_suite with at least 1 compiler; all tests must PASS.
+      2. If all tests PASS, then run the CICE quick_suite with at least one compiler; all tests must PASS.
+
+   * *CICE contributions:*
+      1. If there are changes in Icepack, perform step 'i' above.
+      2. Run the CICE base_suite with at least 1 compiler; all tests must PASS.
+      3. If all tests do not pass, then perform QC testing to classify the changes
+
+In some instances, a new physics parameterization etc. may require a more thorough investigation of the model output to determine if the model is performing appropriately.
+
 ### Consortium membership
 Who can be a CICE Consortium Member?
 
