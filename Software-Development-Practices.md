@@ -77,8 +77,7 @@ The following code acceptance testing criteria **must** be completed for conside
 
 In some instances, a new physics parameterization etc. may require a more thorough investigation of the model output to determine if the model is performing appropriately.
 
-
-Document history
+### Document history
 16 January 2017:  Initial draft 
 1 July 2017:  Dated for public posting
 28 August 2018: Updates for testing practices
