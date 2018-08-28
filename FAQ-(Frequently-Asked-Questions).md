@@ -14,7 +14,7 @@ How do I contact the Consortium?
 **A:** You may contact the Consortium and interact with the community through the community liaison or posting to the Community bulletin board. More information can be found at https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium
 
 ### Contributing to the Consortium
-# **Required Testing**
+**Required Testing**
 The following code acceptance testing criteria **must** be completed for consideration of a pull request to the Consortium repositories:
 
    * *Icepack-only contribution:*
