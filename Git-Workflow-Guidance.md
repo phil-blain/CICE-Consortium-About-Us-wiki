@@ -113,7 +113,7 @@ This entire process clones your fork master which creates a local repo and sandb
 
 ## Collaborators
 
-In general, your forks are public, anyone can read, but nobody can write.  You can add collaborators to your fork by logging into github and going to the repository, e.g. https://github.com/username/cice, clicking on Settings, then Collaborators.  Then add the collaborator at the bottom of the page.  When you do, that person will be invited to collaborate on your fork and you can give them write permission.
+In general, your forks are public, anyone can read, but nobody can write.  You can add collaborators to your fork by logging into github and going to the repository, e.g. https:// github.com/username/cice, clicking on Settings, then Collaborators.  Then add the collaborator at the bottom of the page.  When you do, that person will be invited to collaborate on your fork and you can give them write permission.
 
 # Clone, Commit, Branch
 ## Creating a Sandbox (clone)
@@ -278,7 +278,7 @@ Is the same as
 All modifications to the CICE-Consortium repositories will have to be done via a Pull Request (PR) from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
 
 To execute a pull request, 
-* Login to your fork in github (i.e. https://github.com/username/CICE)
+* Login to your fork in github (i.e. https:// github.com/username/CICE)
 * Click on the appropriate repository
 * Switch to the appropriate branch via the drop down box
 * Click on the box “New Pull Request” next to the branch name
@@ -371,21 +371,21 @@ By using this approach, only at the final CICE commit is the Icepack submodule u
          (update to Consortium CICE master if needed)
       git branch mybranch
       git checkout mybranch
-      mv icepack icepack.orig   # put aside the original version of icepack
+      mv icepack icepack.orig                                  # put aside the original version of icepack
       git clone https://github.com/username/icepack icepack    # check out a new version of icepack from your fork and drop it into your icepack directory in your sandbox
       cd icepack
          (update to Consortium Icepack master if needed)
       git branch icebranch
       git checkout icebranch
          (modify icepack and cice, test icepack and cice, add/commit/push icepack and cice, as separate repositories)
-      git push origin icebranch  # push all changes to Icepack repository
+      git push origin icebranch                                # push all changes to Icepack repository
          (create a PR for icebranch and wait for the Icepack PR to be done)
 
       cd cice.mybranch
-      git push origin mybranch   # push all changes to CICE repository
-      mv icepack icepack.new    # put aside your working copy of icepack
+      git push origin mybranch                                 # push all changes to CICE repository
+      mv icepack icepack.new                                   # put aside your working copy of icepack
       git clone https://github.com/cice-consortium/icepack icepack      # check out the consortium icepack master
-      diff -r icepack icepack.new     # just make sure it looks OK
+      diff -r icepack icepack.new                              # just make sure it looks OK
          (test CICE)
       git add icepack
       git commit -m "update icepack version"
