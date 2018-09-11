@@ -5,13 +5,14 @@
 [**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-initialization)   
 [**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#forks)   
 * Setting up Forks    
-* Updating your Fork    
+* Updating your Fork Master
 * Collaborators    
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
 * Creating a Sandbox (clone)    
+* Branch   
 * Commit    
-* Branch    
+ 
 
 [**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
 * Remotes    
@@ -54,7 +55,7 @@ Always branch from master unless you specifically want changes from another bran
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork) using the Consortium master as your upstream source._
+* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork-master) using the Consortium master as your upstream source._
 
 * _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
 
@@ -63,7 +64,7 @@ _Never push changes to your fork master, only to branches._
 * Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
 
-See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/blob/master/SoftwareDevelopmentPractices.pdf).
+See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices).
 
 # Overview
 CICE consists of a top level driver and dynamical core plus the Icepack code which is included as a git submodule.  Because Icepack is a submodule of CICE, Icepack and CICE development are handled somewhat independently with respect to the github repositories even though development and testing may be done together and in the same sandbox.  
@@ -91,7 +92,7 @@ Users should create personal forks of CICE and Icepack to carry out any developm
 * Go to the repository page (ie. https://github.com/CICE-Consortium/CICE or https://github.com/CICE-Consortium/Icepack)
 * In the upper right hand corner, click on “fork”
 * Click on your github avatar/username
-* A fork will be created on your github page (ie. https://github.com/username/CICE)
+* A fork will be created on your github page (ie. > https://github.com/username/CICE)
 
 Each repository (CICE and Icepack) have to be forked separately and users are encouraged to fork both repositories.
 
