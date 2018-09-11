@@ -19,7 +19,7 @@
 * Push    
 * Pull  
 
-[**Pull Requests**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
+[**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
 
 [**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
 
@@ -273,9 +273,9 @@ Is the same as
       git fetch origin
       git merge origin/master
 
-# Pull Requests (PR)
+# Pull Requests
 
-All modifications to the CICE-Consortium repositories will have to be done via a pull request from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
+All modifications to the CICE-Consortium repositories will have to be done via a Pull Request (PR) from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
 
 To execute a pull request, 
 * Login to your fork in github (i.e. https://github.com/username/CICE)
