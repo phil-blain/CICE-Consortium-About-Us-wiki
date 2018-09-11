@@ -92,7 +92,7 @@ Users should create personal forks of CICE and Icepack to carry out any developm
 * Go to the repository page (ie. https://github.com/CICE-Consortium/CICE or https://github.com/CICE-Consortium/Icepack)
 * In the upper right hand corner, click on “fork”
 * Click on your github avatar/username
-* A fork will be created on your github page (ie. > https://github.com/username/CICE)
+* A fork will be created on your github page (ie. https:// github.com/username/CICE)
 
 Each repository (CICE and Icepack) have to be forked separately and users are encouraged to fork both repositories.
 
