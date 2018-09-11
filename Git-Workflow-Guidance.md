@@ -16,8 +16,11 @@
 [**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
 * Remotes    
 * Push    
-* Pull    
-* Pull Requests (PR)    
+* Pull  
+
+[**Pull Requests**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
+
+[**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
 
 [**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodules)   
 * Overview    
@@ -51,11 +54,11 @@ Always branch from master unless you specifically want changes from another bran
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-* _Immediately before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork) using the Consortium master as your upstream source._
+* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork) using the Consortium master as your upstream source._
 
 * _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
 
-* _Break Pull Requests into multiple pieces (one "fix" at a time)._ Fill in the Pull Request template with details specific to each particular "fix". This is especially important if some changes are bit-for-bit and others are not. 
+* _Separate updates into multiple Pull Requests (one "fix" at a time)._ Fill in the Pull Request template with details specific to each particular "fix". This is especially important if some changes are bit-for-bit and others are not. 
 
 * Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
@@ -95,19 +98,17 @@ Each repository (CICE and Icepack) have to be forked separately and users are en
 
 We encourage development on branches in forks and for the fork master to generally remain up to date with the Consortium version.  This makes it easier to branch in the fork from a Consortium version of master.
 
-## Updating Your Fork
+## Updating Your Fork master
 
-We’re getting a little ahead with respect to documentation but to update your fork from an upstream source, pull from the CICE-Consortium (or another repository) to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like
+We’re getting a little ahead with respect to documentation but to keep your fork master up to date with the consortium master, pull from the CICE-Consortium to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like
 
       git clone https://github.com/username/CICE --recursive
       cd CICE
-      git remote -v
       git remote add upstream https://github.com/CICE-Consortium/CICE
-      git remote -v
       git pull upstream master
       git push origin master
 
-This entire process clones your fork which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox, commits those changes to your local repository, and pushes those changes to your fork (origin).  The process above is how you can keep your fork master up-to-date with the Consortium master.  Whatever branch the sandbox is pointing to is the branch that will be updated by the pull.
+This entire process clones your fork master which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox and commits those changes to your local repository, and pushes those changes to your fork (origin).  We encourage all users to NOT commit local changes to master (always work on a branch), and to keep the fork master up to date with the consortium master.
 
 ## Collaborators
 
@@ -136,26 +137,13 @@ to name the cloned sandbox. Verify with git status.
         Your branch is up-to-date with 'origin/master'.
         nothing to commit, working directory clean
 
-To clone a branch from someone else’s fork,
-
-      git clone -b branch_name --recursive https://github.com/username/CICE mybox
-
-## Commit
-
-When you commit, you are committing changes to the local repository.  This repository is part of your sandbox and is created when you clone.  In general, you want to use git status, git add, git rm, and git commit.  Git status indicates where you are in the repository and what changes have been made in your sandbox.  Git add tells git which files you want to update in the local repository when you commit.  Git commit then commits those to your local repository.  
-
-      git status
-      git add file1
-      git add file2 file3
-      git add file4
-      git commit -m “modified this really cool thing in my code”
-      git status
+You can clone any public github repository.
 
 ## Branch
 
 Branches and forks are often treated the same, but they are fundamentally different. A fork is a copy of an entire repository; that repository contains branches. A branch is a specific version in a repository.
 
-To see which branches exist, use,
+To see which branches exist, in a sandbox,
 
       git branch --list
       git branch --list --all
@@ -164,35 +152,30 @@ To see which branches exist, use,
 
       git checkout branchname
 
-You can also checkout a branch directly with clone using the -b option,
+You can also checkout a branch directly with clone using the -b option from any github location,
 
       git clone -b branchname https://github.com/username/CICE --recursive
 
-To create a new branch, set your sandbox to point where you want to create a branch and use git branch to create it, then checkout that branch to switch to it,
+To create a new branch, set your sandbox to the starting version of your branch.  Often, this should be the head of the consortium master, and it's a good time to update your fork's master as part of the process,
 
-      git checkout master
-      git branch newbranch
-      git checkout newbranch
+      git clone https://github.com/username/CICE --recursive cice.mybranch
+      cd cice.mybranch
+      git remote add upstream https://github.com/cice-consortium/CICE
+      git pull upstream master
+      git push origin master
+      git branch mybranch
+      git checkout mybranch
 
-We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository to have a stable version to create branches from.  To update your fork master to the latest Consortium version, see this section on remote/pull/push.  **NOTE: When you execute “git checkout”, you will switch branches and lose any local modifications that have not been committed so BE CAREFUL with checkout.** Commit and push any changes before you switch branches.  You can also use “git stash” to save local changes.
+The first 5 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master and it is checked out.  
 
-If you are working on a branch[b][c][d][e][f][g][h], when you commit, you want to commit only the changes on the branch, and then you’ll want to push the branch changes to the repository.
-
-      git status
-         On branch newbranch
-         Your branch is up-to-date with 'origin/newbranch'.
-         Changes not staged for commit:
-         ... 
-      git add file1 file2
-      git commit -m “updated the big subroutine to fix the little algorithm”
-      git push origin newbranch
+We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository to have a stable version to create branches from.  **NOTE: When you execute “git checkout”, you will switch branches and lose any local modifications that have not been committed so BE CAREFUL with checkout.** Commit and push any changes before you switch branches.  You can also use “git stash” to save local changes.
 
 To delete a branch
 
       git checkout master
       git branch -d newbranch
 
-If you are going to checkout a branch with a submodule,  
+If your branch has a submodule, 
 
 * You can clone the branch directly,
 
@@ -205,12 +188,28 @@ If you are going to checkout a branch with a submodule,
       git checkout branchname
       git submodule update --init
 
-* If you already have a sandbox with the submodule initialized, you need to sync and update the submodule after you switch branches if the origin of the submodule has changed,
+* Or if you already have a sandbox with the submodule initialized, you can switch to the branch and then you should sync and update/init the submodule,
 
+      git clone --recursive https://github.com/username/CICE
       cd CICE
       git checkout branchname
       git submodule sync
       git submodule update --init
+
+
+## Commit
+
+When you commit, you are committing changes to the local repository.  This repository is part of your sandbox and is created when you clone.  In general, you want to use git status, git add, git rm, and git commit.  Git status indicates where you are in the repository and what changes have been made in your sandbox.  Git add tells git which files you want to update in the local repository when you commit.  Git commit then commits those to your local repository.  
+
+      git status
+      git add file1
+      git add file2 file3
+      git add file4
+      git rm file5
+      git commit -m “modified this really cool thing in my code”
+      git status
+
+In this case, add specifies both new AND modified files that need to be committed.  You can also use `git commit -a` to automatically add modified files, but please review the git documentation first.
 
 # Pushing and Pulling
 
@@ -238,20 +237,15 @@ Now you can pull or push from/to these repositories.
 
 ## Push
 
-A typical workflow for development with push would be
+Push migrates changes from your local repository to the github repository.  Push looks like
 
-      git clone https://github.com/username/CICE
-      cd CICE
-      git checkout master
-      git branch mybranch
-      git checkout mybranch
-         develop and test
-      git status
-      git add <file1      <file2     
-      git commit -m “developed and tested on mybranch”
       git push origin mybranch
 
-## Pull
+You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).
+
+You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).
+
+## Pull, Rebase
 
 If you want to update your master fork with changes from the CICE-Consortium master, you would pull from the master and push to your fork as follows
 
@@ -260,14 +254,14 @@ If you want to update your master fork with changes from the CICE-Consortium mas
       git pull upstream master (pulls upstream repo master to local repo, sandbox)
       git push origin master (pushes your local repo master to your fork)
 
-To then update your branch to the latest changes on the master, you would do
+A similar process can be used to update a branch.  However, on a branch, we recommend using rebase rather than pull.  Pull merges upstream and local changes based on time of commit.  Rebase updates the local repository by first rebasing the repository from the upstream source and then replaying your local commits on top of the rebase.  That means your local changes are always built on top of the base.  This would look like
 
-      git checkout mybranch
-      git pull origin master (merge updates from fork/origin master to mybranch)
-  test
-      git add    (if any local changes were made)
-      git commit  (if any local changes were made)
-      git push origin mybranch      
+      git checkout branchname
+      git remote add upstream https://github.com/CICE-Consortium/CICE
+      git rebase upstream master
+      git push origin master
+
+Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.
 
 A pull is the same thing as a fetch and a merge.  There are many cases where it’s better to do a fetch, review the changes (git diff), and then do a merge.  So
 
@@ -292,17 +286,40 @@ To execute a pull request,
 * Add any relevant documentation and propose reviewers
 * Click on the “create pull request” box
 
+# Overall Workflow
+
+A typical workflow for development on a branch would be
+
+      git clone https://github.com/username/CICE cice.mybranch
+      cd cice.mybranch
+      git remote add upstream https://github.com/cice-consortium/CICE
+      git pull upstream master
+      git push upstream master
+      git branch mybranch
+      git checkout mybranch
+         (develop and test)
+      git status
+      git add file1 file2     
+      git rm file3
+      git commit -m “developed something and tested on mybranch”
+         (develop and test)
+      git add file4
+      git commit -m "updated something again"
+      git rebase upstream master
+         (test)
+      git commit -m "rebase to master"
+      git push origin mybranch
+         (create the Pull Request)
+
+
 # Submodules
 
 ## Overview
 
-Icepack is a submodule of CICE.  Submodules are pointers to specific versions of an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  If you are working in the Icepack repository in stand-alone mode, you can ignore this and follow the documentation above.  But there are a few extra steps if you are modifying Icepack in the CICE code.
+Icepack is a submodule of CICE.  Submodules are pointers to specific versions in an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  When Icepack is downloaded as part of CICE, the Icepack version will be a detached HEAD and probably associated with a version in the consortium repository, even if you checked out a version of CICE from your fork.  Without going into too much detail, a detached HEAD means it’s not in a state where it can be modified or committed.  
 
-## Modify Icepack Code Inside CICE
-
-When Icepack is downloaded as part of CICE, the Icepack version will be a detached HEAD.  Without going into too much detail, that means it’s not in a state where it can be modified and committed.  It’s pointing to a specific version of Icepack, not to a branch.
-
-      cd icepack
+      git clone https://github.com/username/cice
+      cd cice/icepack
       git remote -v
          origin    https://github.com/CICE-Consortium/Icepack (fetch)
          origin    https://github.com/CICE-Consortium/Icepack (push)
@@ -310,11 +327,83 @@ When Icepack is downloaded as part of CICE, the Icepack version will be a detach
          HEAD detached at 192fbaa
          nothing to commit, working directory clean
 
-Icepack is pointing to something in the CICE-Consortium Repository, even if you checked Icepack out of your fork.  If you need to modify Icepack, the first thing to do is to switch the Icepack submodule to the head of a branch in your fork.  To do this, you need to modify the submodule repository, update the submodule version to your fork master, update the fork master to make sure you are using the latest version of the Consortium Icepack code, then switch to a branch in your fork.  Make sure your fork master is up to date with the Consortium master and if not, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_edit#updating-your-fork).
+## Update Icepack in CICE
 
-      cd CICE
+If all you want to do is update the Icepack version in CICE in the repository, then you would do the following
+
+      git clone https://github.com/username/CICE cice.mybranch --recursive
+      cd cice.mybranch
+         (update to Consortium CICE master if needed)
+      git branch mybranch
+      git checkout mybranch
+      cd icepack
+      git status    # should be in a detached HEAD
+      git branch --all --list   # figure out what to checkout
+      git checkout somebranch   # checkout a new version of Icepack from the consortium
+      git status    # should be pointing to another version of Icepack
+      cd .. 
+         (test CICE)
+      git add icepack     # add Icepack changes to CICE
+      git commit    # in CICE
+      git push origin cicebranch
+         (create PR for CICE)
+
+## Develop CICE and Icepack concurrently
+
+There are a number of different ways to handle development of Icepack and CICE concurrently.  The easiest way is probably to checkout CICE and Icepack from your fork, and develop each within a single sandbox but as independent branches.  Then do a PR for Icepack first, and finally update Icepack in CICE in your fork and do a CICE PR.  This process looks like
+
+1.  clone CICE from user fork
+1.  update CICE fork master to Consortium version
+1.  create and checkout a CICE fork branch
+1.  clone Icepack to user fork
+1.  update Icepack fork master to Consortium version
+1.  create and checkout Icepack fork branch
+1.  develop/commit/push Icepack changes to Icepack fork branch, develop/commit/push CICE changes to CICE fork branch, never update CICE submodule formally in fork branch
+1.  execute PR for Icepack to merge changes to Consortium Icepack master
+1.  update CICE fork branch submodule to point to the appropriate Consortium Icepack version and commit/push that change to the CICE fork branch
+1.  execute PR for CICE to merge changes to Consortium CICE master including updating the pointer to the Icepack version
+
+By using this approach, only at the final CICE commit is the Icepack submodule updated.  There may be times where this is not adequate, but as a default, it’s probably the easiest way to carry out development of Icepack and CICE in parallel.  More specifically, this might look something like
+
+      git clone https://github.com/username/CICE cice.mybranch --recursive
+      cd cice.mybranch
+         (update to Consortium CICE master if needed)
+      git branch mybranch
+      git checkout mybranch
+      mv icepack icepack.orig   # put aside the original version of icepack
+      git clone https://github.com/username/icepack icepack    # check out a new version of icepack from your fork and drop it into your icepack directory in your sandbox
+      cd icepack
+         (update to Consortium Icepack master if needed)
+      git branch icebranch
+      git checkout icebranch
+         (modify icepack and cice, test icepack and cice, add/commit/push icepack and cice, as separate repositories)
+      git push origin icebranch  # push all changes to Icepack repository
+         (create a PR for icebranch and wait for the Icepack PR to be done)
+
+      cd cice.mybranch
+      git push origin mybranch   # push all changes to CICE repository
+      mv icepack icepack.new    # put aside your working copy of icepack
+      git clone https://github.com/cice-consortium/icepack icepack      # check out the consortium icepack master
+      diff -r icepack icepack.new     # just make sure it looks OK
+         (test CICE)
+      git add icepack
+      git commit -m "update icepack version"
+      git push origin mybranch
+         (create a PR for CICE that will include CICE mods and a new version of Icepack)
+
+You just need to be a little careful to keep track of the Icepack and CICE changes separately.
+
+## Change the Icepack submodule in CICE
+
+This is more advanced, but you can also change the submodule that Icepack is pointing to within a CICE repository.  To do this, you need to modify the submodule repository, update the submodule version using git config, then commit and push the change.  
+
+      git clone https://github.com/username/CICE cice.mybranch --recursive
+      cd cice.mybranch
+         (update to Consortium CICE master if needed)
+      git branch mybranch
+      git checkout mybranch   # work on CICE branch
       git config --file=.gitmodules -l
-      git config --file=.gitmodules submodule.icepack.url https://github.com/username/Icepack.git
+      git config --file=.gitmodules submodule.icepack.url https://github.com/username/Icepack.git  # change the repository
       git config --file=.gitmodules submodule.icepack.branch master
       git config --file=.gitmodules -l
       git submodule sync
@@ -326,58 +415,12 @@ Icepack is pointing to something in the CICE-Consortium Repository, even if you 
       git status
          HEAD detached at 903678f
          nothing to commit, working directory clean
-      git checkout master  (switch from the detached HEAD to your fork master)
-      git remote add upstream https://github.com/CICE-Consortium/Icepack
-      git merge upstream master
-      git push origin master
-      git branch testmods1
-      git checkout testmods1
-      git status
-         On branch testmods1
-         nothing to commit, working directory clean
+      git checkout something   # change the version of Icepack
+      cd ../
+      git add icepack
+      git commit -a -m "switch icepack to different repository"
 
-## Modify and Commit Icepack Changes
-
-Now you are ready to modify the Icepack code, commit Icepack locally, and push your branch changes to your Icepack fork.  This is just like working in any git repository.
-
-         Modify Icepack code, test, and review
-      cd icepack
-      git status
-      git diff
-      git add file1
-      git commit -m “update something really special in a nice way”
-      git push origin testmods1
-
-When ready, execute a pull request from your Icepack fork to the CICE-Consortium repository.  When the pull request is executed, your Icepack changes will be merged into the CICE-Consortium version.
-## Update the Icepack Version in CICE
-However, CICE is still pointing to the older version of Icepack in all repositories.  To update the CICE submodule version[i][j], you just need to switch Icepack to the version of code of interest and then commit the submodule change to CICE.  For instance
-
-      git branch cicebranch
-      git checkout cicebranch
-      cd icepack
-      git status
-      git branch -a
-      git checkout somebranch
-      cd .. 
-      git status
-      git add icepack  (add Icepack changes to CICE)
-      git commit  (in CICE)
-      git push origin cicebranch
-
-The exact commands and sequence will vary a bit depending what you want to do.  This will have to be done regularly in the CICE-Consortium version to keep Icepack up to date.  In general, the Icepack submodule may not need to be formally updated until a pull request is done.  In most cases, it should be fine to develop, commit, and push on a fork branch in both CICE and Icepack at the same time without ever fussing with submodules.  A process for working on CICE and Icepack at the same time is
-
-1.  clone CICE from user fork
-1.  update CICE fork master to Consortium version
-1.  create and checkout a CICE fork branch
-1.  switch Icepack to user fork
-1.  update Icepack fork master to Consortium version
-1.  create and checkout Icepack fork branch
-1.  develop/commit/push Icepack changes to Icepack fork branch, develop/commit/push CICE changes to CICE fork branch, never update CICE submodule formally in fork branch
-1.  execute PR for Icepack to merge changes to Consortium Icepack master
-1.  update CICE fork branch submodule to point to the appropriate Consortium Icepack version and commit/push that change to the CICE fork branch
-1.  execute PR for CICE to merge changes to Consortium CICE master including updating the pointer to the Icepack version
-
-By using this approach, only at the final CICE commit is the Icepack submodule updated.  There may be times where this is not adequate, but as a default, it’s probably the easiest way to carry out development of Icepack and CICE in parallel.
+This should be avoided as it just means that later on, you will have to change the Icepack repository back to a version in the consortium if you want to PR this CICE branch.  It's far easier to just treat the Icepack repository independently until you are ready to checkout a new version from the consortium to update CICE.
 
 ## Completely Remove and Replace the Icepack Submodule in CICE
 
@@ -388,12 +431,12 @@ This is not something you should normally have to do, but just in case,
       rm -r -f .git/modules/icepack
       git rm -f icepack
       git commit -m “remove icepack”
-      git submodule add https://github.com/username/Icepack icepack
+      git submodule add https://github.com/cice-consortium/Icepack icepack
       cd icepack
       git checkout some_branch
       cd ../
       git add icepack
-      git commit -m “switch to Icepack repo from username”
+      git commit -m “switch to Icepack version xyz”
 
 and now you can push the change to CICE.  
 
@@ -449,8 +492,8 @@ If you want a useful graphical summary of the log, try
 
 # Appendix B: Best Practices
 * Create a fresh clone and branch for each batch of changes that will be submitted in separate PRs, if a previous PR might not be executed before work begins on the next one.
-* Update your fork from the main Consortium repositories. 
-* Always develop on a branch, then later merge (or pull request) to master.
+* Keep your fork master up to date with the Consortium, don't commit local changes to your fork master, and rebase your branches from the main Consortium repositories periodically. 
+* Always develop on a branch, then create a PR to merge to the consortium master.
 * Use “git status” often.
 * Use “git remote -v” often.
 * Always commit with a reasonably detailed and clear commit message.
