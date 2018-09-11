@@ -338,14 +338,14 @@ If all you want to do is update the Icepack version in CICE in the repository, t
       git branch mybranch
       git checkout mybranch
       cd icepack
-      git status    # should be in a detached HEAD
+      git status                # should be in a detached HEAD
       git branch --all --list   # figure out what to checkout
       git checkout somebranch   # checkout a new version of Icepack from the consortium
-      git status    # should be pointing to another version of Icepack
+      git status                # should be pointing to another version of Icepack
       cd .. 
          (test CICE)
-      git add icepack     # add Icepack changes to CICE
-      git commit    # in CICE
+      git add icepack           # add Icepack changes to CICE
+      git commit                # in CICE
       git push origin cicebranch
          (create PR for CICE)
 
