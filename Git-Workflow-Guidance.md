@@ -137,12 +137,17 @@ When you clone, your sandbox will be set to the head of the master branch.  You 
 
       git clone https://github.com/username/CICE --recursive mysandbox
 
-to name the cloned sandbox. Verify with git status.
+Verify with git status and git remote -v
 
       git status
         On branch master
         Your branch is up-to-date with 'origin/master'.
         nothing to commit, working directory clean
+
+      git remote -v
+        origin	https://github.com/username/CICE (fetch)
+        origin	https://github.com/username/CICE (push)
+
 
 You can clone any public github repository.
 
@@ -163,7 +168,11 @@ You can also checkout a branch directly with clone using the -b option from any 
 
       git clone -b branchname https://github.com/username/CICE --recursive
 
-To create a new branch, set your sandbox to the starting version of your branch.  Often, this should be the head of the consortium master, and it's a good time to update your fork's master as part of the process,
+To create a new branch, initialize your sandbox to the version you want to branch from and type,
+
+      git branch mybranch
+
+You will usually branch from the head of the consortium master, and this is good time to update your fork's master as part of the process,
 
       git clone https://github.com/username/CICE --recursive cice.mybranch
       cd cice.mybranch
@@ -184,7 +193,7 @@ To delete a branch
 
 If your branch has a submodule, 
 
-* You can clone the branch directly,
+* You can create the branch as part of the clone,
 
       git clone -b branchname --recursive https://github.com/username/CICE 
 
@@ -220,7 +229,7 @@ In this case, add specifies both new AND modified files that need to be committe
 
 # Pushing and Pulling
 
-Pushing and Pulling are operations associated with migrating changes between repositories.  You push something if you are acting on the “sending” side and you pull something if you are on the “receiving” side.  To push or pull, you have to identify the repository and what you want to migrate, and you need write access to that repository.  The git remote command is extremely useful in push and pull operations.
+Pushing and Pulling are operations associated with migrating changes between repositories.  You push something if you are acting on the “sending” side and you pull something if you are on the “receiving” side.  To push or pull, you should specify the repository and what is being migrated explicitly, and you will need write access to that repository.  The git remote command is extremely useful in push and pull operations.
 
 ## Remotes
 
@@ -244,22 +253,20 @@ Now you can pull or push from/to these repositories.
 
 ## Push
 
-Push migrates changes from your local repository to the github repository.  Push looks like
+Push migrates changes from your local repository TO the github repository.  Push looks like
 
       git push origin mybranch
 
 You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).
 
-You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).
-
 ## Pull, Rebase
 
-If you want to update your master fork with changes from the CICE-Consortium master, you would pull from the master and push to your fork as follows
+If you want to update your master fork with changes from the CICE-Consortium master, you would pull from the consortium and push to your fork as follows
 
       git checkout master
       git remote add upstream https://github.com/CICE-Consortium/CICE
-      git pull upstream master (pulls upstream repo master to local repo, sandbox)
-      git push origin master (pushes your local repo master to your fork)
+      git pull upstream master      # pulls upstream repo master to local repo and sandbox
+      git push origin master        # pushes your local repo master to your fork
 
 A similar process can be used to update a branch.  However, on a branch, we recommend using rebase rather than pull.  Pull merges upstream and local changes based on time of commit.  Rebase updates the local repository by first rebasing the repository from the upstream source and then replaying your local commits on top of the rebase.  That means your local changes are always built on top of the base.  This would look like
 
@@ -284,24 +291,24 @@ Is the same as
 All modifications to the CICE-Consortium repositories will have to be done via a Pull Request (PR) from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
 
 To execute a pull request, 
-* Login to your fork in github (i.e. https:// github.com/username/CICE)
+* Login to your fork in github (i.e. https:// github.com/username)
 * Click on the appropriate repository
 * Switch to the appropriate branch via the drop down box
 * Click on the box “New Pull Request” next to the branch name
 * Review and verify the changes
 * Review and verify that the base and head are accurate
-* Add any relevant documentation and propose reviewers
+* Add any relevant documentation in the template box and propose reviewers
 * Click on the “create pull request” box
 
 # Overall Workflow
 
-A typical workflow for development on a branch would be
+To summarize, a typical workflow for development on a branch would be
 
       git clone https://github.com/username/CICE cice.mybranch
       cd cice.mybranch
       git remote add upstream https://github.com/cice-consortium/CICE
       git pull upstream master
-      git push upstream master
+      git push origin master
       git branch mybranch
       git checkout mybranch
          (develop and test)
@@ -316,7 +323,7 @@ A typical workflow for development on a branch would be
          (test)
       git commit -m "rebase to master"
       git push origin mybranch
-         (create the Pull Request)
+      (create the Pull Request)
 
 
 # Submodules
@@ -340,7 +347,7 @@ If all you want to do is update the Icepack version in CICE in the repository, t
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
-         (update to Consortium CICE master if needed)
+      (update to Consortium CICE master if needed)
       git branch mybranch
       git checkout mybranch
       cd icepack
@@ -349,11 +356,11 @@ If all you want to do is update the Icepack version in CICE in the repository, t
       git checkout somebranch   # checkout a new version of Icepack from the consortium
       git status                # should be pointing to another version of Icepack
       cd .. 
-         (test CICE)
+      (test CICE)
       git add icepack           # add Icepack changes to CICE
       git commit                # in CICE
-      git push origin cicebranch
-         (create PR for CICE)
+      git push origin mybranch
+      (create PR for CICE)
 
 ## Develop CICE and Icepack concurrently
 
@@ -374,29 +381,29 @@ By using this approach, only at the final CICE commit is the Icepack submodule u
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
-         (update to Consortium CICE master if needed)
+      (update to Consortium CICE master if needed)
       git branch mybranch
       git checkout mybranch
       mv icepack icepack.orig                                  # put aside the original version of icepack
       git clone https://github.com/username/icepack icepack    # check out a new version of icepack from your fork and drop it into your icepack directory in your sandbox
       cd icepack
-         (update to Consortium Icepack master if needed)
+      (update to Consortium Icepack master if needed)
       git branch icebranch
       git checkout icebranch
-         (modify icepack and cice, test icepack and cice, add/commit/push icepack and cice, as separate repositories)
+      (modify icepack and cice, test icepack and cice, add/commit/push icepack and cice, as separate repositories)
       git push origin icebranch                                # push all changes to Icepack repository
-         (create a PR for icebranch and wait for the Icepack PR to be done)
+      (create a PR for icebranch and wait for the Icepack PR to be done)
 
       cd cice.mybranch
       git push origin mybranch                                 # push all changes to CICE repository
       mv icepack icepack.new                                   # put aside your working copy of icepack
       git clone https://github.com/cice-consortium/icepack icepack      # check out the consortium icepack master
       diff -r icepack icepack.new                              # just make sure it looks OK
-         (test CICE)
+      (test CICE)
       git add icepack
       git commit -m "update icepack version"
       git push origin mybranch
-         (create a PR for CICE that will include CICE mods and a new version of Icepack)
+      (create a PR for CICE that will include CICE mods and a new version of Icepack)
 
 You just need to be a little careful to keep track of the Icepack and CICE changes separately.
 
@@ -406,7 +413,7 @@ This is more advanced, but you can also change the submodule that Icepack is poi
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
-         (update to Consortium CICE master if needed)
+      (update to Consortium CICE master if needed)
       git branch mybranch
       git checkout mybranch   # work on CICE branch
       git config --file=.gitmodules -l
@@ -425,7 +432,7 @@ This is more advanced, but you can also change the submodule that Icepack is poi
       git checkout something   # change the version of Icepack
       cd ../
       git add icepack
-      git commit -a -m "switch icepack to different repository"
+      git commit -m "switch icepack to different repository"
 
 This should be avoided as it just means that later on, you will have to change the Icepack repository back to a version in the consortium if you want to PR this CICE branch.  It's far easier to just treat the Icepack repository independently until you are ready to checkout a new version from the consortium to update CICE.
 
@@ -449,19 +456,20 @@ and now you can push the change to CICE.
 
 # Information
 
-There are many git commands to understand the status of your sandbox.
+There are many git commands to diagnose the status of your sandbox.
 
 ## Status
 Status provides a summary of the status of your sandbox.  
 
       git status
 
-will indicate which branch your sandbox is on and the changes that have been made.  This should be used often before commits and pushes.
+will indicate which branch your sandbox is on and the changes that have been made.  This should be used often during development and before commits and pushes.
 
 ## Diff
 Diff shows code changes.
 
       git diff
+
 ## Log
 Log summarizes the commits and pushes in your sandbox up to the current state.  The first entry will provide the id of the current model version.
 
@@ -478,24 +486,24 @@ If you want a useful graphical summary of the log, try
 
  | [command] | Description |
  | --------- | ----------- |
- | status    | Provides summary of status of sandbox |
+ | add | Defines which files will be committed |
+ | branch | Create a branch or list branches |
+ | checkout | Switch to another version/branch |
+ | clone | Initialize a local repo/sandbox |
+ | commit | Copy changes into the local sandbox repository |
  | diff    | Provides list of changes in current sandbox, lots of options for doing diffs with other repo versions.|
- | remote [-v] [add] | 	Lists/Sets remote repositories in a sandbox |
+ | fetch | Download changes to local repo |
+ | log | Provide a summary of commits |
+ | merge | Merge changes from local repo to sandbox |
  | pull | Download changes to local sandbox (== fetch + merge) |
  | push | Upload changes |
- | clone | Initialize a local repo/sandbox |
- | update | Pull updates into the local sandbox |
- | commit | Copy changes into the local sandbox repository |
- | submodule | 	Many options, useful for working with submodules |
- | checkout | Switch to another version/branch |
- | branch | Create a branch or list branches |
- | tag -a | Create a tag or list tags |
- | log | Provide a summary of commits |
- | add | Defines which files will be committed |
+ | rebase | like pull but updates the base version then replays local changes |
+ | remote [-v] [add] | 	Lists/Sets remote repositories in a sandbox |
  | rm | Removes a file from the repo |
- | fetch | Download changes to local repo |
- | merge | Merge changes from local repo to sandbox |
- | pull request | A request to merge changes from one repo to another.  AKA PR. |
+ | status    | Provides summary of status of sandbox |
+ | submodule | 	Many options, useful for working with submodules |
+ | tag -a | Create a tag or list tags |
+ | update | Pull updates into the local sandbox |
 
 # Appendix B: Best Practices
 * Create a fresh clone and branch for each batch of changes that will be submitted in separate PRs, if a previous PR might not be executed before work begins on the next one.
@@ -515,7 +523,7 @@ _Fork_ - When you copy a repository within github from one github project to ano
 _Master_ - The main or trunk branch in a github repository    
 _Merge_ - Merging changes from your local repository to your sandbox    
 _Pull_ - When you copy changes out of an external repository to your local repository and merge those changes into your local sandbox.  This is a combination of fetch and merge    
-_Pull Request_ - A github operation to request an update to an upstream repository    
+_Pull Request_ - A github operation to request an update to an upstream repository (aka PR)    
 _Push_ - When you copy changes into a github repository    
 _Sandbox_ - Your local checkout with or without local modifications    
 _Submodule_ - An external repository included in another repository    
