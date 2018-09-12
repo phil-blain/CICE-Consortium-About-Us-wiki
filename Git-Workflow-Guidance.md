@@ -77,6 +77,8 @@ There are a few basics to understand about git.  It is distributed.  That means 
 
 ![repodiagram](https://github.com/CICE-Consortium/About-Us/wiki/images/CICE_repo_diagrams1.png)
 
+<img src="https://github.com/CICE-Consortium/About-Us/wiki/images/CICE_repo_diagrams1.png" width="200" title="repodiagram">
+
 # Local Initialization
 Before using git on any platform, it’s useful to set a few things.  Execute the following commands,
 
