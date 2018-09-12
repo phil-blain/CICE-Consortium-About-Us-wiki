@@ -75,7 +75,7 @@ A good tutorial on the overall git workflow is at [atlassian's comparing-workflo
 
 There are a few basics to understand about git.  It is distributed.  That means there are actually multiple repositories.  For instance, normally there will be the CICE-Consortium repository, a user’s forked repository, and a local repository on your local machine associated with your sandbox.  The sandbox just contains a particular version from your repository like the head of a specific branch.  The sandbox is where you work.  To download a copy of the repository to a local file system, you clone it in git, that creates the local repository and sets up the sandbox.  That sandbox will be set to the head of the master branch initially.  You can update your local repository from any other repository by using fetch and merge (aka pull).  When you commit, you are migrating changes from your sandbox to your local repository.  Use push to migrate changes in the local repository back to your fork.  Once your fork is ready, those changes will be migrated to the CICE-Consortium repository by executing a pull request.   To update your local sandbox, you execute a pull from a github repository.  More generally, you can pull or push from/to any github repository.
 
-[[/images/CICE_repo_diagram1.png]]
+[[blob/master/images/CICE_repo_diagram1.png]]
 
 ![repodiagram](/images/CICE_repo_diagram1.png)
 
