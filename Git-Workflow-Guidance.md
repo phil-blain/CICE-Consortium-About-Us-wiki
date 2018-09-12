@@ -80,6 +80,7 @@ There are a few basics to understand about git.  It is distributed.  That means 
 -->
 
 <img src="https://github.com/CICE-Consortium/About-Us/wiki/images/CICE_repo_diagrams1.png" width="500" title="repodiagram">
+
 _**Figure: Relationship between CICE consortium repositories and git commands**_
 
 # Local Initialization
