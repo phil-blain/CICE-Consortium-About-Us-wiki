@@ -77,6 +77,8 @@ There are a few basics to understand about git.  It is distributed.  That means 
 
 [[/images/CICE_repo_diagram1.png]]
 
+![repodiagram](/images/CICE_repo_diagram1.png)
+
 # Local Initialization
 Before using git on any platform, it’s useful to set a few things.  Execute the following commands,
 
