@@ -48,7 +48,7 @@ This document provides a simplified overview of git and how to use it within CIC
 * _Create your own forks for each repository._
 
 * Keep your fork master consistent with the Consortium master:
-_pull from the Consortium master and push to your fork_  
+_pull from the Consortium master and push to your fork master_  
 
 * Work on branches in your sandbox, not on master.
 Always branch from master unless you specifically want changes from another branch in the new branch.
@@ -57,7 +57,7 @@ _Never push changes to your fork master, only to branches._
 
 * _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork-master) using the Consortium master as your upstream source._
 
-* _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and post the results._
+* _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and include test information in the PR template._
 
 * _Separate updates into multiple Pull Requests (one "fix" at a time)._ Fill in the Pull Request template with details specific to each particular "fix". This is especially important if some changes are bit-for-bit and others are not. 
 
@@ -71,7 +71,7 @@ CICE consists of a top level driver and dynamical core plus the Icepack code whi
 
 Only a limited number of users are able to push to the CICE-Consortium repositories.  Users will be working on personal forks and executing pull requests to merge their fork to the CICE-Consortium repositories.  If you plan to work within the CICE-Consortium project, create a github account (https://github.com) if you don’t have one already.
 
-A good tutorial on the overall git workflow is at atlassian's comparing-workflows page.  We will be following most of the ideas discussed in those workflows.  Details about using git can be found at the git-scm site or use google search.
+A good tutorial on the overall git workflow is at [atlassian's comparing-workflows page](https://www.atlassian.com/git/tutorials/comparing-workflows).  We will be following most of the ideas discussed in those workflows.  Details about using git can be found at the git-scm site or use google search.
 
 There are a few basics to understand about git.  It is distributed.  That means there are actually multiple repositories.  For instance, normally there will be the CICE-Consortium repository, a user’s forked repository, and a local repository on your local machine associated with your sandbox.  The sandbox just contains a particular version from your repository like the head of a specific branch.  The sandbox is where you work.  To download a copy of the repository to a local file system, you clone it in git, that creates the local repository and sets up the sandbox.  That sandbox will be set to the head of the master branch initially.  You can update your local repository from any other repository by using fetch and merge (aka pull).  When you commit, you are migrating changes from your sandbox to your local repository.  Use push to migrate changes in the local repository back to your fork.  Once your fork is ready, those changes will be migrated to the CICE-Consortium repository by executing a pull request.   To update your local sandbox, you execute a pull from a github repository.  More generally, you can pull or push from/to any github repository.
 
