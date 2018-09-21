@@ -274,8 +274,14 @@ A similar process can be used to update a branch.  However, on a branch, we reco
 
       git checkout branchname
       git remote add upstream https://github.com/CICE-Consortium/CICE
-      git rebase upstream master
-      git push origin master
+      git pull --rebase upstream master
+      git push origin branchname
+
+This works fine if your push is just a fast-forward push.  If you have pushed the branch before the rebase, it probably won't be a fast-forward as the history of your local repo and the remote repo have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
+
+      git push --force-with-lease origin branchname
+
+The force-with-lease (versus just force) checks whether you might overwrite other commits on your branch before forcing.  The other option is to work on a new branch and pull changes from the old branch to the new branch.  Neither are ideal.
 
 Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.
 
