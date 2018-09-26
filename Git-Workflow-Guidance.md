@@ -284,7 +284,7 @@ This works fine if your push is just a fast-forward push.  If you have pushed th
 The force-with-lease (versus just force) checks whether you might overwrite other commits on your branch before forcing.  The other option is to work on a new branch and pull changes from the old branch to the new branch.  Neither are ideal.  
 Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.  In summary, to rebase a branch with conflicts, do the following
 
-      git clone https://github.com/username/CICE
+      git clone https://github.com/username/CICE --recursive
       git checkout branchname
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git fetch upstream master
@@ -323,7 +323,7 @@ To execute a pull request,
 
 To summarize, a typical workflow for development on a branch would be
 
-      git clone https://github.com/username/CICE cice.mybranch
+      git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
       git remote add upstream https://github.com/cice-consortium/CICE
       git pull upstream master
@@ -351,7 +351,7 @@ To summarize, a typical workflow for development on a branch would be
 
 Icepack is a submodule of CICE.  Submodules are pointers to specific versions in an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  When Icepack is downloaded as part of CICE, the Icepack version will be a detached HEAD and probably associated with a version in the consortium repository, even if you checked out a version of CICE from your fork.  Without going into too much detail, a detached HEAD means it’s not in a state where it can be modified or committed.  
 
-      git clone https://github.com/username/cice
+      git clone https://github.com/username/cice --recursive
       cd cice/icepack
       git remote -v
          origin    https://github.com/CICE-Consortium/Icepack (fetch)
