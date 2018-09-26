@@ -281,9 +281,20 @@ This works fine if your push is just a fast-forward push.  If you have pushed th
 
       git push --force-with-lease origin branchname
 
-The force-with-lease (versus just force) checks whether you might overwrite other commits on your branch before forcing.  The other option is to work on a new branch and pull changes from the old branch to the new branch.  Neither are ideal.
+The force-with-lease (versus just force) checks whether you might overwrite other commits on your branch before forcing.  The other option is to work on a new branch and pull changes from the old branch to the new branch.  Neither are ideal.  
+Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.  In summary, to rebase a branch with conflicts, do the following
 
-Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.
+      git clone https://github.com/username/CICE
+      git checkout branchname
+      git remote add upstream https://github.com/CICE-Consortium/CICE
+      git fetch upstream master
+      git rebase upstream/master
+      > hand edit conflicts
+      git rebase --continue
+      git push --force-with-least origin branchname
+
+Your branch will now be rebased to the current master and your pull request should update and reflect that.
+
 
 A pull is the same thing as a fetch and a merge.  There are many cases where it’s better to do a fetch, review the changes (git diff), and then do a merge.  So
 
