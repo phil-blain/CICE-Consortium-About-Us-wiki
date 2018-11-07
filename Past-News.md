@@ -1,5 +1,5 @@
-# **CICE Consortium established**   -   *August, 2018*
-One sentence of relevant info. [More info ...](https://e3sm.org/wp-content/uploads/2018/04/ResearchHighlight_CICE.pdf)
+# **CICE Consortium established**   -   *April 1, 2018*
+In 2016, the international CICE Consortium was founded to promote further scientific research and development (R&D) of sea ice modeling, and to accelerate the transfer of these innovations to operational arenas. [More info ...](https://e3sm.org/wp-content/uploads/2018/04/ResearchHighlight_CICE.pdf)
 
 # **Real Time Sea Ice Tracking**   -  *March 21, 2018* 
-One sentence of relevant info. [More info ...](https://psmag.com/environment/tracking-seasonal-sea-ice-in-real-time)
+Dr. Elizabeth Hunke, the Consortium lead, discusses challenges of modeling sea ice evolution over different time scales from weeks to years to millenia. [More info ...](https://psmag.com/environment/tracking-seasonal-sea-ice-in-real-time)
