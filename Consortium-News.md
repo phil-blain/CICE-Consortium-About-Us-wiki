@@ -4,7 +4,7 @@
 We have publicly released CICE v6.0, TO BE POPULATED [More info ...](https://github.com/CICE-Consortium/CICE) 
 
 # **Consortium Town Hall**   -   *November 7, 2018*
-![](https://www.carbonbrief.org/wp-content/uploads/2015/03/stock-arctic-sea-ice-2-1550x804.jpg)
+![](http://www.envriplus.eu/wp-content/uploads/2018/06/CEN-FM18_logo-1-1.png)
 
 The Consortium will host a town hall Friday December 14, 2018 at the annual meeting of the American Geophysical Meeting in Washington, DC. The Consortium aims to accelerate sea ice model development by providing a pathway and support for community contributions to its sea ice model codes. At this town hall we will discuss recent Consortium activities, provide brief updates on exciting new sea ice code developments, and invite the community to participate in this model development.  [More info ...](https://agu.confex.com/agu/fm18/meetingapp.cgi/Session/56058) 
 
