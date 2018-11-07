@@ -1,14 +1,14 @@
-# **CICE version 6.0.0 released**   -   *November 7, 2018*   
-![](https://www.carbonbrief.org/wp-content/uploads/2015/03/stock-arctic-sea-ice-2-1550x804.jpg)
+# **CICE version 6.0 released**   -   *November X, 2018*   
+![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
-One sentence of relevant info. [More info ...](https://github.com/CICE-Consortium/CICE) 
+We have publicly released CICE v6.0, TO BE POPULATED [More info ...](https://github.com/CICE-Consortium/CICE) 
 
 # **Consortium Town Hall**   -   *November 7, 2018*
 ![](https://www.carbonbrief.org/wp-content/uploads/2015/03/stock-arctic-sea-ice-2-1550x804.jpg)
 
-One sentence of relevant info. [More info ...](https://github.com/CICE-Consortium/CICE) 
+The Consortium will host a town hall Friday December 14, 2018 at the annual meeting of the American Geophysical Meeting in Washington, DC. The Consortium aims to accelerate sea ice model development by providing a pathway and support for community contributions to its sea ice model codes. At this town hall we will discuss recent Consortium activities, provide brief updates on exciting new sea ice code developments, and invite the community to participate in this model development.  [More info ...](https://agu.confex.com/agu/fm18/meetingapp.cgi/Session/56058) 
 
-# **Icepack version 1.0.0 released**   -   *November 7, 2018*
-![](https://www.carbonbrief.org/wp-content/uploads/2015/03/stock-arctic-sea-ice-2-1550x804.jpg)
+# **Icepack version 1.0 released**   -   *February 13, 2018*
+![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
-One sentence of relevant info. [More info ...](https://github.com/CICE-Consortium/CICE) 
+We have publicly released Icepack v1.0, the CICE Consortium’s new sea ice column physics code.  It includes all physical parameterizations from the CICE sea ice model that are limited to single grid-cell columns or Lagrangian elements, independent of the grid and other sea ice model infrastructure.  Many aspects of the physics and biogeochemistry that were previously embedded in CICE version 5 now reside within Icepack, and new features have also been added.  In addition to the column physics modules from CICE, this software package includes a stand-alone driver and automated testing using a comprehensive test suite. [More info ...](https://github.com/CICE-Consortium/Icepack) 
