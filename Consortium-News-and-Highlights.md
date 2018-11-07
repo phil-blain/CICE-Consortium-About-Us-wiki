@@ -12,3 +12,5 @@ The Consortium will host a town hall Friday December 14, 2018 at the annual meet
 ![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
 We have publicly released Icepack v1.0, the CICE Consortium’s new sea ice column physics code.  It includes all physical parameterizations from the CICE sea ice model that are limited to single grid-cell columns or Lagrangian elements, independent of the grid and other sea ice model infrastructure.  Many aspects of the physics and biogeochemistry that were previously embedded in CICE version 5 now reside within Icepack, and new features have also been added.  In addition to the column physics modules from CICE, this software package includes a stand-alone driver and automated testing using a comprehensive test suite. [More info ...](https://github.com/CICE-Consortium/Icepack) 
+
+## [Past Consortium News Stories and Highlights](https://github.com/CICE-Consortium/About-Us/wiki/Past-Consortium-News-and-Highlights) 
