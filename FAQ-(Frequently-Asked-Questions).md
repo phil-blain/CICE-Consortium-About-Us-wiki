@@ -2,6 +2,7 @@
 * [Contact the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-contact)
 * [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)#contributing-to-the-consortium)
 * [Access to the consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership)
+* [Stand-alone configuration and forcing](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#stand-alone-configuration-and-forcing)
 * [Enthalpy corrections](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#enthalpy-corrections)
 * [[EVP time steps|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#evp-time-steps]]    
 * [[Boundaries|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#boundaries]]   
@@ -45,6 +46,11 @@ NOAA National Weather Service
 NSF National Center for Atmospheric Research
 
 CICE developers who are not affiliated with Consortium Members will be able to access the code and contribute their developments for use by the community, via the Consortium's procedures and with help from Consortium Members. The role of the Consortium is not to develop the model, but to aid the community in its development of the code. Consortium Members may also develop the code under non-Consortium funding streams.
+
+### Stand-alone configuration and forcing
+Why does the Consortium recommend against performing scientific studies using the stand-alone CICE configurations?
+
+The stand-alone CICE model is useful for initial model development and testing, but should not be used for drawing scientific conclusions.  Sea ice is now viewed in a more holistic manner as part of the tightly coupled earth system, and the interactions and feedbacks in the coupled system must be included in scientific studies.  Processes represented in the stand-alone sea ice system may be incomplete and lead to erroneous conclusions.  A good example of the kinds of things that can go wrong is described in this set of slides: [emissivity_tale.pdf](https://github.com/CICE-Consortium/CICE/files/2602119/emissivity_tale.pdf).  In this case, the sea ice simulation itself appears to be reasonable in its response to the applied forcing (wind, temperature, etc), but the simulation's sensitivity to a change in the value of the emissivity parameter is of the wrong sign because the simulated feedbacks are incorrect.  Because of this, the Consortium also recommends that, at a minimum, the final stages of sea ice physical parameterization development take place in a coupled context. 
 
 ### Enthalpy corrections   
 My diagnostics file contains a warning that the initial temperature is too warm. The code recovers, but what is happening here?
