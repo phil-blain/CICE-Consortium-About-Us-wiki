@@ -18,7 +18,7 @@ CICE Release Process
 * Create release specific tables on wiki, https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index
   * Link release page and repo in table
   * Generate static documentation at readthedocs and link to release table (activate the tag under readthedocs "versions", may need to trigger a build of the master docs for the tag to appear), html and pdf.
-  * Create DOI on zenodo
+  * Create DOI on zenodo and link in table
 * Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases
 * Move/generate release test results and post on test wiki.
 * Post science results as needed
