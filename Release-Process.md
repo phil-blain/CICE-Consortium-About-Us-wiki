@@ -7,8 +7,7 @@ CICE Release Process
 * Create release project at https://github.com/CICE-Consortium/CICE/projects and create list of release tasks
   * code changes
   * Update documentation including doc/source/intro/major_updates.rst
-  * Update version via cice.setup --setvers and commit/push
-     * Note that this will automatically change the documentation versioning. No manual changes are necessary.
+  * Update version via cice.setup --setvers and commit/push (Note that this will automatically change the documentation versioning. No manual changes are necessary.)
   * Push changes to master
   * Test
   * Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
