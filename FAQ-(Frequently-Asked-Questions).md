@@ -8,6 +8,7 @@
 * [[Boundaries|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#boundaries]]   
 * [[Rigid ice|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#rigid-ice]]    
 * [[Time to compile|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#time-to-compile]]       
+* [[How to add images to a wiki|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)#how-to-add-images-to-a-wiki]]
 
 ### Consortium contact
 How do I contact the Consortium?
@@ -106,3 +107,7 @@ Rigid ice will be very difficult to simulate using any viscous-plastic-based mod
 The entire code recompiles every time I build, even though I only made one change, and this takes a long time.  How do I make it compile more quickly?
 
 **A:**  Change ICE_CLEANBUILD from true to false in CICE.settings or Icepack.settings.  These scripts are located in /configuration/scripts, or you can change them for an individual case in the case directory.
+
+### How to add images to a wiki
+
+Clone the wiki, create a directory for the images if it does not already exist, copy the images into the directory, add paths to images in Wiki pages (see above). Then git add, commit, and push; there are no pull requests for this process as there are with the code portion of the repository.  Edit the wiki page online to add the image link, or do this in the clone before pushing.
