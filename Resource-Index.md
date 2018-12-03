@@ -87,8 +87,12 @@ _**Test Results**_
 [Contact Information](https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium)
 
 ### Information for Developers
-[Contributing to model development](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))        
-[Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices)     
+[Contributing to model development](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)) 
+       
+[Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices) 
+    
 [git Workflow Guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) 
+
 [Documentation Workflow Guide](https://github.com/CICE-Consortium/About-Us/wiki/Documentation-Workflow-Guidance) 
+
 [Release Process](https://github.com/CICE-Consortium/About-Us/wiki/Release-Process)
