@@ -3,8 +3,7 @@ documentation are required. Whenever you modify the model you should update
 documentation. The Consortium uses [readthedocs.org](https://readthedocs.org) 
 to create online HTML and PDF documentation.
 
-FAQs
-===
+# FAQs
 
 1) What is reStructuredText (RST)?
 
@@ -37,11 +36,9 @@ FAQs
 
    Links to the "master" and static versions of CICE and Icepack documentation can be found in the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).   
 
-Steps for Modifying Documentation
-=================================
+# Steps for Modifying Documentation
 
-Setting up readthedocs.org
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Setting up readthedocs.org
 
 The CICE-Consortium recommends that developers use [readthedocs.org](https://readthedocs.org) to generate and test
 their contributions to the CICE documentation. This tool does not require external libraries to be built
@@ -91,8 +88,7 @@ Under 'Advanced Settings' modify the following:
       - Privacy Level: Public  (this is useful to keep public if you want to point to the tested documentation as part of a Pull Request)
       - Python Interpreter: Python 2.x
 
-Model sandbox and documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Model sandbox and documentation
 
 Follow the general [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
 to clone the repository and create your personal fork for model modifications. Whenever you modify the model 
@@ -106,8 +102,7 @@ There are some important files you will need in order to correctly build the doc
    - /doc/source/zreferences.rst : required for the references to link properly. This file should *not* need to be modified by developers generally. 
    - /doc/source/master_list.bib : the master list of references cited in the documentation. This file *may need* to be modified by developers with documentation updates. This file is currently ordered sequentially from oldest to newest and alphabetically within a given year. To add references for your documentation, edit the master_list.bib file using the Articles and/or Books entries as examples for your addition(s). Please follow the format for ordering the date/alphabetization as well as including a URL with the document's DOI.
 
-Editing RST files
-~~~~~~~~~~~~~~~~~~
+## Editing RST files
 
 Open the RST file using a text editor and make the changes necessary. Note that from the User's Guide documentation (see link above) there is a hyperlink called "Show Source" on the left hand column that will show you the RST source code for the HTML you are viewing. This is a good way to see the syntax for tables, equations, linking references, labeling tables or figures, and correctly identifying documentation sections or subsections.
 
@@ -121,8 +116,7 @@ Here are some resources for using RST files:
 
 * [RST tables](http://www.sphinx-doc.org/en/stable/rest.html#tables) - Note that tables can be tricky in Sphinx and we prefer using [comma separated tables](http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table) whenever possible.
 
-Building documentation
-~~~~~~~~~~~~~~~~~~~~~~
+## Building documentation
 
 Once you've committed and pushed changes to the documentation `*.rst` files on your personal development fork. 
 Go to your readthedocs.org site and then select your project "Overview". Whenever you commit to your fork
@@ -138,8 +132,7 @@ listed with the most recent build appearing at the top of the list.
 
 To see the HTML you just successfully built, go to "Overview" and click on "latest" under versions. To see the PDF you just successfully built, go to "Downloads" and click on "latest PDF". 
 
-Push changes back to the repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Push changes back to the repository
 
 When you're happy with the documentation you've generated, follow the standard Consortium 
 [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
@@ -149,11 +142,9 @@ It can be particularly helpful if you include the link to your successfully buil
 part of the Pull Request, and in order to do this you must ensure that your settings in readthedocs.org 
 are set to "Public".
 
-Other Tips and Tricks
-=====================
+# Other Tips and Tricks
 
-Converting LaTeX to RST
-~~~~~~~~~~~~~~~~~~~~~~~
+## Converting LaTeX to RST
 
 If you start from a LaTeX (``*.tex``) document you will need to convert this to the RST format that Sphinx 
 requires. A handy tool to do this is [Pandoc](http://pandoc.org/getting-started.html), which you 
@@ -172,14 +163,12 @@ document in Emacs then do ``ctrl-x ctrl-m f`` and you will be prompted to enter 
 type in ``utf-8`` and hit enter. Then save with ``ctrl-x ctrl-s`` . You are done and the document can be
 converted with Pandoc.
 
-Using Sphinx
-~~~~~~~~~~~~
+## Using Sphinx
 
 We recommend that you use [readthedocs.org](https://readthedocs.org) to test documentation. However, it is also possible to use Sphinx to build and test documentation. 
 If you choose to follow this workflow, below are some tips for using Sphinx. 
 
-Installing Sphinx
-`````````````````
+### Installing Sphinx
 
 Sphinx must be installed once on each platform. See [Sphinx](http://www.sphinx-doc.org/en/stable/) or 
 [Installing Sphinx](http://www.sphinx-doc.org/en/stable/install.html) for details. Below are the
@@ -205,8 +194,7 @@ references:
 As mentioned above, you will need the conf.py, zreferences.rst, and master_list.bib files that are part of the 
 master branch and automatically included in your checkout. To use linked references you will need to have the sphinxcontrib-bibtex package as well.
 
-Building HTML
-`````````````
+### Building HTML
 
 Move into the /doc/ directory of your sandbox. Then execute the following command::
 
@@ -222,8 +210,8 @@ to build HTML into /build/html/ directory. It will also give you errors if there
 
 Open the HTML on your browser for testing.
 
-Converting RST to PDF
-`````````````````````
+### Converting RST to PDF
+
 Generating a PDF is more complex and currently requires a two-step process. The generation will require 
 recent versions of both LaTeX and Sphinx. From the /doc/ directory do the following::
 
