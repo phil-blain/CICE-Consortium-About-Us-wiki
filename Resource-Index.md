@@ -52,7 +52,7 @@ Icepack documentation updated with the current Icepack master [(html)](http://ci
 
 _**Updating Documentation**_
 
-[Documentation System](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/dg_documentation.html) with information on how to document CICE or Icepack model development 
+[Documentation Workflow and Developers Guide](https://github.com/CICE-Consortium/About-Us/wiki/Documentation-Workflow-Guidance) has information on how to document CICE or Icepack model development. 
 
 _**Publications**_
 
@@ -89,5 +89,6 @@ _**Test Results**_
 ### Information for Developers
 [Contributing to model development](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))        
 [Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices)     
-[git Workflow and Developers Guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)       
+[git Workflow and Developers Guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) 
+[Documentation Workflow and Developers Guide](https://github.com/CICE-Consortium/About-Us/wiki/Documentation-Workflow-Guidance)      
 [Release Process](https://github.com/CICE-Consortium/About-Us/wiki/Release-Process)
