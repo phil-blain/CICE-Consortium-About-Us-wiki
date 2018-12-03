@@ -1,9 +1,9 @@
 Documentation System
 ====================
 
-With CICE development, corresponding updates or modification to the CICE
+With CICE or Icepack development, corresponding updates or modification to the CICE or Icepack
 documentation are required. Whenever you modify the model you should update
-documentation. CICE uses `readthedocs.org <https://readthedocs.org>`_ to create 
+documentation. The Consortium uses `readthedocs.org <https://readthedocs.org>` to create 
 online HTML and PDF documentation.
 
 FAQs
