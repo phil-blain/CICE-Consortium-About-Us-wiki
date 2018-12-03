@@ -16,17 +16,18 @@ FAQs
 
 2) What is expected of *me* when changing the documentation?
 
-   Updated static PDF documentation will be generated for each new CICE code release. However, 
+   Updated static PDF documentation will be generated for each new CICE or Icepack code release. However, 
    the online "master" version of HTML or PDF documentation is considered a living document and 
    will be updated regularly with regular code development workflow. 
+
+   Links to the CICE and Icepack documentation can be found in the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
 
    We expect that if you need to add or modify documentation that you will be able to modify the 
    RST source files and generate HTML in order to review the HTML documentation. We 
    will review the RST and HTML during a Pull Request to verify it is working properly and is consistent 
-   with the rest of the CICE-Consortium documentation format. Then we will trigger a new documentation build
-   on `CICE's documentation page <https://readthedocs.org/projects/cice-consortium-cice/>`_ when 
-   the Pull Request is successful. The new documentation build will create the HTML and PDF versions of
-   CICE's documentation along with your updates. 
+   with the rest of the Consortium documentation format. When the Pull Request is successful, we will
+   trigger a new documentation build for the master branch of the documentation. The new documentation 
+   build will create the HTML and PDF versions of CICE's documentation along with your updates. 
 
    In particular, it is important that you test out tables, equations, section references, figures, and/or citations
    in your contributed documentation as these can be particularly fiddly to get right.
