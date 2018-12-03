@@ -10,8 +10,8 @@ FAQs
 
    The CICE and Icepack documentation is written using reStructuredText (RST) markup language. 
    ReStructuredText is a markup language, like HTML, markdown, or LaTeX. 
-   `readthedocs.org <https://readthedocs.org>`_ is a tool for publishing RST documents in other formats 
-   such as HTML and PDF. Additional information about using RST and `readthedocs.org <https://readthedocs.org>`_ 
+   [readthedocs.org](https://readthedocs.org) is a tool for publishing RST documents in other formats 
+   such as HTML and PDF. Additional information about using RST and [readthedocs.org](https://readthedocs.org) 
    are found in the sections below.
 
 2) What is expected of *me* when changing the documentation?
