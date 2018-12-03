@@ -50,29 +50,29 @@ reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_st
 
 1. Sign up for a free account at [readthedocs.org](https://readthedocs.org)
 
-   Select a username and password. These do not have to match your GitHub username and password, but having
-   the same username can be simpler if the user chooses to do this. Below, 
-   USERNAME is a placeholder - you would need to replace this with your personal username. 
+Select a username and password. These do not have to match your GitHub username and password, but having
+the same username can be simpler if the user chooses to do this. Below, 
+USERNAME is a placeholder - you would need to replace this with your personal username. 
 
 2. Connect your GitHub account
 
-   Click on your username in the upper right hand corner and select 'Settings' and then select 'Connected
-   Services' to connect your GitHub account. This process will ask you to authorize a connection to
-   readthedocs.org that allows for reading of information about and cloning of your repositories.
+Click on your username in the upper right hand corner and select 'Settings' and then select 'Connected
+Services' to connect your GitHub account. This process will ask you to authorize a connection to
+readthedocs.org that allows for reading of information about and cloning of your repositories.
 
 3. Import your projects
 
-   Click on your username in the upper right hand corner and select 'My Projects'. Then click the 'Import
-   a Project' green button. This will generate a list of repositories you are able to import. To add a
-   repository click the + button. Once added and imported to readthedocs, the icon will change to an 
-   upward pointing arrow. 
+Click on your username in the upper right hand corner and select 'My Projects'. Then click the 'Import
+a Project' green button. This will generate a list of repositories you are able to import. To add a
+repository click the + button. Once added and imported to readthedocs, the icon will change to an 
+upward pointing arrow. 
 
 4. Modify the project settings
 
-   Click on the project you are editing then click on the 'Admin' tab on the far right. The CICE-Consortium
-   has found the following settings to be important for proper building.
+Click on the project you are editing then click on the 'Admin' tab on the far right. The CICE-Consortium
+has found the following settings to be important for proper building.
 
-   Under 'Settings' modify and save the following:
+Under 'Settings' modify and save the following:
       - Name: USERNAME CICE    (this is the local name of the repository on readthedocs.org)
       - Repository URL: https://github.com/USERNAME/CICE.git
       - Repository type: Git
@@ -81,7 +81,7 @@ reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_st
       - Language: English
       - Programming Language: Only Words
 
-   Under 'Advanced Settings' modify the following:
+Under 'Advanced Settings' modify the following:
       - Install Project: Unchecked box
       - Requirements file: doc/requirements.txt  (*VERY IMPORTANT, see below*)
       - Default branch: readthedocs  (whatever branch you are working on for development. If not set, this will default to master. When testing documentation on a development branch, you can set the branch to the name of the development branch and the "latest" version of the documentation will reflect the rst files that are in your development branch.)
@@ -90,7 +90,6 @@ reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_st
       - Enable EPUB build: Checked box
       - Privacy Level: Public  (this is useful to keep public if you want to point to the tested documentation as part of a Pull Request)
       - Python Interpreter: Python 2.x
-
 
 Model sandbox and documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +105,6 @@ There are some important files you will need in order to correctly build the doc
    - /doc/source/conf.py : Basic documentation information for the Consortium including template, etc. This file should *not* need to be modified by developers generally.
    - /doc/source/zreferences.rst : required for the references to link properly. This file should *not* need to be modified by developers generally. 
    - /doc/source/master_list.bib : the master list of references cited in the documentation. This file *may need* to be modified by developers with documentation updates. This file is currently ordered sequentially from oldest to newest and alphabetically within a given year. To add references for your documentation, edit the master_list.bib file using the Articles and/or Books entries as examples for your addition(s). Please follow the format for ordering the date/alphabetization as well as including a URL with the document's DOI.
-
 
 Editing RST files
 ~~~~~~~~~~~~~~~~~~
@@ -140,7 +138,6 @@ listed with the most recent build appearing at the top of the list.
 
 To see the HTML you just successfully built, go to "Overview" and click on "latest" under versions. To see the PDF you just successfully built, go to "Downloads" and click on "latest PDF". 
 
-
 Push changes back to the repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -151,7 +148,6 @@ been updated. We will test the HTML and PDF as part of the Pull Request before i
 It can be particularly helpful if you include the link to your successfully built documentation that is 
 part of the Pull Request, and in order to do this you must ensure that your settings in readthedocs.org 
 are set to "Public".
-
 
 Other Tips and Tricks
 =====================
@@ -226,10 +222,8 @@ to build HTML into /build/html/ directory. It will also give you errors if there
 
 Open the HTML on your browser for testing.
 
-
 Converting RST to PDF
 `````````````````````
-
 Generating a PDF is more complex and currently requires a two-step process. The generation will require 
 recent versions of both LaTeX and Sphinx. From the /doc/ directory do the following::
 
