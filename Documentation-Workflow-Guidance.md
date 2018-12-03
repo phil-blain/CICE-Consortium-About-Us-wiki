@@ -1,13 +1,10 @@
-Documentation System
-====================
-
 With CICE or Icepack development, corresponding updates or modification to the CICE or Icepack
 documentation are required. Whenever you modify the model you should update
 documentation. The Consortium uses [readthedocs.org](https://readthedocs.org) 
 to create online HTML and PDF documentation.
 
 FAQs
-----
+===
 
 1) What is reStructuredText (RST)?
 
@@ -47,10 +44,8 @@ FAQs
    <https://readthedocs.org/projects/cice-consortium-cice/downloads/>`_. The CICE-Consortium team will trigger
    builds of both HTML and PDF documentation with each pull request. 
 
-.. _moddocs:
-
 Steps for Modifying Documentation
----------------------------------
+=================================
 
 Setting up readthedocs.org
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -166,7 +161,7 @@ are set to "Public".
 
 
 Other Tips and Tricks
----------------------
+=====================
 
 Converting LaTeX to RST
 ~~~~~~~~~~~~~~~~~~~~~~~
