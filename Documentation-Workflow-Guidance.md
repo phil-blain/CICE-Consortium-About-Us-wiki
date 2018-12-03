@@ -18,9 +18,8 @@ FAQs
 
    Updated static PDF documentation will be generated for each new CICE or Icepack code release. However, 
    the online "master" version of HTML or PDF documentation is considered a living document and 
-   will be updated regularly with regular code development workflow. 
-
-   Links to the CICE and Icepack documentation can be found in the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
+   will be updated regularly with regular code development workflow. Links to the "master" and static versions
+   of CICE and Icepack documentation can be found in the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
 
    We expect that if you need to add or modify documentation that you will be able to modify the 
    RST source files and generate HTML in order to review the HTML documentation. We 
@@ -32,18 +31,11 @@ FAQs
    In particular, it is important that you test out tables, equations, section references, figures, and/or citations
    in your contributed documentation as these can be particularly fiddly to get right.
 
-
 3) Where are the documentation files kept?
 
    The RST source files for generating HTML and PDF are stored in the master branch of the repository under /doc/source/. 
 
-   The HTML and PDF versions of the documentation are available at `CICE's
-   documentation page <https://readthedocs.org/projects/cice-consortium-cice/>`_
-   HTML documentation for the current "master" branch as well as static documentation for releases of CICE 
-   will be available on the `Versions page <https://readthedocs.org/projects/cice-consortium-cice/versions/>`_ 
-   while corresponding PDF documentation is available on the `Downloads page
-   <https://readthedocs.org/projects/cice-consortium-cice/downloads/>`_. The CICE-Consortium team will trigger
-   builds of both HTML and PDF documentation with each pull request. 
+   Links to the "master" and static versions of CICE and Icepack documentation can be found in the [Resource Index](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).   
 
 Steps for Modifying Documentation
 =================================
@@ -51,12 +43,12 @@ Steps for Modifying Documentation
 Setting up readthedocs.org
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The CICE-Consortium recommends that developers use `readthedocs.org <https://readthedocs.org>`_ to generate and test
+The CICE-Consortium recommends that developers use [readthedocs.org](https://readthedocs.org) to generate and test
 their contributions to the CICE documentation. This tool does not require external libraries to be built
 on each developer's personal computer and is free and easy to use. You can follow the steps below and also
-reference the `Getting Started <https://docs.readthedocs.io/en/latest/getting_started.html>`_ guide available from `readthedocs.org <https://readthedocs.org>`_. 
+reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html) guide available from [readthedocs.org](https://readthedocs.org). 
 
-1. Sign up for a free account at `readthedocs.org <https://readthedocs.org>`_
+1. Sign up for a free account at [readthedocs.org](https://readthedocs.org)
 
    Select a username and password. These do not have to match your GitHub username and password, but having
    the same username can be simpler if the user chooses to do this. Below, 
@@ -92,7 +84,7 @@ reference the `Getting Started <https://docs.readthedocs.io/en/latest/getting_st
    Under 'Advanced Settings' modify the following:
       - Install Project: Unchecked box
       - Requirements file: doc/requirements.txt  (*VERY IMPORTANT, see below*)
-      - Default branch: readthedocs  (whatever branch you are working on for development. If not set, this will default to master.)
+      - Default branch: readthedocs  (whatever branch you are working on for development. If not set, this will default to master. When testing documentation on a development branch, you can set the branch to the name of the development branch and the "latest" version of the documentation will reflect the rst files that are in your development branch.)
       - Default version: latest (what your documentation build will be called)
       - Enable PDF build: Checked box
       - Enable EPUB build: Checked box
@@ -103,7 +95,7 @@ reference the `Getting Started <https://docs.readthedocs.io/en/latest/getting_st
 Model sandbox and documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Follow the general `CICE-Consortium Git Workflow and Developer's guide <https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance>`_
+Follow the general [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
 to clone the repository and create your personal fork for model modifications. Whenever you modify the model 
 you should update documentation. You can update the documentation on the same branch of your fork on which 
 you test code, or you can create a separate branch called 'readthedocs' to test only the RST and HTML documentation.
@@ -123,13 +115,13 @@ Open the RST file using a text editor and make the changes necessary. Note that 
 
 Here are some resources for using RST files:
 
-* `RST Primer1 <http://www.sphinx-doc.org/en/stable/rest.html>`_
+* [RST Primer1](http://www.sphinx-doc.org/en/stable/rest.html)
 
-* `RST Primer2 <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_
+* [RST Primer2](http://docutils.sourceforge.net/docs/user/rst/quickstart.html)
 
-* `RST Syntax <https://wiki.typo3.org/ReST_Syntax>`_
+* [RST Syntax](https://wiki.typo3.org/ReST_Syntax)
 
-* `RST tables <http://www.sphinx-doc.org/en/stable/rest.html#tables>`_ - Note that tables can be tricky in Sphinx and we prefer using `comma separated tables <http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table>`_ whenever possible.
+* [RST tables](http://www.sphinx-doc.org/en/stable/rest.html#tables) - Note that tables can be tricky in Sphinx and we prefer using [comma separated tables](http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table) whenever possible.
 
 Building documentation
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -152,8 +144,8 @@ To see the HTML you just successfully built, go to "Overview" and click on "late
 Push changes back to the repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you're happy with the documentation you've generated, follow the standard CICE-Consortium 
-`Git Workflow and Developer's guide <https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance>`_
+When you're happy with the documentation you've generated, follow the standard Consortium 
+[CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
 to do a Pull Request and make sure to note in the Pull Request Template that documentation has also 
 been updated. We will test the HTML and PDF as part of the Pull Request before it is merged to the repository. 
 It can be particularly helpful if you include the link to your successfully built documentation that is 
@@ -168,7 +160,7 @@ Converting LaTeX to RST
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 If you start from a LaTeX (``*.tex``) document you will need to convert this to the RST format that Sphinx 
-requires. A handy tool to do this is `Pandoc <http://pandoc.org/getting-started.html>`_, which you 
+requires. A handy tool to do this is [Pandoc](http://pandoc.org/getting-started.html), which you 
 can install quickly and run from the command line.
 
 Once Pandoc is installed, the basic command line syntax to convert a file is ::
@@ -187,15 +179,14 @@ converted with Pandoc.
 Using Sphinx
 ~~~~~~~~~~~~
 
-We recommend that you use `readthedocs.org <https://readthedocs.org>`_ to test documentation
-(see :ref:`moddocs`). However, it is also possible to use Sphinx to build and test documentation. 
+We recommend that you use [readthedocs.org](https://readthedocs.org) to test documentation. However, it is also possible to use Sphinx to build and test documentation. 
 If you choose to follow this workflow, below are some tips for using Sphinx. 
 
 Installing Sphinx
 `````````````````
 
-Sphinx must be installed once on each platform. See `Sphinx <http://www.sphinx-doc.org/en/stable/>`_ or 
-`Installing Sphinx <http://www.sphinx-doc.org/en/stable/install.html>`_ for details. Below are the
+Sphinx must be installed once on each platform. See [Sphinx](http://www.sphinx-doc.org/en/stable/) or 
+[Installing Sphinx](http://www.sphinx-doc.org/en/stable/install.html) for details. Below are the
 commands for installing Sphinx on a mac laptop at the command line. 
 Other platforms may require other steps. ::
 
@@ -247,5 +238,3 @@ recent versions of both LaTeX and Sphinx. From the /doc/ directory do the follow
      $ make
 
 Then search for the ``*.pdf`` document created.
-
-
