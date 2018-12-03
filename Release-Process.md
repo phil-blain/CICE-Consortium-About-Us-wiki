@@ -15,7 +15,7 @@ CICE Release Process
 * Create release branch in repository if needed.  Naming convention is CICEm.n
   * Clone, branch, and push directly to the consortium repository
 * Git Tag the release. Naming convention is CICEm.n.p
-  * Tag and push directly to the consortium repository
+  * Tag and push directly to the consortium repository, use annotated tag (ie. git tag -a CICE6.0.0 -m "CICE6.0.0 tag")
 * Verify tag/release page generation (should be automatic), https://github.com/CICE-Consortium/CICE/releases
   * Edit the release page to add additional info
 * Create release specific tables on wiki, https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index
