@@ -220,3 +220,7 @@ recent versions of both LaTeX and Sphinx. From the /doc/ directory do the follow
      $ make
 
 Then search for the ``*.pdf`` document created.
+
+### How to add images to a wiki
+
+Clone the wiki, create a directory for the images if it does not already exist, copy the images into the directory, add paths to images in Wiki pages. Then git add, commit, and push; there are no pull requests for this process as there are with the code portion of the repository.  Edit the wiki page online to add the image link, or do this in the clone before pushing.
