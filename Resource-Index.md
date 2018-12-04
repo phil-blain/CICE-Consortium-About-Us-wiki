@@ -26,9 +26,8 @@ _**Icepack**_
 ### Model Documentation
 _**CICE**_
 
-[DOI (Digital Object Identifier)](https://zenodo.org/record/1205675) and how to cite the code   
-CICE documentation home at [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/)    
-CICE release static documentation [(html)](https://readthedocs.org/projects/cice-consortium-cice/) [(pdf)](https://readthedocs.org/projects/cice-consortium-cice/downloads/)    
+[DOI (Digital Object Identifier)](https://zenodo.org/record/1900639#.XAX0cRNKhjU) and how to cite the code   
+CICE documentation home at [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-cice/)        
 CICE documentation updated with the current CICE master [(html)](http://cice-consortium-cice.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-cice/master/cice-consortium-cice.pdf) 
   - [Quick Start](http://cice-consortium-cice.readthedocs.io/en/master/intro/quickstart.html) for running the model
   - [Science guide](http://cice-consortium-cice.readthedocs.io/en/master/science_guide/index.html)
@@ -36,12 +35,12 @@ CICE documentation updated with the current CICE master [(html)](http://cice-con
   - [Developer guide](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-cice.readthedocs.io/en/master/cice_index.html)
   - The Table of Contents can be accessed from the "CICE x.x.xx documentation" link at upper left, on any page.
+CICE static documentation from releases can be found at the [CICE Version Index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
 
 _**Icepack**_
 
-[DOI (Digital Object Identifier)](https://zenodo.org/record/1213463) and how to cite the code     
-Icepack documentation home at [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-icepack/)      
-Icepack release static documentation [(html)](https://readthedocs.org/projects/cice-consortium-icepack/) [(pdf)](https://readthedocs.org/projects/cice-consortium-icepack/downloads/)     
+[DOI (Digital Object Identifier)](https://zenodo.org/record/1891650#.XAX0qhNKhjU) and how to cite the code     
+Icepack documentation home at [ReadTheDocs](https://readthedocs.org/projects/cice-consortium-icepack/)         
 Icepack documentation updated with the current Icepack master [(html)](http://cice-consortium-icepack.readthedocs.io/en/master/) [(pdf)](https://media.readthedocs.org/pdf/cice-consortium-icepack/master/cice-consortium-icepack.pdf)   
   - [Quick Start](http://cice-consortium-icepack.readthedocs.io/en/master/intro/quickstart.html) for running the model 
   - [Science guide](http://cice-consortium-icepack.readthedocs.io/en/master/science_guide/index.html)
@@ -49,6 +48,7 @@ Icepack documentation updated with the current Icepack master [(html)](http://ci
   - [Developer guide](http://cice-consortium-icepack.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-icepack.readthedocs.io/en/master/icepack_index.html)
   - The Table of Contents can be accessed from the "Icepack x.x.xx documentation" link at upper left, on any page.
+Icepack static documentation from releases can be found at the [Icepack Version Index](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index)
 
 _**Updating Documentation**_
 
