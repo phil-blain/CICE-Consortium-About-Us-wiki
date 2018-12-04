@@ -9,7 +9,7 @@ CICE version 6.0.0 is publicly released along with Icepack version 1.1.0. Icepac
 
 The Consortium will host a town hall Friday December 14, 2018 at the annual meeting of the American Geophysical Union (AGU) in Washington, DC. The Consortium aims to accelerate sea ice model development by providing a pathway and support for community contributions to its sea ice model codes. At this town hall we will discuss recent Consortium activities, provide brief updates on exciting new sea ice code developments, and invite the community to participate in this model development.  [More info ...](https://agu.confex.com/agu/fm18/meetingapp.cgi/Session/56058) 
 
-# **DOE technical highlight: Icepack**   -   *October 1, 2018*
+# **Icepack leaflet**   -   *October 1, 2018*
 Icepack, a new modular software package, represents critical sea ice processes including thermodynamics, ridging, biogeochemistry, and associated area and thickness changes. The software can be
 ported easily to a wide variety of models for sea ice prediction and earth system simulation. [More info ...](https://e3sm.org/wp-content/uploads/2018/10/TechnicalHighlight_Icepack_opt.pdf)
 
