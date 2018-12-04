@@ -1,10 +1,11 @@
-CICE Release Process
+**CICE Release Process**
+
 * Determine type of release
   * new branch, new tag
   * merge master to branch, new tag
   * update to branch, new tag
   * Specify test strategy
-* Create release project at https://github.com/CICE-Consortium/CICE/projects and create list of release tasks
+* Create release project at https://github.com/CICE-Consortium/CICE/projects and create list of release tasks (see template below)
   * code changes
   * Update documentation including doc/source/intro/major_updates.rst
   * Update version via cice.setup --setvers and commit/push (Note that this will automatically change the documentation versioning. No manual changes are necessary.)
@@ -26,3 +27,27 @@ CICE Release Process
 * Move/generate release test results and post on test wiki.
 * Post science results as needed
 * Send out release email 
+
+-----------------------------------------
+**Template for CICE release**    (Icepack will be similar - edit this page to copy)
+
+- [ ] Complete [tasks for release](https://github.com/CICE-Consortium/Icepack/projects/2)
+- [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
+- [ ] Update doc/source/conf.py version/release
+- [ ] Generate and check html and pdf documentation
+- [ ] Commit and push final changes to master including, at least,    
+   doc/source/conf.py
+- [ ] Create release branch in repository if needed
+Naming convention is CICEm.n
+- [ ] Generate test results and post to Test-Results wiki
+Use --bgen with the full release name
+- [ ] Git Tag the release
+Naming convention is CICEm.n.p
+This generates documentation at readthedocs
+- [ ] Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases, and publish
+- [ ] Add to zenodo community
+- [ ] Add links in appropriate places on github where to find the release and tar file
+[News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
+[Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
+- [ ] Post science results as needed
+- [ ] Send out release email s
