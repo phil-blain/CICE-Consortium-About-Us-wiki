@@ -35,6 +35,7 @@ CICE documentation updated with the current CICE master [(html)](http://cice-con
   - [Developer guide](http://cice-consortium-cice.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-cice.readthedocs.io/en/master/cice_index.html)
   - The Table of Contents can be accessed from the "CICE x.x.xx documentation" link at upper left, on any page.
+
 CICE static documentation from releases can be found at the [CICE Version Index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
 
 _**Icepack**_
@@ -48,6 +49,7 @@ Icepack documentation updated with the current Icepack master [(html)](http://ci
   - [Developer guide](http://cice-consortium-icepack.readthedocs.io/en/master/developer_guide/index.html) 
   - [Index](http://cice-consortium-icepack.readthedocs.io/en/master/icepack_index.html)
   - The Table of Contents can be accessed from the "Icepack x.x.xx documentation" link at upper left, on any page.
+
 Icepack static documentation from releases can be found at the [Icepack Version Index](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index)
 
 _**Updating Documentation**_
