@@ -1,4 +1,4 @@
-# **DOE technical highlight: CICE Consortium**   -   *April 1, 2018*
+# **CICE Consortium leaflet**   -   *April 1, 2018*
 In 2016, the international CICE Consortium was founded to promote further scientific research and development (R&D) of sea ice modeling, and to accelerate the transfer of these innovations to operational arenas. [More info ...](https://e3sm.org/wp-content/uploads/2018/04/ResearchHighlight_CICE.pdf)
 
 # **Real Time Sea Ice Tracking**   -  *March 21, 2018* 
