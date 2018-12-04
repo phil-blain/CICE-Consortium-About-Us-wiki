@@ -9,9 +9,8 @@ CICE version 6.0.0 is publicly released along with Icepack version 1.1.0. Icepac
 
 The Consortium will host a town hall Friday December 14, 2018 at the annual meeting of the American Geophysical Union (AGU) in Washington, DC. The Consortium aims to accelerate sea ice model development by providing a pathway and support for community contributions to its sea ice model codes. At this town hall we will discuss recent Consortium activities, provide brief updates on exciting new sea ice code developments, and invite the community to participate in this model development.  [More info ...](https://agu.confex.com/agu/fm18/meetingapp.cgi/Session/56058) 
 
-# **Icepack version 1.0 released**   -   *February 13, 2018*
-![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
-
-We have publicly released Icepack v1.0, the CICE Consortium’s new sea ice column physics code.  It includes all physical parameterizations from the CICE sea ice model that are limited to single grid-cell columns or Lagrangian elements, independent of the grid and other sea ice model infrastructure.  Many aspects of the physics and biogeochemistry that were previously embedded in CICE version 5 now reside within Icepack, and new features have also been added.  In addition to the column physics modules from CICE, this software package includes a stand-alone driver and automated testing using a comprehensive test suite. [More info ...](https://github.com/CICE-Consortium/Icepack) 
+# **DOE technical highlight: Icepack**   -   *October 1, 2018*
+Icepack, a new modular software package, represents critical sea ice processes including thermodynamics, ridging, biogeochemistry, and associated area and thickness changes. The software can be
+ported easily to a wide variety of models for sea ice prediction and earth system simulation. [More info ...](https://e3sm.org/wp-content/uploads/2018/10/TechnicalHighlight_Icepack_opt.pdf)
 
 ## [Past Consortium News Stories and Highlights](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights-Archive)
