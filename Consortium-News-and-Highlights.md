@@ -1,7 +1,7 @@
-# **CICE version 6.0 released**   -   *November X, 2018*   
+# **CICE version 6.0.0 and Icepack version 1.1.0 released**   -   *December 3, 2018*   
 ![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
-We have publicly released CICE v6.0, TO BE POPULATED [More info ...](https://github.com/CICE-Consortium/CICE) 
+We have publicly released CICE v6.0, TO BE POPULATED [More CICE info ...](https://github.com/CICE-Consortium/CICE/releases/tag/CICE6.0.0). [More Icepack info ...](https://github.com/CICE-Consortium/Icepack/releases/tag/Icepack1.1.0). 
 
 # **Consortium Town Hall**   -   *November 7, 2018*
 ![](http://www.envriplus.eu/wp-content/uploads/2018/06/CEN-FM18_logo-1-1.png)
