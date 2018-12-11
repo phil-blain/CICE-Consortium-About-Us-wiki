@@ -1,7 +1,7 @@
 # **CICE version 6.0.0 and Icepack version 1.1.0 released**   -   *December 3, 2018*   
 ![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
-CICE version 6.0.0 is publicly released along with Icepack version 1.1.0. Icepack contains the column physics within CICE, first released as an independent software package in February 2018. This CICE release also includes many other improvements since version 5.1.2, most notably a new landfast-ice parameterization with tensile strength, and full vertical biogeochemistry with shortwave feedback on sea ice physics. We have also implemented a number of infrastructure improvements for running and testing the model. [More CICE info ...](https://github.com/CICE-Consortium/CICE/releases/tag/CICE6.0.0). 
+CICE version 6.0.0 is publicly released along with Icepack version 1.1.0. Icepack contains the column physics within CICE, first released as an independent software package in February 2018. This CICE release also includes many other improvements since version 5.1.2, most notably a new landfast-ice parameterization with tensile strength, and full vertical biogeochemistry with shortwave feedback on sea ice physics. We have also implemented a number of infrastructure improvements for running and testing the model. [Press](https://phys.org/news/2018-12-arctic-ice-benefit-polar-industry.html). [More CICE info ...](https://github.com/CICE-Consortium/CICE/releases/tag/CICE6.0.0). 
 [More Icepack info ...](https://github.com/CICE-Consortium/Icepack/releases/tag/Icepack1.1.0). 
 
 # **Consortium Town Hall**   -   *November 7, 2018*
