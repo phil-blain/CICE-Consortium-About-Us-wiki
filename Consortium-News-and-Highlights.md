@@ -5,7 +5,7 @@ CICE version 6.0.0 is publicly released along with Icepack version 1.1.0. Icepac
 
 [Video](https://vimeo.com/306045100)
 
-Press coverage: [phys.org](https://phys.org/news/2018-12-arctic-ice-benefit-polar-industry.html) and [Santa Fe New Mexican](http://www.santafenewmexican.com/news/health_and_science/sea-ice-more-than-just-frozen-water/article_3c3eaab2-6574-5500-9ac7-3a7659d5c574.html). 
+Press coverage: [phys.org](https://phys.org/news/2018-12-arctic-ice-benefit-polar-industry.html) and [Santa Fe New Mexican](http://www.santafenewmexican.com/news/health_and_science/sea-ice-more-than-just-frozen-water/article_3c3eaab2-6574-5500-9ac7-3a7659d5c574.html) and [AGU The Field](https://blogs.agu.org/thefield/2018/12/24/modeling-sea-ice-has-impact-far-beyond-the-poles/). 
 
 [More CICE info ...](https://github.com/CICE-Consortium/CICE/releases/tag/CICE6.0.0). 
 [More Icepack info ...](https://github.com/CICE-Consortium/Icepack/releases/tag/Icepack1.1.0). 
