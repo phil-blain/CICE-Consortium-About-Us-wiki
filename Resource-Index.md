@@ -88,6 +88,8 @@ _**Test Results**_
 
 [Contact Information](https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium)
 
+[Community Bulletin Board](https://bb.cgd.ucar.edu/forums/cice-consortium-model-development)
+
 ### Information for Developers
 [Contributing to model development](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)) 
        
