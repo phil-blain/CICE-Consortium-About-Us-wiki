@@ -1,4 +1,5 @@
 ## Topics
+* [Frequently Asked Questions](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#frequently-asked-questions)
 * [Repository Information](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#repository-information)
 * [Model Documentation](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-documentation)
 * [Model Testing](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing)
@@ -6,8 +7,10 @@
 * [Information for Developers](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#information-for-developers)
 * [Zenodo CICE Community](https://zenodo.org/communities/cice-consortium/?page=1&size=20)
 
-### FAQ (Frequently Asked Questions)
+### Frequently Asked Questions
 [FAQ](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))
+
+[Community Bulletin Board](https://bb.cgd.ucar.edu/forums/cice-consortium-model-development)
 
 ### Repository Information
 _**CICE**_
@@ -87,8 +90,6 @@ _**Test Results**_
    * [Distribution policy](https://github.com/CICE-Consortium/About-Us/blob/master/DistributionPolicy.pdf)   
 
 [Contact Information](https://github.com/CICE-Consortium/About-Us/wiki/Contacting-the-Consortium)
-
-[Community Bulletin Board](https://bb.cgd.ucar.edu/forums/cice-consortium-model-development)
 
 ### Information for Developers
 [Contributing to model development](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)) 
