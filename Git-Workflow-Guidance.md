@@ -88,7 +88,7 @@ Before using git on any platform, it’s useful to set a few things.  Execute th
 
       git config --global user.name "Your Github Username"
       git config --global user.email you@yourdomain.com
-      git config --global push.default simple[a]
+      git config --global push.default simple
 
 You only need to set these once for each independent platform, they will be stored in the file ~/.gitconfig
 
