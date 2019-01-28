@@ -10,7 +10,7 @@
 ### Frequently Asked Questions
 [FAQ](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions))
 
-[Community Bulletin Board](https://bb.cgd.ucar.edu/forums/cice-consortium-model-development)
+[Community Bulletin Board](https://bb.cgd.ucar.edu/forums/cice-consortium-model-development) - first point of contact for the Consortium
 
 ### Repository Information
 _**CICE**_
