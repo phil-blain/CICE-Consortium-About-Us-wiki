@@ -36,12 +36,13 @@ In some instances, a new physics parameterization etc. may require a more thorou
 ### Consortium membership
 Who can be a CICE Consortium Member?
 
-**A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2017, Consortium Members are
+**A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2019, Consortium Members are
 
 DOE Los Alamos National Laboratory  
+DMI Danish Meteorological Institute
 DoD Naval Postgraduate School  
 DoD Naval Research Laboratory, Stennis Space Center  
-Environment and Climate Change Canada  
+ECCC Environment and Climate Change Canada  
 NOAA Geophysical Fluid Dynamics Laboratory  
 NOAA National Weather Service  
 NSF National Center for Atmospheric Research
