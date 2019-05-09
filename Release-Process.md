@@ -38,8 +38,7 @@
 - [ ] Commit and push final changes to master including, making sure version update is included
 - [ ] Create release branch in repository if needed
 Naming convention is CICEm.n
-- [ ] Generate test results and post to Test-Results wiki
-Use --bgen with the full release name
+- [ ] Generate test results and post to Test-Results wiki, use --bgen with release name if possible
 - [ ] Git Tag the release
 Naming convention is CICEm.n.p
 This generates documentation at readthedocs
@@ -56,7 +55,7 @@ This generates documentation at readthedocs
 
 - [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
-- [ ] Review Test results
+- [ ] Test, use --bgen with version name if possible and review tests
 - [ ] Verify that html and pdf documentation is generated OK
 - [ ] Git Tag the release
 Naming convention is CICEm.n.p
