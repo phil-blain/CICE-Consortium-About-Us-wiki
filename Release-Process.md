@@ -56,16 +56,17 @@ This generates documentation at readthedocs
 
 - [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
-- [ ] Test
-- [ ] Review that html and pdf documentation is generated
+- [ ] Review Test results
+- [ ] Verify that html and pdf documentation is generated OK
 - [ ] Git Tag the release
 Naming convention is CICEm.n.p
 This generates documentation at readthedocs
 - [ ] Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases, and publish
 - [ ] Add to zenodo community
+- [ ] Verify readthedocs tags documentation is generated
+- [ ] Post to Test-Results wiki
 - [ ] Add links in appropriate places on github where to find the release and tar file
 [News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
 [Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
-- [ ] Post to Test-Results wiki
 - [ ] Merge release to release branch
-- [ ] Send out release email s
+- [ ] Send out release email s if needed
