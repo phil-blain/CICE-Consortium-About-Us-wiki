@@ -33,10 +33,9 @@
 
 - [ ] Complete [tasks for release](https://github.com/CICE-Consortium/Icepack/projects/2)
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
-- [ ] Update doc/source/conf.py version/release
+- [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
 - [ ] Generate and check html and pdf documentation
-- [ ] Commit and push final changes to master including, at least,    
-   doc/source/conf.py
+- [ ] Commit and push final changes to master including, making sure version update is included
 - [ ] Create release branch in repository if needed
 Naming convention is CICEm.n
 - [ ] Generate test results and post to Test-Results wiki
@@ -50,4 +49,23 @@ This generates documentation at readthedocs
 [News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
 [Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
 - [ ] Post science results as needed
+- [ ] Send out release email s
+
+-----------------------------------------
+**Template for CICE incremental release** 
+
+- [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
+- [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
+- [ ] Test
+- [ ] Review that html and pdf documentation is generated
+- [ ] Git Tag the release
+Naming convention is CICEm.n.p
+This generates documentation at readthedocs
+- [ ] Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases, and publish
+- [ ] Add to zenodo community
+- [ ] Add links in appropriate places on github where to find the release and tar file
+[News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
+[Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
+- [ ] Post to Test-Results wiki
+- [ ] Merge release to release branch
 - [ ] Send out release email s
