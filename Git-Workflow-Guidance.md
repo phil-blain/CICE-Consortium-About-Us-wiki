@@ -20,6 +20,8 @@
 * Pull  
 
 [**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
+* Overview
+* Refreshing your PR
 
 [**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
 
@@ -307,6 +309,8 @@ Is the same as
 
 # Pull Requests
 
+## Overview
+
 All modifications to the CICE-Consortium repositories will have to be done via a Pull Request (PR) from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
 
 To execute a pull request, 
@@ -318,6 +322,25 @@ To execute a pull request,
 * Review and verify that the base and head are accurate
 * Add any relevant documentation in the template box and propose reviewers
 * Click on the “create pull request” box
+
+## Refreshing your PR
+
+There are times where a PR is conflicting with the destination code, where the PR shows changes related to pulls from master, where the PR isn't running correctly, or where the PR just is not reviewable or readable for various reasons.  One option is to delete the PR and create a new one.  The easiest way is to create a new branch off the current master and pull from the old branch.  Lets assume the current branch is called feature.  These steps (or similar) should allow you to continue fairly quickly
+
+     git clone https://github.com/user/cice cice.feature2
+     cd cice.feature2
+     git remote add upstream https://github.com/cice-consortium/cice
+     git pull upstream master
+     git push origin master
+     git branch feature2
+     git checkout feature2
+     git pull origin feature
+       (review and test)
+     git add ...
+     git commit -m "pull feature branch to feature2 branch"
+     git push origin feature2
+     (delete pull request for feature branch)
+     (create pull request for feature2 branch)
 
 # Overall Workflow
 
