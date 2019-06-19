@@ -34,6 +34,7 @@
 - [ ] Complete [tasks for release](https://github.com/CICE-Consortium/Icepack/projects/2)
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
 - [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
+- [ ] Review Copyright
 - [ ] Generate and check html and pdf documentation
 - [ ] Commit and push final changes to master including, making sure version update is included
 - [ ] Create release branch in repository if needed
@@ -54,6 +55,7 @@ This generates documentation at readthedocs
 **Template for CICE incremental release** 
 
 - [ ] Update version/release by running "cice.setup --setvers 6.0.2" and commit/PR modifications
+- [ ] Review Copyright
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
 - [ ] Test, use --bgen with version name if possible and review tests
 - [ ] Verify that html and pdf documentation is generated OK
