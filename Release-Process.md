@@ -67,5 +67,4 @@ This generates documentation at readthedocs
 - [ ] Add links in appropriate places on github where to find the release and tar file
 [News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
 [Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
-- [ ] Merge release to release branch
 - [ ] Send out release email s if needed
