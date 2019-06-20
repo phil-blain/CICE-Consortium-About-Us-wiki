@@ -59,7 +59,7 @@ This generates documentation at readthedocs
 - [ ] Create release notes at https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes
 - [ ] Test, use --bgen with version name if possible and review tests
 - [ ] Verify that html and pdf documentation is generated OK
-- [ ] Git Tag the release
+- [ ] Move to release branch if needed and git tag the release
 Naming convention is CICEm.n.p
 This generates documentation at readthedocs
 - [ ] Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases, and publish
