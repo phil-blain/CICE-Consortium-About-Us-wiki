@@ -68,3 +68,37 @@ This generates documentation at readthedocs
 [News](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights)
 [Version index](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index)
 - [ ] Send out release email s if needed
+
+-----------------------------------------
+**Template for zenodo record** 
+
+When a release is tagged, GitHub sends the information to zenodo, which assigns a DOI and creates a draft page for the release.  The draft must be edited for correctness.
+Template:
+
+- [ ] Filename(s) should already be populated
+- [ ] Communities:  Add CICE-Consortium
+- [ ] Upload type should already be Software
+- [ ] DOI number should already be assigned
+- [ ] Publication date listed will be the date of the GitHub tag
+- [ ] Title will be the title assigned to the tag
+- [ ] Authors:
+1st author Consortium Lead, remaining authors in alphabetical order.
+All people assigned to work on Consortium issues and code since the last release are Authors.  Look at prior release for a starting list.
+- [ ] Affiliations (cut and paste):
+* Los Alamos National Laboratory
+* Naval Research Laboratory Stennis Space Center
+* National Center for Atmospheric Research
+* Environment and Climate Change Canada
+* Danish Meteorological Institute
+* National Oceanographic and Atmospheric Administration
+* Geophysical Fluid Dynamics Laboratory
+- [ ] Description will be automatically populated from GitHub, edit if needed
+- [ ] Version will be automatically populated
+- [ ] Language:  English
+- [ ] Keywords:  sea ice model, Icepack, CICE (as appropriate)
+- [ ] Access right:  Open Access
+- [ ] License:  Other (Open)
+- [ ] Save and Publish
+
+
+
