@@ -78,7 +78,7 @@ _**Icepack**_
 
 _**Test Results**_
 
-[Test Results](https://github.com/CICE-Consortium/Test-Results/wiki) posted to github wiki (work in progress)
+[Test Results](https://github.com/CICE-Consortium/Test-Results/wiki) posted to github wiki 
 
 ### About the Consortium
 [Home](https://github.com/CICE-Consortium/About-Us)   
