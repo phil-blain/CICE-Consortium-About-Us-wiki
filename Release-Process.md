@@ -83,7 +83,7 @@ Template:
 - [ ] Title will be the title assigned to the tag
 - [ ] Authors:
 1st author Consortium Lead, remaining authors in alphabetical order.
-All people assigned to work on Consortium issues and code since the last release are Authors.  Look at prior release for a starting list.
+All people assigned to work on Consortium issues and code since the last release are Authors.  Look at prior release for a starting list, and check PRs or Contributors under the Settings tab to find new additions.
 - [ ] Affiliations (cut and paste):
 * Los Alamos National Laboratory
 * Naval Research Laboratory Stennis Space Center
