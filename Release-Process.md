@@ -23,7 +23,7 @@
   * Link release page and repo in table
   * Generate static documentation at readthedocs and link to release table (activate the tag under readthedocs "versions", may need to trigger a build of the master docs for the tag to appear), html and pdf.
   * Create DOI on zenodo and link in table
-* Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases
+* Move release notes from https://github.com/CICE-Consortium/CICE/wiki/CICE-Recent-changes to https://github.com/CICE-Consortium/CICE/releases.  Include a listing of recent system configurations used for testing, such as compiler versions, etc.
 * Move/generate release test results and post on test wiki.
 * Post science results as needed
 * Send out release email 
