@@ -39,7 +39,7 @@ Who can be a CICE Consortium Member?
 **A:** Initially, Consortium Members are the entities (agencies or institutions) that are contributing in-kind FTE funding to support the CICE model as part of the Consortium. Each entity is responsible for maintaining part of the code and assisting others to incorporate new code developments.  In 2019, Consortium Members are
 
 DOE Los Alamos National Laboratory  
-DMI Danish Meteorological Institute
+DMI Danish Meteorological Institute  
 DoD Naval Postgraduate School  
 DoD Naval Research Laboratory, Stennis Space Center  
 ECCC Environment and Climate Change Canada  
