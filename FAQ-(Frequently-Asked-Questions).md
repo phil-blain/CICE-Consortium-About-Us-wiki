@@ -1,7 +1,7 @@
 ## Topics
 * [Contact the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-contact)
 * [Contribute to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)#contributing-to-the-consortium)
-* [Access to the consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership)
+* [Access to the Consortium](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#consortium-membership)
 * [Stand-alone configuration and forcing](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#stand-alone-configuration-and-forcing)
 * [Enthalpy corrections](https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#enthalpy-corrections)
 * [[EVP time steps|https://github.com/CICE-Consortium/About-Us/wiki/FAQ-(Frequently-Asked-Questions)/#evp-time-steps]]    
