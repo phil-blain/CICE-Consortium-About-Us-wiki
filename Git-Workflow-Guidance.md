@@ -117,6 +117,7 @@ We’re getting a little ahead with respect to documentation but to keep your fo
       cd CICE
       git remote add upstream https://github.com/CICE-Consortium/CICE  # first-time only
       git pull upstream master
+      git submodule update
       git push origin master
 
 This entire process clones your fork master which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox and commits those changes to your local repository, and pushes those changes to your fork (origin).  We encourage all users to NOT commit local changes to master (always work on a branch), and to keep the fork master up to date with the consortium master.
@@ -182,11 +183,12 @@ You will usually branch from the head of the consortium master, and this is good
       cd cice.mybranch
       git remote add upstream https://github.com/cice-consortium/CICE
       git pull upstream master
+      git submodule update
       git push origin master
       git branch mybranch
       git checkout mybranch
 
-The first 5 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master and it is checked out.  
+The first 6 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master and it is checked out.  
 
 We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository to have a stable version to create branches from.  **NOTE: When you execute “git checkout”, you will switch branches and lose any local modifications that have not been committed so BE CAREFUL with checkout.** Commit and push any changes before you switch branches.  You can also use “git stash” to save local changes.
 
@@ -195,7 +197,7 @@ To delete a branch
       git checkout master
       git branch -d newbranch
 
-If your branch has a submodule, 
+If your branch has a submodule (all CICE branches should since Icepack is a submodule!), 
 
 * You can create the branch as part of the clone,
 
@@ -270,6 +272,7 @@ If you want to update your master fork with changes from the CICE-Consortium mas
       git checkout master
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git pull upstream master      # pulls upstream repo master to local repo and sandbox
+      git submodule update          # updates your Icepack submodule sandbox to the version you just pulled
       git push origin master        # pushes your local repo master to your fork
 
 A similar process can be used to update a branch.  However, on a branch, we recommend using rebase rather than pull.  Pull merges upstream and local changes based on time of commit.  Rebase updates the local repository by first rebasing the repository from the upstream source and then replaying your local commits on top of the rebase.  That means your local changes are always built on top of the base.  This would look like
@@ -277,6 +280,7 @@ A similar process can be used to update a branch.  However, on a branch, we reco
       git checkout branchname
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git pull --rebase upstream master
+      git submodule update
       git push origin branchname
 
 This works fine if your push is just a fast-forward push.  If you have pushed the branch before the rebase, it probably won't be a fast-forward as the history of your local repo and the remote repo have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
@@ -293,6 +297,7 @@ Pull and rebase can result in conflicts.  If there are conflicts, they will be r
       git rebase upstream/master
       > hand edit conflicts
       git rebase --continue
+      git submodule update
       git push --force-with-least origin branchname
 
 Your branch will now be rebased to the current master and your pull request should update and reflect that.
@@ -331,6 +336,7 @@ There are times where a PR is conflicting with the destination code, where the P
      cd cice.feature2
      git remote add upstream https://github.com/cice-consortium/cice
      git pull upstream master
+     git submodule update
      git push origin master
      git branch feature2
      git checkout feature2
@@ -350,6 +356,7 @@ To summarize, a typical workflow for development on a branch would be
       cd cice.mybranch
       git remote add upstream https://github.com/cice-consortium/CICE
       git pull upstream master
+      git submodule update
       git push origin master
       git branch mybranch
       git checkout mybranch
@@ -385,7 +392,7 @@ Icepack is a submodule of CICE.  Submodules are pointers to specific versions in
 
 ## Update Icepack in CICE
 
-If all you want to do is update the Icepack version in CICE in the repository, then you would do the following
+If all you want to do is change the Icepack version in CICE in the repository, then you would do the following
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
@@ -403,6 +410,14 @@ If all you want to do is update the Icepack version in CICE in the repository, t
       git commit                # in CICE
       git push origin mybranch
       (create PR for CICE)
+
+## Keep Icepack up-to-date when pulling from the Consortium master
+As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-rebase), you need to update the Icepack submodule using 
+```bash
+git submodule update
+```
+after you pull from the Consortium master. This is because Git will fetch submodule changes automatically when doing `git pull` but it will **not** update your local submodule working directory.  
+It might also be necessary to run `git submodule update` after switching branches if the branches record the Icepack submodule at different commits.
 
 ## Develop CICE and Icepack concurrently
 
