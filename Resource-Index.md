@@ -96,7 +96,7 @@ _**Test Results**_
        
 [Software Development Practices Guide](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices) 
     
-[git Workflow Guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) 
+[Git Workflow Guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) 
 
 [Documentation Workflow Guide](https://github.com/CICE-Consortium/About-Us/wiki/Documentation-Workflow-Guidance) 
 
