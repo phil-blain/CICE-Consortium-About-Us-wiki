@@ -113,9 +113,9 @@ We encourage development on branches in forks and for the fork master to general
 
 We’re getting a little ahead with respect to documentation but to keep your fork master up to date with the consortium master, pull from the CICE-Consortium to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like
 
-      git clone https://github.com/username/CICE --recursive
+      git clone https://github.com/username/CICE --recursive  # first-time only
       cd CICE
-      git remote add upstream https://github.com/CICE-Consortium/CICE
+      git remote add upstream https://github.com/CICE-Consortium/CICE  # first-time only
       git pull upstream master
       git push origin master
 
