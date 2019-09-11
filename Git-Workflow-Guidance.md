@@ -411,12 +411,12 @@ If all you want to do is change the Icepack version in CICE in the repository, t
       git push origin mybranch
       (create PR for CICE)
 
-## Keep Icepack up-to-date when pulling from the Consortium master
+## Keep Icepack up-to-date when pulling CICE from the Consortium master
 As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-rebase), you need to update the Icepack submodule using 
 ```bash
 git submodule update
 ```
-after you pull from the Consortium master. This is because Git will fetch submodule changes automatically when doing `git pull` but it will **not** update your local submodule working directory.  
+after you pull from the Consortium CICE master. This is because Git will fetch submodule changes automatically when doing `git pull` but it will **not** update your local submodule working directory.  
 It might also be necessary to run `git submodule update` after switching branches if the branches record the Icepack submodule at different commits.
 
 ## Develop CICE and Icepack concurrently
