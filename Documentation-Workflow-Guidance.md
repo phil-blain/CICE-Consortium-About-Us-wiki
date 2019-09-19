@@ -40,10 +40,73 @@ to create online HTML and PDF documentation.
 
 ## Setting up readthedocs.org
 
-The CICE-Consortium recommends that developers use [readthedocs.org](https://readthedocs.org) to generate and test
-their contributions to the CICE documentation. This tool does not require external libraries to be built
+The CICE-Consortium uses [readthedocs.org](https://readthedocs.org) to generate documentation for the CICE and Icepack models. As part of a Pull Request, model documentation will be build through readthedocs.org to verify that any contributions to the repositories correctly generate documentation. 
+
+However, as contributions to the model code and documentation are being developed it may be helpful to test the documentation before a Pull Request. We recommend that developers use [readthedocs.org](https://readthedocs.org)
+to test their contributions to the CICE documentation. This tool does not require external libraries to be built
 on each developer's personal computer and is free and easy to use. You can follow the steps below and also
 reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html) guide available from [readthedocs.org](https://readthedocs.org). 
+
+## Model sandbox and documentation
+
+Follow the general [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
+to clone the repository and create your personal fork for model modifications. Whenever you modify the model 
+you should update documentation. You can update the documentation on the same branch of your fork on which 
+you test code, or you can create a separate branch called 'readthedocs' to test only the RST and HTML documentation.
+
+There are some important files you will need in order to correctly build the documentation. These should all be included automatically when you fork from the CICE-Consortium repositories:
+
+   - /doc/requirements.txt : This file is necessary to get the references and citations working properly by using sphinxcontrib-bibtex. This file should *not* need to be modified by developers generally.
+   - /doc/source/conf.py : Basic documentation information for the Consortium including template, etc. This file should *not* need to be modified by developers generally.
+   - /doc/source/zreferences.rst : required for the references to link properly. This file should *not* need to be modified by developers generally. 
+   - /doc/source/master_list.bib : the master list of references cited in the documentation. This file *may need* to be modified by developers with documentation updates. This file is currently ordered sequentially from oldest to newest and alphabetically within a given year. To add references for your documentation, edit the master_list.bib file using the Articles and/or Books entries as examples for your addition(s). Please follow the format for ordering the date/alphabetization as well as including a URL with the document's DOI.
+
+## Editing RST files
+
+Open the RST file using a text editor and make the changes necessary. Note that from the User's Guide documentation (see link above) there is a hyperlink called "Show Source" on the left hand column that will show you the RST source code for the HTML you are viewing. This is a good way to see the syntax for tables, equations, linking references, labeling tables or figures, and correctly identifying documentation sections or subsections.
+
+Here are some resources for using RST files:
+
+* [RST Primer1](http://www.sphinx-doc.org/en/stable/rest.html)
+
+* [RST Primer2](http://docutils.sourceforge.net/docs/user/rst/quickstart.html)
+
+* [RST Syntax](https://wiki.typo3.org/ReST_Syntax)
+
+* [RST tables](http://www.sphinx-doc.org/en/stable/rest.html#tables) - Note that tables can be tricky in Sphinx and we prefer using [comma separated tables](http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table) whenever possible.
+
+## Push changes back to the repository
+
+When you're happy with the documentation you've generated, follow the standard Consortium 
+[CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
+to do a Pull Request and make sure to note in the Pull Request Template that documentation has also 
+been updated. We will test the HTML and PDF as part of the Pull Request before it is merged to the repository. 
+It can be particularly helpful if you include the link to your successfully built documentation that is 
+part of the Pull Request, and in order to do this you must ensure that your settings in readthedocs.org 
+are set to "Public".
+
+# Other Tips and Tricks
+
+## Converting LaTeX to RST
+
+If you start from a LaTeX (``*.tex``) document you will need to convert this to the RST format that Sphinx 
+requires. A handy tool to do this is [Pandoc](http://pandoc.org/getting-started.html), which you 
+can install quickly and run from the command line.
+
+Once Pandoc is installed, the basic command line syntax to convert a file is ::
+
+     $ pandoc NAMEIN.tex -f latex -t rst -s -ou NAMEOUT.rst
+
+The NAMEOUT.rst file can be directly edited for Sphinx. Pandoc does a beautiful job of converting the text, 
+equations, and many tables. However, equation numbering, section linking, references, figures, and some 
+tables required more hands on care to be sure they render correctly. 
+
+Pandoc requires that the ``*.tex`` files be in utf-8 encoding. To easily do this open the ``*.tex``
+document in Emacs then do ``ctrl-x ctrl-m f`` and you will be prompted to enter encoding type. Just
+type in ``utf-8`` and hit enter. Then save with ``ctrl-x ctrl-s`` . You are done and the document can be
+converted with Pandoc.
+
+## Setting up readthedocs.org
 
 1. Sign up for a free account at [readthedocs.org](https://readthedocs.org)
 
@@ -88,35 +151,7 @@ Under 'Advanced Settings' modify the following:
       - Privacy Level: Public  (this is useful to keep public if you want to point to the tested documentation as part of a Pull Request)
       - Python Interpreter: Python 2.x
 
-## Model sandbox and documentation
-
-Follow the general [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
-to clone the repository and create your personal fork for model modifications. Whenever you modify the model 
-you should update documentation. You can update the documentation on the same branch of your fork on which 
-you test code, or you can create a separate branch called 'readthedocs' to test only the RST and HTML documentation.
-
-There are some important files you will need in order to correctly build the documentation. These should all be included automatically when you fork from the CICE-Consortium repositories:
-
-   - /doc/requirements.txt : This file is necessary to get the references and citations working properly by using sphinxcontrib-bibtex. This file should *not* need to be modified by developers generally.
-   - /doc/source/conf.py : Basic documentation information for the Consortium including template, etc. This file should *not* need to be modified by developers generally.
-   - /doc/source/zreferences.rst : required for the references to link properly. This file should *not* need to be modified by developers generally. 
-   - /doc/source/master_list.bib : the master list of references cited in the documentation. This file *may need* to be modified by developers with documentation updates. This file is currently ordered sequentially from oldest to newest and alphabetically within a given year. To add references for your documentation, edit the master_list.bib file using the Articles and/or Books entries as examples for your addition(s). Please follow the format for ordering the date/alphabetization as well as including a URL with the document's DOI.
-
-## Editing RST files
-
-Open the RST file using a text editor and make the changes necessary. Note that from the User's Guide documentation (see link above) there is a hyperlink called "Show Source" on the left hand column that will show you the RST source code for the HTML you are viewing. This is a good way to see the syntax for tables, equations, linking references, labeling tables or figures, and correctly identifying documentation sections or subsections.
-
-Here are some resources for using RST files:
-
-* [RST Primer1](http://www.sphinx-doc.org/en/stable/rest.html)
-
-* [RST Primer2](http://docutils.sourceforge.net/docs/user/rst/quickstart.html)
-
-* [RST Syntax](https://wiki.typo3.org/ReST_Syntax)
-
-* [RST tables](http://www.sphinx-doc.org/en/stable/rest.html#tables) - Note that tables can be tricky in Sphinx and we prefer using [comma separated tables](http://docutils.sourceforge.net/docs/ref/rst/directives.html#csv-table) whenever possible.
-
-## Building documentation
+## Building documentation on your personal readthedocs.org account
 
 Once you've committed and pushed changes to the documentation `*.rst` files on your personal development fork. 
 Go to your readthedocs.org site and then select your project "Overview". Whenever you commit to your fork
@@ -131,37 +166,6 @@ information about the build and what might be problematic. The time of the build
 listed with the most recent build appearing at the top of the list.
 
 To see the HTML you just successfully built, go to "Overview" and click on "latest" under versions. To see the PDF you just successfully built, go to "Downloads" and click on "latest PDF". 
-
-## Push changes back to the repository
-
-When you're happy with the documentation you've generated, follow the standard Consortium 
-[CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
-to do a Pull Request and make sure to note in the Pull Request Template that documentation has also 
-been updated. We will test the HTML and PDF as part of the Pull Request before it is merged to the repository. 
-It can be particularly helpful if you include the link to your successfully built documentation that is 
-part of the Pull Request, and in order to do this you must ensure that your settings in readthedocs.org 
-are set to "Public".
-
-# Other Tips and Tricks
-
-## Converting LaTeX to RST
-
-If you start from a LaTeX (``*.tex``) document you will need to convert this to the RST format that Sphinx 
-requires. A handy tool to do this is [Pandoc](http://pandoc.org/getting-started.html), which you 
-can install quickly and run from the command line.
-
-Once Pandoc is installed, the basic command line syntax to convert a file is ::
-
-     $ pandoc NAMEIN.tex -f latex -t rst -s -ou NAMEOUT.rst
-
-The NAMEOUT.rst file can be directly edited for Sphinx. Pandoc does a beautiful job of converting the text, 
-equations, and many tables. However, equation numbering, section linking, references, figures, and some 
-tables required more hands on care to be sure they render correctly. 
-
-Pandoc requires that the ``*.tex`` files be in utf-8 encoding. To easily do this open the ``*.tex``
-document in Emacs then do ``ctrl-x ctrl-m f`` and you will be prompted to enter encoding type. Just
-type in ``utf-8`` and hit enter. Then save with ``ctrl-x ctrl-s`` . You are done and the document can be
-converted with Pandoc.
 
 ## Using Sphinx
 
