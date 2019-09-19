@@ -38,7 +38,7 @@ to create online HTML and PDF documentation.
 
 # Steps for Modifying Documentation
 
-## Setting up readthedocs.org
+## Documentation Tool - Read the Docs
 
 The CICE-Consortium uses [readthedocs.org](https://readthedocs.org) to generate documentation for the CICE and Icepack models. As part of a Pull Request, model documentation will be build through readthedocs.org to verify that any contributions to the repositories correctly generate documentation. 
 
