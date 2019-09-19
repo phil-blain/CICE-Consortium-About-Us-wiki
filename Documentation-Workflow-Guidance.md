@@ -23,7 +23,7 @@ to create online HTML and PDF documentation.
    We expect that if you need to add or modify documentation that you will be able to modify the 
    RST source files and generate HTML in order to review the HTML documentation. We 
    will review the RST and HTML during a Pull Request to verify it is working properly and is consistent 
-   with the rest of the Consortium documentation format. When the Pull Request is successful, we will
+   with the rest of the Consortium documentation format. When the Pull Request is successful, it will
    trigger a new documentation build for the master branch of the documentation. The new documentation 
    build will create the HTML and PDF versions of CICE's documentation along with your updates. 
 
@@ -50,8 +50,7 @@ on each developer's personal computer and is free and easy to use. You can follo
 
 Follow the general [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
 to clone the repository and create your personal fork for model modifications. Whenever you modify the model 
-you should update documentation. You can update the documentation on the same branch of your fork on which 
-you test code, or you can create a separate branch called 'readthedocs' to test only the RST and HTML documentation.
+you should update documentation. We recommend you update the documentation on the same branch of your fork on which you are developing and testing code.
 
 There are some important files you will need in order to correctly build the documentation. These should all be included automatically when you fork from the CICE-Consortium repositories:
 
@@ -77,10 +76,7 @@ Here are some resources for using RST files:
 ## Push changes back to the repository
 
 When you're happy with the documentation you've generated, follow the standard Consortium 
-[CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
-to do a Pull Request and make sure to note in the Pull Request Template that documentation has also 
-been updated. The Read the Docs Github hook we will automatically generate the HTML and PDF documentation once the Pull Request is opened.
-It can be particularly helpful if you include link(s) to the modified part(s) of the documentation once it is built. You can find the URL for your generated documentation at the bottom of the Pull Request page, by clicking on "Show all checks" and then "Details" next to the read-the-docs item.
+[CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance) to do a Pull Request and make sure to note in the Pull Request Template that documentation has also been updated. The Read the Docs Github hook will automatically generate the HTML and PDF documentation once the Pull Request is opened. It can be particularly helpful if you include link(s) to the modified part(s) of the built documentation in the Pull Request Template. You can find the URL for your generated documentation at the bottom of the Pull Request page, by clicking on "Show all checks" and then "Details" next to the read-the-docs item.
 
 # Other Tips and Tricks
 
