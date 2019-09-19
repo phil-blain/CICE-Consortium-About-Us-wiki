@@ -44,8 +44,7 @@ The CICE-Consortium uses [readthedocs.org](https://readthedocs.org) to generate 
 
 However, as contributions to the model code and documentation are being developed it may be helpful to test the documentation before a Pull Request. We recommend that developers use [readthedocs.org](https://readthedocs.org)
 to test their contributions to the CICE documentation. This tool does not require external libraries to be built
-on each developer's personal computer and is free and easy to use. You can follow the steps below and also
-reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html) guide available from [readthedocs.org](https://readthedocs.org). 
+on each developer's personal computer and is free and easy to use. You can follow the steps [below](https://github.com/CICE-Consortium/About-Us/wiki/Documentation-Workflow-Guidance#setting-up-readthedocsorg) and also reference the [Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html) guide available from [readthedocs.org](https://readthedocs.org). 
 
 ## Model sandbox and documentation
 
