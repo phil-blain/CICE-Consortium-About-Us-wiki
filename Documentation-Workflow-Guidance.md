@@ -79,10 +79,8 @@ Here are some resources for using RST files:
 When you're happy with the documentation you've generated, follow the standard Consortium 
 [CICE-Consortium Git Workflow and Developer's guide](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance)
 to do a Pull Request and make sure to note in the Pull Request Template that documentation has also 
-been updated. We will test the HTML and PDF as part of the Pull Request before it is merged to the repository. 
-It can be particularly helpful if you include the link to your successfully built documentation that is 
-part of the Pull Request, and in order to do this you must ensure that your settings in readthedocs.org 
-are set to "Public".
+been updated. The Read the Docs Github hook we will automatically generate the HTML and PDF documentation once the Pull Request is opened.
+It can be particularly helpful if you include link(s) to the modified part(s) of the documentation once it is built. You can find the URL for your generated documentation at the bottom of the Pull Request page, by clicking on "Show all checks" and then "Details" next to the read-the-docs item.
 
 # Other Tips and Tricks
 
