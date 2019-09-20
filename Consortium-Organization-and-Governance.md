@@ -2,7 +2,7 @@ Our open-source codes are covered by a standard 3-clause BSD license.  PDFs with
 
 ### 1. Our mission 
 
-[[/images/consortium1.png|Goals of the Consortium]]
+[[/images/consortium4.png|Goals of the Consortium]]
 
 Community collaboration has been critical for development of the CICE model.
 In late 2016 a core group of CICE developers stood up an interagency and international CICE Consortium to enhance sea ice model development throughout the sea ice community. This consortium formalizes longstanding collaborations and makes our connections with the operational community explicit in our goals of accelerating both scientific development and the transfer of new developments into operational models. Each agency provides in-kind support through FTE contributions to the Consortium.
