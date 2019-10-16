@@ -1,7 +1,6 @@
 # **CICE version 6.0.1 and Icepack version 1.1.1 released**   -   *July 2019*   
 Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
 
-
 ***
 
 # **CICE version 6.0.0 and Icepack version 1.1.0 released**   -   *December 3, 2018*   
@@ -16,13 +15,19 @@ Press coverage: [phys.org](https://phys.org/news/2018-12-arctic-ice-benefit-pola
 [More CICE info ...](https://github.com/CICE-Consortium/CICE/releases/tag/CICE6.0.0). 
 [More Icepack info ...](https://github.com/CICE-Consortium/Icepack/releases/tag/Icepack1.1.0). 
 
+***
+
 # **Consortium Town Hall**   -   *November 7, 2018*
 ![](http://www.envriplus.eu/wp-content/uploads/2018/06/CEN-FM18_logo-1-1.png)
 
 The Consortium will host a town hall Friday December 14, 2018 at the annual meeting of the American Geophysical Union (AGU) in Washington, DC. The Consortium aims to accelerate sea ice model development by providing a pathway and support for community contributions to its sea ice model codes. At this town hall we will discuss recent Consortium activities, provide brief updates on exciting new sea ice code developments, and invite the community to participate in this model development.  [More info ...](https://agu.confex.com/agu/fm18/meetingapp.cgi/Session/56058) 
 
+***
+
 # **Icepack leaflet**   -   *October 1, 2018*
 Icepack, a new modular software package, represents critical sea ice processes including thermodynamics, ridging, biogeochemistry, and associated area and thickness changes. The software can be
 ported easily to a wide variety of models for sea ice prediction and earth system simulation. [More info ...](https://e3sm.org/wp-content/uploads/2018/10/TechnicalHighlight_Icepack_opt.pdf)
+
+***
 
 ## [Past Consortium News Stories and Highlights](https://github.com/CICE-Consortium/About-Us/wiki/Consortium-News-and-Highlights-Archive)
