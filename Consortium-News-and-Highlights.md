@@ -2,6 +2,8 @@
 Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
 
 
+***
+
 # **CICE version 6.0.0 and Icepack version 1.1.0 released**   -   *December 3, 2018*   
 ![](https://avatars2.githubusercontent.com/u/28584507?s=280&v=4)
 
