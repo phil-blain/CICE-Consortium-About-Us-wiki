@@ -1,3 +1,5 @@
+***
+
 # **CICE version 6.0.1 and Icepack version 1.1.1 released**   -   *July 2019*   
 Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
 
