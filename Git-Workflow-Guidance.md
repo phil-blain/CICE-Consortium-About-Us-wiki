@@ -165,9 +165,12 @@ To see which branches exist, in a sandbox,
       git branch --list
       git branch --list --all
 
---all shows all remote branches.  To switch to an existing branch, use git checkout.
+--all shows all remote branches.  To switch to an existing branch, use `git checkout`, then `git submodule update`.
 
       git checkout branchname
+      git submodule update  # needed to synchronize your Icepack checkout.
+      # or, do both in one command :
+      git checkout --recurse-submodules branchname
 
 You can also checkout a branch directly with clone using the -b option from any github location,
 
