@@ -73,6 +73,9 @@ This generates documentation at readthedocs
 **Template for zenodo record** 
 
 When a release is tagged, GitHub sends the information to zenodo, which assigns a DOI and creates a draft page for the release.  The draft must be edited for correctness.  To find it, search [zenodo.org](zenodo.org) for CICE-Consortium -- the record will not appear on the CICE-Consortium community page until it has been edited.
+
+> An easier method is to Edit the previous release on Zenodo, deleting the previous file and uploading a new one (which creates a new DOI), and then update the entries as needed.
+
 Template:
 
 - [ ] Filename(s) should already be populated
@@ -99,4 +102,3 @@ All people assigned to work on Consortium issues and code since the last release
 - [ ] Access right:  Open Access
 - [ ] License:  Other (Open)
 - [ ] Save and Publish
-
