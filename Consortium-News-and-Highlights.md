@@ -1,5 +1,17 @@
 ***
 
+### **CICE version 6.0.2 and Icepack version 1.1.2 released**   -   *October 2019*   
+Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
+
+***
+
+### **CICE Consortium highlighted by USGCRP**   -   *September 2019*   
+The U.S. Global Change Research Program included a short article about the CICE Consortium in its annual report,
+[Our Changing Planet: The U.S. Global Change Research Program for Fiscal Years 2018-2019](https://www.globalchange.gov/browse/reports/our-changing-planet-FY-2018-2019).  Read the 
+[online highlight](https://www.globalchange.gov/about/highlights/2019-predicting-arctic-sea-ice-change).
+
+***
+
 ### **CICE version 6.0.1 and Icepack version 1.1.1 released**   -   *July 2019*   
 Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
 
