@@ -1,6 +1,12 @@
 
 ***
 
+### **CICE and Icepack Workshop and Tutorial**   -   *February 3-5, 2020*   
+A one-day user's workshop and 2-day tutorial will be held at NCAR's Mesa Lab in Boulder, Colorado.  The workshop will be webcast, and tutorial materials will be posted on this wiki following the event. 
+[Registration and other information](http://www.cesm.ucar.edu/events/2020/cice-icepack/).
+
+***
+
 ### **CICE version 6.1.0 and Icepack version 1.2.0 released**   -   *December 2019*   
 Updated code releases can be found through our release pages for [CICE](https://github.com/CICE-Consortium/CICE/wiki/CICE-Version-Index) and [Icepack](https://github.com/CICE-Consortium/Icepack/wiki/Icepack-Version-Index), or through our [Zenodo community](https://zenodo.org/communities/cice-consortium).
 
