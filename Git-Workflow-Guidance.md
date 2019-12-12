@@ -262,9 +262,11 @@ When you commit, you are committing changes to the local repository.  This repos
 
 In this case, add specifies both new AND modified files that need to be committed.  You can also use `git commit -a` to automatically add modified files, but please review the git documentation first.
 
+When you `git add` or `git rm` files, `git status` will no longer show them as being different, but they are NOT yet committed to your local repository.  You must do `git commit` to commit the actual code changes.
+
 # Pushing and Pulling
 
-Pushing and Pulling are operations associated with migrating changes between repositories.  You push something if you are acting on the “sending” side and you pull something if you are on the “receiving” side.  To push or pull, you should specify the repository and what is being migrated explicitly, and you will need write access to that repository.  The git remote command is extremely useful in push and pull operations.
+Pushing and Pulling are operations associated with migrating changes between repositories.  You push something if you are acting on the “sending” side and you pull something if you are on the “receiving” side.  To push or pull, you should specify both the repository and what is being migrated explicitly, and you will need write access to that repository.  The git remote command is extremely useful in push and pull operations.
 
 ## Remotes
 
@@ -272,7 +274,7 @@ Pushing and Pulling are operations associated with migrating changes between rep
          origin    https://github.com/username/CICE (fetch)
          origin    https://github.com/username/CICE (push)
 
-shows the repositories that are currently associated with your local repository.  By default, the repository that was cloned will be “origin”.  Others can be added easily, e.g.,
+shows the repositories that are currently associated with your local repository.  By default, the repository that was cloned will be nicknamed “origin”.  Others can be added easily, e.g.,
 
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git remote add buddy https://github.com/anotherusername/CICE
@@ -284,35 +286,63 @@ shows the repositories that are currently associated with your local repository.
          upstream    https://github.com/CICE-Consortium/CICE (fetch)
          upstream    https://github.com/CICE-Consortium/CICE (push)
 
-Now you can pull or push from/to these repositories.  
+Now you can pull or push from/to any of these repositories by referencing their nickname.
 
 ## Push
 
-Push migrates changes from your local repository TO the github repository.  Push looks like
+Push migrates changes from your local repository to the github repository.  Push looks like
 
       git push origin mybranch
 
-You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).
+This pushes mybranch from your local repository to the origin repository.  You push to the repository of interest (ie. origin) and on the branch of interest (ie. mybranch).  You can also push tags,
+
+      git tag mybranch_tag01
+      git push origin mybranch_tag01
 
 ## Pull, Rebase
 
-If you want to update your master fork with changes from the CICE-Consortium master, you would pull from the consortium and push to your fork as follows
+Pull migrates changes from a remote repository to your local repository.  Pull looks like
+
+      git pull origin mybranch
+
+This pulls mybranch from the origin repository to your local repository.  It is important to keep your local branch synced up with your remote repository when multiple people are developing in the same repository+branch.  
+
+When you pull, it's possible conflicts will arise.  If they do, git will let you know and you'll have to manually reconcile those conflicts.
+
+When you pull, you are just integrating local and remote commits on a commit-by-commit basis by time.  Another way to operate is to rebase.  When you rebase, the remote commits are checked out and then your local commits are "replayed" on top.  This will change your local commit history, but can be advantageous in terms of keeping track of commit history and doing pull requests.  To rebase,
+
+      git pull --rebase origin branchname
+
+A pull is the same thing as a fetch and a merge.  There are many cases where it’s better to do a fetch, review the changes (git diff), and then do a merge.  So
+
+      git pull origin branchname
+
+Is the same as
+
+      git fetch origin
+      git merge origin/branchname
+
+## Some Examples
+
+### Update fork master from Consortium master
+
+As noted earlier in this document, if you want to update your master fork to recent changes in the CICE-Consortium master, you would pull from the consortium and push to your fork as follows
 
       git checkout master
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git pull upstream master      # pulls upstream repo master to local repo and sandbox
-      git submodule update          # updates your Icepack submodule sandbox to the version you just pulled
       git push origin master        # pushes your local repo master to your fork
 
-A similar process can be used to update a branch.  However, on a branch, we recommend using rebase rather than pull.  Pull merges upstream and local changes based on time of commit.  Rebase updates the local repository by first rebasing the repository from the upstream source and then replaying your local commits on top of the rebase.  That means your local changes are always built on top of the base.  This would look like
+### Update a branch from Consortium master
+
+A similar process can be used to update a branch.  However, on a branch, we recommend using rebase rather than pull.  Pull merges upstream and local changes based on time of commit.  Rebase updates the local repository by first "rebasing" the repository from the upstream source and then "replaying" your local commits on top of the rebase.  That means your local changes are always built on top of the base.  This would look like
 
       git checkout branchname
       git remote add upstream https://github.com/CICE-Consortium/CICE
       git pull --rebase upstream master
-      git submodule update
       git push origin branchname
 
-This works fine if your push is just a fast-forward push.  If you have pushed the branch before the rebase, it probably won't be a fast-forward as the history of your local repo and the remote repo have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
+This works fine if your push is just a fast-forward push.  If you have pushed the branch before the rebase, it probably won't be a fast-forward as the history of your local repository and the remote repository have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
 
       git push --force-with-lease origin branchname
 
@@ -326,20 +356,28 @@ Pull and rebase can result in conflicts.  If there are conflicts, they will be r
       git rebase upstream/master
       > hand edit conflicts
       git rebase --continue
-      git submodule update
       git push --force-with-least origin branchname
 
 Your branch will now be rebased to the current master and your pull request should update and reflect that.
 
+### Rejected pushes
 
-A pull is the same thing as a fetch and a merge.  There are many cases where it’s better to do a fetch, review the changes (git diff), and then do a merge.  So
+If you get a "rejected" error message when you try to push, it's probably because your local repository is behind the remote repository.  The fix is to update your local repository by doing
 
-      git pull origin master
+      git pull origin branchname
 
-Is the same as
+### Push to a different repository
 
-      git fetch origin
-      git merge origin/master
+As noted above, you can pull from a repository that is different from your origin repository.  You can also push to a different remote repository.  If you wanted to copy someone else's branch onto your fork, you could
+
+     git clone https://github.com/anotheruser/CICE.branchname
+     cd CICE.branchname
+     git checkout branchname
+     git add myrepo https://github.com/myusername/CICE
+     git push myrepo branchname
+
+This is useful in cases where you want to contribute to a remote repository but you don't have write access.  You can push local commits to the branch to your remote repository (your fork) and then issue PRs to propose merges to the other user's repository.
+
 
 # Pull Requests
 
