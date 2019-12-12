@@ -46,7 +46,7 @@
 # Introduction
 This document provides a simplified overview of git and how to use it within CICE-Consortium development.  In most cases, it does not fully represent the details and complexity associated with git.  It should provide a starting point for working in the CICE-Consortium, and it will hopefully encourage users to look for more detailed documentation on the web.  This document is not a substitute for a proper and detailed git user guide.  
 
-# General Recommendations
+## General Recommendations
 * _Create your own forks for each repository._
 
 * Keep your fork master consistent with the Consortium master:
@@ -68,14 +68,14 @@ _Use ‘git status’ and ‘git remote -v’ frequently._
 
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices).
 
-# Overview
+## Overview
 CICE consists of a top level driver and dynamical core plus the Icepack code which is included as a git submodule.  Because Icepack is a submodule of CICE, Icepack and CICE development are handled somewhat independently with respect to the github repositories even though development and testing may be done together and in the same sandbox.  
 
-Only a limited number of users are able to push to the CICE-Consortium repositories.  Users will be working on personal forks and executing pull requests to merge their fork to the CICE-Consortium repositories.  If you plan to work within the CICE-Consortium project, create a github account (https://github.com) if you don’t have one already.
+Only a limited number of users are able to push to the CICE-Consortium repositories.  Users will be working on personal forks and executing pull requests to merge their changes into the CICE-Consortium repositories.  If you plan to work within the CICE-Consortium project, create a github account (https://github.com) if you don’t have one already.
 
 A good tutorial on the overall git workflow is at [atlassian's comparing-workflows page](https://www.atlassian.com/git/tutorials/comparing-workflows).  We will be following most of the ideas discussed in those workflows.  Details about using git can be found at the git-scm site or use google search.
 
-There are a few basics to understand about git.  It is distributed.  That means there are actually multiple repositories.  For instance, normally there will be the CICE-Consortium repository, a user’s forked repository, and a local repository on your local machine associated with your sandbox.  The sandbox just contains a particular version from your repository like the head of a specific branch.  The sandbox is where you work.  To download a copy of the repository to a local file system, you clone it in git, that creates the local repository and sets up the sandbox.  That sandbox will be set to the head of the master branch initially.  You can update your local repository from any other repository by using fetch and merge (aka pull).  When you commit, you are migrating changes from your sandbox to your local repository.  Use push to migrate changes in the local repository back to your fork.  Once your fork is ready, those changes will be migrated to the CICE-Consortium repository by executing a pull request.   To update your local sandbox, you execute a pull from a github repository.  More generally, you can pull or push from/to any github repository.
+There are a few basics to understand about git.  It is distributed.  That means there are actually multiple repositories.  For instance, normally there will be the github CICE-Consortium repository, a user’s github forked repository, and a local repository on your local machine associated with your sandbox.  The sandbox just contains a particular version from your repository like the head of a specific branch.  The sandbox is where you work.  To download a copy of the repository to a local file system, you clone it in git, that creates the local repository and sets up the sandbox.  That sandbox will be set to the head of the master branch initially and will contain all branches and tags from the remote repository at the time of the clone.  You can update your local repository from any other repository by using fetch and merge (aka pull).  When you commit, you are migrating changes from your sandbox to your local repository.  Use push to migrate changes in the local repository back to your fork.  Once your fork is ready, those changes will be migrated to the CICE-Consortium repository by executing a pull request.   To update your local sandbox, you execute a pull from a github repository.  More generally, you can pull or push from/to any github repository.
 
 <!---
 ![repodiagram](https://github.com/CICE-Consortium/About-Us/wiki/images/CICE_repo_diagrams1.png)
@@ -85,7 +85,15 @@ There are a few basics to understand about git.  It is distributed.  That means 
 
 _**Figure: Relationship between CICE consortium repositories and git commands**_
 
-# Local Initialization
+# Getting Started with GIT
+
+## Setup a Github account
+
+You can clone (checkout) the CICE-Consortium code without a Github account, but if you want to have your own repository and contribute, you'll need a Github account.  To setup a Github account, go to [github.com](https://github.com) and click on the SignUp button in the upper right hand side.
+
+Thereafter, you will SignIn when you go to github.com.
+
+## Local Initialization
 Before using git on any platform, it’s useful to set a few things.  Execute the following commands,
 
       git config --global user.name "Your Github Username"
@@ -94,7 +102,6 @@ Before using git on any platform, it’s useful to set a few things.  Execute th
 
 You only need to set these once for each independent platform, they will be stored in the file ~/.gitconfig
 
-# Forks
 ## Setting Up Forks
 
 
