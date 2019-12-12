@@ -68,6 +68,8 @@ _Never push changes to your fork master, only to branches._
 * Be very careful with every pull and push command to make sure it's from/to the right repo/fork/branch and contains what is intended.  
 _Use ‘git status’ and ‘git remote -v’ frequently._
 
+* When working with CICE, treat Icepack as a separate repository.  If you need to modify both Icepack and CICE together, clone your own version of Icepack to use within CICE, create a new branch in each, and commit and push Icepack and CICE changes separately.  Do not worry about the submodule status initially.
+
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices).
 
 ## Overview
