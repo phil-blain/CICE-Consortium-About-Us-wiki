@@ -104,9 +104,9 @@ Before using git on any platform, it’s useful to set a few things.  Execute th
 
 You only need to set these once for each independent platform, they will be stored in the file ~/.gitconfig
 
-## Setting Up Forks
+## Setting Up Github Forks
 
-Users should create personal forks of CICE and Icepack to carry out any development of the CICE or Icepack source code.  To create a fork (you do this once), 
+Users should create personal github forks of CICE and Icepack to carry out any development of the CICE or Icepack source code.  To create a fork (you do this once), 
 * Go to the repository page (ie. https://github.com/CICE-Consortium/CICE or https://github.com/CICE-Consortium/Icepack)
 * In the upper right hand corner, click on “fork”
 * Click on your github avatar/username
@@ -116,25 +116,33 @@ Each repository (CICE and Icepack) have to be forked separately and users are en
 
 We encourage development on branches in forks and for the fork master to generally remain up to date with the Consortium version.  This makes it easier to branch in the fork from a Consortium version of master.
 
-## Updating Your Fork master
+## Updating Your Github Fork master
 
-We’re getting a little ahead with respect to documentation but to keep your fork master up to date with the consortium master, pull from the CICE-Consortium to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like
+We’re getting a little ahead with respect to documentation but to keep your fork master up to date with the consortium master, pull from the CICE-Consortium to your local sandbox, commit locally, and then push those changes to your fork.  Typically, this looks like for Icepack
 
-      git clone https://github.com/username/CICE --recursive  # first-time only
-      cd CICE
-      git remote add upstream https://github.com/CICE-Consortium/CICE  # first-time only
+      git clone https://github.com/username/Icepack
+      cd Icepack
+      git remote add upstream https://github.com/CICE-Consortium/Icepack
       git pull upstream master
-      git submodule update
       git push origin master
 
-This entire process clones your fork master which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox and commits those changes to your local repository, and pushes those changes to your fork (origin).  We encourage all users to NOT commit local changes to master (always work on a branch), and to keep the fork master up to date with the consortium master.
+and for CICE
+
+      git clone https://github.com/username/CICE 
+      cd CICE
+      git remote add upstream https://github.com/CICE-Consortium/CICE
+      git pull upstream master
+      git push origin master
+
+This entire process clones your fork master which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox (which commits those changes to your local repository), and pushes those changes to your fork (origin).  We encourage all users to NOT commit local changes to master (always work on a branch), and to keep the fork master up to date with the consortium master.
 
 ## Collaborators
 
 In general, your forks are public, anyone can read, but nobody can write.  You can add collaborators to your fork by logging into github and going to the repository, e.g. https:// github.com/username/cice, clicking on Settings, then Collaborators.  Then add the collaborator at the bottom of the page.  When you do, that person will be invited to collaborate on your fork and you can give them write permission.
 
 # Clone, Commit, Branch
-## Creating a Sandbox (clone)
+
+## Clone (checkout or creating a Sandbox)
 To create the initial sandbox, use git clone.
 
       git clone https://github.com/username/CICE --recursive
@@ -147,7 +155,7 @@ To create the initial sandbox, use git clone.
 
 When you clone, your sandbox will be set to the head of the master branch.  You can also specify a local directory name with git clone 
 
-      git clone https://github.com/username/CICE --recursive mysandbox
+      git clone https://github.com/username/CICE --recursive CICE.mysandbox
 
 Verify with git status and git remote -v
 
@@ -165,7 +173,7 @@ You can clone any public github repository.
 
 ## Branch
 
-Branches and forks are often treated the same, but they are fundamentally different. A fork is a copy of an entire repository; that repository contains branches. A branch is a specific version in a repository.
+Branches and forks are often treated the same, but they are fundamentally different. A fork is a copy of an entire repository; that repository contains branches. A branch is more like a specific version within a repository.  
 
 To see which branches exist, in a sandbox,
 
@@ -175,7 +183,7 @@ To see which branches exist, in a sandbox,
 --all shows all remote branches.  To switch to an existing branch, use `git checkout`, then `git submodule update`.
 
       git checkout branchname
-      git submodule update  # needed to synchronize your Icepack checkout.
+      git submodule update --init  # needed to synchronize your Icepack checkout.
       # or, do both in one command :
       git checkout --recurse-submodules branchname
 
@@ -189,40 +197,51 @@ To create a new branch, initialize your sandbox to the version you want to branc
 
 You will usually branch from the head of the consortium master, and this is good time to update your fork's master as part of the process,
 
-      git clone https://github.com/username/CICE --recursive cice.mybranch
+      git clone https://github.com/username/CICE cice.mybranch
       cd cice.mybranch
       git remote add upstream https://github.com/cice-consortium/CICE
       git pull upstream master
-      git submodule update
       git push origin master
       git branch mybranch
       git checkout mybranch
-
-The first 6 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master and it is checked out.  
-
-We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository to have a stable version to create branches from.  **NOTE: When you execute “git checkout”, you will switch branches and lose any local modifications that have not been committed so BE CAREFUL with checkout.** Commit and push any changes before you switch branches.  You can also use “git stash” to save local changes.
-
-To delete a branch
-
-      git checkout master
-      git branch -d newbranch
-
-If your branch has a submodule (all CICE branches should since Icepack is a submodule!), 
-
-* You can create the branch as part of the clone,
-
-      git clone -b branchname --recursive https://github.com/username/CICE 
-
-* You can clone the repository without --recursive, switch to the branch, and then init and update the submodule,
-
-      git clone https://github.com/username/CICE 
-      cd CICE
-      git checkout branchname
       git submodule update --init
 
-* Or if you already have a sandbox with the submodule initialized, you can switch to the branch and then you should sync and update/init the submodule,
+The first 5 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master, it is checked out, and then the submodule is checked out.  
 
-      git clone --recursive https://github.com/username/CICE
+We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository.  **NOTE: When you execute “git checkout”, you will switch branches and may lose local modifications that have not been committed so BE CAREFUL with checkout.** You can use “git stash” to save local changes and then recover them.
+
+Branches in git are generally not something that should last forever, and they can be used liberally.  As a general rule, pull requests will be done to the Consortium from branches in your fork, and we recommend that each branch be used for a single pull request.  In other words, once a pull request is issued, stop development on that branch and create a new branch.  To branch from a working branch
+
+      git checkout currentbranch
+      git branch newbranch
+      git checkout newbranch
+      git submodule update --init
+
+or even better
+
+      git clone https://github.com/username/CICE cice.mybranch
+      cd cice.mybranch
+      git remote add upstream https://github.com/cice-consortium/CICE
+      git pull upstream master
+      git push origin master
+      git branch newbranch
+      git checkout newbranch
+      git pull origin oldbranch
+      git submodule update --init
+
+This branches off the current Consortium master but then pulls in any changes to the newbranch from the oldbranch.
+
+To delete a branch in your local repository
+
+      git checkout master
+      git branch -d branchname
+
+To delete a branch in your remote repository
+
+      git push origin --delete branchname
+
+If your branch has a submodule (all CICE branches should since Icepack is a submodule!), when you switch to the branch, you may want to update your submodule via a sync and update call,
+
       cd CICE
       git checkout branchname
       git submodule sync
