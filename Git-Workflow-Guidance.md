@@ -6,7 +6,7 @@
 [**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-github)
 * Setup a Github Account
 * Setting up Forks    
-* Local Initialization
+* Local Git Initialization
 * Updating your Fork Master
 * Collaborators    
 
@@ -87,7 +87,7 @@ There are a few basics to understand about git.  It is distributed.  That means 
 
 _**Figure: Relationship between CICE consortium repositories and git commands**_
 
-# Getting Started with GIT
+# Getting Started with Git
 
 ## Setup a Github Account
 
@@ -95,7 +95,7 @@ You can clone (checkout) the CICE-Consortium code without a Github account, but 
 
 Thereafter, you will SignIn when you go to github.com.
 
-## Local Initialization
+## Local Git Initialization
 Before using git on any platform, it’s useful to set a few things.  Execute the following commands,
 
       git config --global user.name "Your Github Username"
@@ -106,7 +106,6 @@ You only need to set these once for each independent platform, they will be stor
 
 ## Setting Up Forks
 
-
 Users should create personal forks of CICE and Icepack to carry out any development of the CICE or Icepack source code.  To create a fork (you do this once), 
 * Go to the repository page (ie. https://github.com/CICE-Consortium/CICE or https://github.com/CICE-Consortium/Icepack)
 * In the upper right hand corner, click on “fork”
@@ -114,7 +113,6 @@ Users should create personal forks of CICE and Icepack to carry out any developm
 * A fork will be created on your github page (ie. https:// github.com/username/CICE)
 
 Each repository (CICE and Icepack) have to be forked separately and users are encouraged to fork both repositories.
-
 
 We encourage development on branches in forks and for the fork master to generally remain up to date with the Consortium version.  This makes it easier to branch in the fork from a Consortium version of master.
 
