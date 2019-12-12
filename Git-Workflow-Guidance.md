@@ -1,10 +1,12 @@
 # Table of Contents
-[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction)  
-[**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#general-recommendations)    
-[**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overview)   
+[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
+* General Recommendations
+* Overview 
 [**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-initialization)   
-[**Forks**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#forks)   
+[**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-github)
+* Setup a Github Account
 * Setting up Forks    
+* Local Initialization
 * Updating your Fork Master
 * Collaborators    
 
@@ -87,7 +89,7 @@ _**Figure: Relationship between CICE consortium repositories and git commands**_
 
 # Getting Started with GIT
 
-## Setup a Github account
+## Setup a Github Account
 
 You can clone (checkout) the CICE-Consortium code without a Github account, but if you want to have your own repository and contribute, you'll need a Github account.  To setup a Github account, go to [github.com](https://github.com) and click on the SignUp button in the upper right hand side.
 
