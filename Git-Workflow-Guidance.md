@@ -342,18 +342,28 @@ A similar process can be used to update a branch.  However, on a branch, we reco
       git pull --rebase upstream master
       git push origin branchname
 
-This works fine if your push is just a fast-forward push.  If you have pushed the branch before the rebase, it probably won't be a fast-forward as the history of your local repository and the remote repository have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
+The push works fine if it is just a fast-forward (consistent history) push.  If you have pushed the branch to your remote repository before the rebase, it probably won't be a fast-forward as the history of your local repository and the remote repository have diverged.  To overcome this, you'll have to do one of two things.  Either force the push and overwrite the history on your branch in your repo.  This is perfectly fine if nobody else is working in your branch.  That would look like
 
       git push --force-with-lease origin branchname
 
-The force-with-lease (versus just force) checks whether you might overwrite other commits on your branch before forcing.  The other option is to work on a new branch and pull changes from the old branch to the new branch.  Neither are ideal.  
+The force-with-lease (versus just force) checks whether you might overwrite non-local commits on your branch before forcing.  This prevents remote commits by others from being lost.  The other option is to switch to a new branch and pull changes from the old branch,
+
+      git checkout master
+      git remote add upstream https://github.com/CICE-Consortium/CICE
+      git pull upstream master 
+      git push origin master 
+      git branch newbranch
+      git checkout newbranch
+      git pull origin oldbranch
+
+Now you have a new branch based on the current Consortium master with changes from the old branch.
+
 Pull and rebase can result in conflicts.  If there are conflicts, they will be reported and you will have to fix them to continue.  With pull, you will have to resolve the conflicts and commit manually.  With rebase, you will have to resolve the conflicts and use git rebase --continue.  See the git documentation for more details about handling conflicts.  In summary, to rebase a branch with conflicts, do the following
 
       git clone https://github.com/username/CICE --recursive
       git checkout branchname
       git remote add upstream https://github.com/CICE-Consortium/CICE
-      git fetch upstream master
-      git rebase upstream/master
+      git pull --rebase upstream master (or git fetch upstream master; git rebase upstream/master)
       > hand edit conflicts
       git rebase --continue
       git push --force-with-least origin branchname
@@ -362,15 +372,17 @@ Your branch will now be rebased to the current master and your pull request shou
 
 ### Rejected pushes
 
-If you get a "rejected" error message when you try to push, it's probably because your local repository is behind the remote repository.  The fix is to update your local repository by doing
+If you get a "rejected" error message when you try to push, it's probably because someone else pushed a change onto your remote repository and your local repository is currently behind.  The fix is to update your local repository by doing
 
       git pull origin branchname
+
+This could result in a conflict that would have to be resolved.
 
 ### Push to a different repository
 
 As noted above, you can pull from a repository that is different from your origin repository.  You can also push to a different remote repository.  If you wanted to copy someone else's branch onto your fork, you could
 
-     git clone https://github.com/anotheruser/CICE.branchname
+     git clone https://github.com/anotheruser/CICE CICE.branchname
      cd CICE.branchname
      git checkout branchname
      git add myrepo https://github.com/myusername/CICE
