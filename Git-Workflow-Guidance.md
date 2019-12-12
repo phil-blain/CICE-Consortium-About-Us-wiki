@@ -2,7 +2,7 @@
 [**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
 * General Recommendations
 * Overview 
-[**Local Initialization**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-initialization)   
+
 [**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-github)
 * Setup a Github Account
 * Setting up Forks    
