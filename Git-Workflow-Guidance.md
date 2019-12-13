@@ -339,7 +339,7 @@ Is the same as
 
 ### Update fork master from Consortium master
 
-As noted earlier in this document, if you want to update your master fork to recent changes in the CICE-Consortium master, you would pull from the consortium and push to your fork as follows
+As noted [earlier in this document](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-github-fork-master), if you want to update your master fork to recent changes in the CICE-Consortium master, you would pull from the consortium and push to your fork as follows
 
       git checkout master
       git remote add upstream https://github.com/CICE-Consortium/CICE
