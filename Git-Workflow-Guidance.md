@@ -26,7 +26,7 @@
   * Rejected pushes
   * Push to a different repository
 
-[**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
+[**Pull Request (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-request)
 * PR Overview
 * Refreshing your PR
 
@@ -401,7 +401,7 @@ As noted above, you can pull from a repository that is different from your origi
 This is useful in cases where you want to contribute to a remote repository but you don't have write access.  You can push local commits to the branch to your remote repository (your fork) and then issue PRs to propose merges to the other user's repository.
 
 
-# Pull Requests
+# Pull Request
 
 ## PR Overview
 
