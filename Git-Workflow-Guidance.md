@@ -7,8 +7,8 @@
 * [Setup a Github Account](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setup-a-github-account)
 * [Local Git Initialization](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-git-initialization)
 * [Setting up Github Forks](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setting-up-github-forks)
-* Updating your Github Fork Master](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#updating-your-github-fork-master)
-* Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
+* [Updating your Github Fork Master](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#updating-your-github-fork-master)
+* [Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
 * Creating a Sandbox (clone)    
