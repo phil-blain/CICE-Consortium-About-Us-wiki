@@ -45,7 +45,7 @@
 * Collaborating on Development
 
 
-[**Appendix A:** Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands--git-command)   
+[**Appendix A:** Table of useful git commands](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands)   
 [**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-b-best-practices)   
 [**Appendix C:** Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-c-terms)   
 
@@ -639,7 +639,9 @@ Collaboration on model development features is encouraged.  When collaborating, 
 
 ***
 
-# Appendix A: Table of Useful git Commands  (git [command])
+# Appendix A: Table of Useful git Commands
+
+These commands are generally invoked by `git [command]` with some options.
 
  | [command] | Description |
  | --------- | ----------- |
