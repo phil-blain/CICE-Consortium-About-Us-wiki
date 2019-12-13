@@ -146,6 +146,7 @@ In general, your forks are public, anyone can read, but nobody can write.  You c
 
 ## Clone 
 **(checkout or creating a Sandbox)**
+
 To create the initial sandbox, use git clone.
 
       git clone https://github.com/username/CICE --recursive
