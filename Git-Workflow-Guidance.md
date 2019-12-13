@@ -68,7 +68,7 @@ Always branch from master unless you specifically want changes from another bran
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#update-fork-master-from-consortium-master) using the Consortium master as your upstream source._
+* _Before a Pull Request, [update your branch](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#update-a-branch-from-consortium-master) using the Consortium master as your upstream source._
 
 * _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and include test information in the PR template._
 
