@@ -460,7 +460,7 @@ To summarize, a typical workflow for development on a branch would be
 
 ## Overview
 
-Icepack is a submodule of CICE.  Submodules are pointers to specific versions in an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  When Icepack is cloned by CICE as a submodule, a specific version of Icepack from the Consortium repository will be downloaded.  Without going into too much detail, Icepack will in a detached HEAD state which means it us a fixed version and cannot be modified easily.  
+Icepack is a submodule of CICE.  Submodules are pointers to specific versions in an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  When Icepack is cloned by CICE as a submodule, a specific version of Icepack will be downloaded.  Without going into too much detail, Icepack will in a detached HEAD state which means it is a fixed version and cannot be modified easily.  
 
       git clone https://github.com/username/cice --recursive
       cd cice/icepack
@@ -475,7 +475,7 @@ In this case, the CICE has downloaded Icepack hash is 192fbaa from the CICE-Cons
 
 ## Update Icepack in CICE
 
-If all you want to do is change the Icepack version in CICE in the Consortium repository, then you would create a branch, switch the Icepack version, `git add` Icepack in CICE, commit, and issue a pull request,
+If all you want to do is change the Icepack version in CICE in the Consortium repository, then you would create a branch, switch the Icepack version, git add Icepack in CICE, commit, and issue a pull request,
 
       git clone https://github.com/username/CICE cice.mybranch 
       cd cice.mybranch
@@ -495,6 +495,8 @@ If all you want to do is change the Icepack version in CICE in the Consortium re
       git push origin mybranch
       (create PR for CICE)
 
+This is the standard procedure for updating the Icepack submodule in CICE.
+
 ## Resync Icepack in CICE
 
 As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-rebase), you will want to update the Icepack submodule whenever you change branches or pull from another repository or branch.  You can do that with
@@ -502,7 +504,7 @@ As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workfl
       git submodule sync
       git submodule update --init
 
-**NOTE: if you have cloned your own version of Icepack in CICE, do NOT do this as you may lose any local changes.**
+**NOTE: if you have cloned your own version of Icepack in CICE, do NOT do this as you may lose local changes.**
 
 ## Development of Icepack under CICE
 
@@ -520,19 +522,19 @@ You now have a copy of Icepack from your personal fork on a new branch in your C
 
 ## Develop CICE and Icepack concurrently
 
-There are a number of different ways to handle development of Icepack and CICE concurrently.  What we strong recommend is that you checkout CICE and Icepack from your fork, and develop each within a single sandbox but as independent repositories.  Eventually, you'll do a PR for Icepack.  Once that is accepted, you can update the submodule in CICE (Update-Icepack-in-CICE) and create a CICE PR.  The basic steps are
+There are a number of different ways to handle development of Icepack and CICE concurrently.  What we strongly recommend is that you checkout CICE and Icepack from your fork and develop each within a single sandbox but as independent repositories.  Eventually, you'll do a PR for Icepack.  Once that is accepted, you can [update the submodule in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) and create a CICE PR.  The basic steps are
 
-1.  clone CICE from user fork
-1.  update CICE fork master to Consortium version
+1.  clone CICE from user repository (fork)
+1.  update CICE repository master to Consortium version if needed
 1.  create and checkout a CICE branch
 1.  remove/move Icepack
-1.  clone Icepack from user fork
-1.  update Icepack fork master to Consortium version
+1.  clone Icepack from user repository (fork)
+1.  update Icepack repository master to Consortium version if needed
 1.  create and checkout an Icepack branch
-1.  develop/commit/push Icepack changes to Icepack remote repository on the branch and develop/commit/push CICE changes to CICE remote repository on branch.  Do not update CICE submodule
-1.  execute a PR for Icepack to merge changes to Consortium Icepack master
-1.  update CICE branch submodule to point to the appropriate Consortium Icepack version and commit/push that change to the CICE branch
-1.  execute PR for CICE to merge changes to Consortium CICE master including updating the pointer to the Icepack version
+1.  develop/commit/push Icepack changes to the Icepack remote repository on the Icepack branch.  Develop/commit/push CICE changes to CICE remote repository on the CICE branch.  **Do not update the Icepack submodule in CICE**
+1.  execute a PR for the Icepack branch to merge changes to the Consortium repository
+1.  update the CICE branch submodule to point to the appropriate Consortium Icepack version and commit/push that change to the CICE branch
+1.  execute a PR for the CICE branch to merge changes to the Consortium repository including the update to the Icepack submodule version
 
 By using this approach, the Icepack submodule in CICE is updated only as final step, using an existing version Icepack from the Consortium repository.  The above steps would look like
 
@@ -541,20 +543,20 @@ By using this approach, the Icepack submodule in CICE is updated only as final s
       (update to Consortium CICE master if needed)
       git branch mybranch
       git checkout mybranch
-      mv icepack icepack.orig                                  # put aside the original version of icepack
-      git clone https://github.com/username/icepack icepack    # check out a new version of icepack from your fork and drop it into your icepack directory in your sandbox
-      cd icepack
+      mv icepack icepack.orig                              # put aside the original version of icepack
+      git clone https://github.com/username/Icepack        # check out a new version of icepack from your fork and drop it into your icepack directory in your sandbox
+      cd Icepack
       (update to Consortium Icepack master if needed)
       git branch icebranch
       git checkout icebranch
       (modify icepack and cice, test icepack and cice, add/commit/push icepack and cice, as separate repositories)
-      git push origin icebranch                                # push all changes to Icepack repository
+      git push origin icebranch                            # push all changes to Icepack repository
       (create a PR for icebranch and wait for the Icepack PR to be done)
 
       cd cice.mybranch
-      mv icepack icepack.new                                   # put aside your working copy of icepack
+      mv icepack icepack.new                               # put aside your working copy of icepack
       git clone https://github.com/cice-consortium/icepack icepack      # check out the consortium icepack master
-      diff -r icepack icepack.new                              # just make sure it looks OK
+      diff -r icepack icepack.new                          # just make sure it looks OK
       (test CICE)
       git add icepack
       git commit -m "update icepack version"
@@ -565,7 +567,7 @@ Basically, you are treating CICE and Icepack as separate repositories until the 
 
 ## Switch the Icepack Submodule Repository
 
-Two things define a specific version of a submodule, the repository of the submodule and the hash.  These two parameters are defined separately, and it's quite possible to end up with a repository and hash that are inconsistent.  The Icepack submodule in CICE is generally going to point to the CICE-Consortium Repository.  Section (Update-Icepack-in-CICE) documents how to update the Icepack submodule version (hash) in CICE.  This section will document how to change the submodule repository.  If you follow the recommended workflow, **you should NEVER do this**.  But for completeness, we include it in the documentation.  To update the submodule repository, you will execute some git config commands,
+Two things define a specific version of a submodule, the repository of the submodule and the version (hash).  These two parameters are defined separately, and it's quite possible to end up with a repository and hash that are inconsistent.  The Icepack submodule in CICE is generally going to point to the CICE-Consortium Repository.  The [update Icepack in CICE section](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) documents how to update the Icepack submodule version (hash) in CICE.  This section will document how to change the submodule repository.  If you follow the recommended workflow, **you should NEVER do this**.  But for completeness, we include it in the documentation.  To update the submodule repository, you will execute some git config commands,
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
@@ -586,7 +588,7 @@ Two things define a specific version of a submodule, the repository of the submo
       git commit -m "switch icepack to different repository and hash"
       git push origin mybranch
 
-Again, this should be avoided in most cases.  We recommend following (Develop-CICE-and-Icepack-concurrently) and treating the two repositories independently until the Icepack submodule in CICE can be easily updated from a version on the Consortium master.
+Again, this should be avoided in most cases.  We recommend [Developing CICE and Icepack concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Develop-CICE-and-Icepack-concurrently) and treating the two repositories independently until the Icepack submodule in CICE can be easily updated from a version on the Consortium master.
 
 ## Completely Remove and Replace the Icepack Submodule in CICE
 
