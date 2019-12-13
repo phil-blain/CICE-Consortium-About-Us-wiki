@@ -68,7 +68,7 @@ Always branch from master unless you specifically want changes from another bran
 Use different sandboxes for different branches.
 _Never push changes to your fork master, only to branches._
 
-* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#updating-your-fork-master) using the Consortium master as your upstream source._
+* _Before a Pull Request, [update your fork](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#update-fork-master-from-consortium-master) using the Consortium master as your upstream source._
 
 * _Before a Pull Request run the appropriate tests (see [Resource Guide](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index#model-testing) for details) and include test information in the PR template._
 
@@ -221,7 +221,7 @@ You will usually branch from the head of the consortium master, and this is good
 
 The first 5 lines above just update master in your fork with the consortium version.  Then the branch is created from the head of master, it is checked out, and then the submodule is checked out.  
 
-We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository.  **NOTE: When you execute “git checkout”, you will switch branches and may lose local modifications that have not been committed so BE CAREFUL with checkout.** You can use “git stash” to save local changes and then recover them.
+We recommend that you give your branches meaningful names, because you likely will create and use many of them, and this helps identify pull requests.  E.g. for a bug fix, you might use something like “bugfix_thermo_conductivity.”  We recommend you work only on branches in your fork and that master is consistent with the CICE-Consortium repository.  **NOTE: When you execute “git checkout”, you will switch branches and may lose local modifications that have not been committed so BE CAREFUL with checkout.** You can use “git stash” to save local changes and then recover them later.
 
 Branches in git are generally not something that should last forever, and they can be used liberally.  As a general rule, pull requests will be done to the Consortium from branches in your fork, and we recommend that each branch be used for a single pull request.  In other words, once a pull request is issued, stop development on that branch and create a new branch.  To branch from a working branch
 
