@@ -27,8 +27,8 @@
   * Push to a different repository
 
 [**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
-* Overview
-* Refreshing your PR
+* [PR Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#PR-overview)
+* [Refreshing your PR](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#refreshing-your-PR)
 
 [**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
 
