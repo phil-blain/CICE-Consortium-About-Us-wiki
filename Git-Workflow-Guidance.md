@@ -637,7 +637,7 @@ It's easy to accidently update the Icepack submodule in CICE when you don't mean
 
 We suggest avoiding `git commit -a` if there are Icepack changes.  Use `git add` and `git commit` to explicitly add the set of changes that are desired.  You can use `git add` on a directory to add everything under that directory to speed up the process.
 
-If you really get stuck, create a new sandbox and start again.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.   Also, feel free to contact folks in the Consortium thru the bulletin board for help.  The bulletin board is linked on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
+If the submodule is problematic, just checkout a new copy of Icepack, continue to work, and avoid submodule commands.  The CICE submodule setting can be fixed as a separate step.  If you really get stuck, create a new sandbox and start again.  Do not delete the old sandbox in case you need to recover anything.  You should be able to create a useful sandbox and then carefully step forward using the appropriate process.   Finally, feel free to contact folks in the Consortium thru the bulletin board for help.  The bulletin board is linked on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
 
 ## Problems with Pull Requests
 
@@ -645,6 +645,7 @@ Sometimes a pull request will have conflicts with the current master.  Those con
 
 Sometimes a pull request will reflect more than just the changes you've committed.  That can occur when the history of the branch and the history of the master become intertwined.  Git creates differences by looking at the git history, not at the code differences.  There are a few ways to correct this.  The method we recommend is to create a new branch off the current master, pull the changes from the prior branch to the new branch, then issue a new PR.  These steps are documented in the section on how to [refresh your PR](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance#refreshing-your-pr)
 
+Finally, if there are problems or questions with a PR, a discussion will probably occur thru the conversation and review features in the PR and help can be provided thru that feature.
 
 ***
 
@@ -688,6 +689,12 @@ will indicate which branch your sandbox is on and the changes that have been mad
 Diff shows code changes.
 
       git diff
+
+If you also want to see the submodule diffs, use
+
+      git diff --submodule
+
+but it's important to remember that a commit to CICE will NOT commit the Icepack changes to Icepack.
 
 #### Log
 Log summarizes the commits and pushes in your sandbox up to the current state.  The first entry will provide the id of the current model version.
