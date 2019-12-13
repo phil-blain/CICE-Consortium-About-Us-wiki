@@ -35,20 +35,15 @@
 * [Update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#update-icepack-in-cice)
 * [Resync Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#resync-icepack-in-cice)
 * [Development of Icepack under CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#development-of-icepack-under-cice)
-* [Develop Icepack and CICE Concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#develop-icepack-and-cice-concurrently)
+* [Develop Icepack and CICE Concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#develop-cice-and-icepack-concurrently)
 * [Switch the Icepack Submodule Repository](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#switch-the-icepack-submodule-repository)
 * [Remove and Replace the Icepack Submodule](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#remove-and-replace-the-icepack-submodule)
 
-* Update the Icepack Version in CICE    
-* Completely Remove and Replace the Icepack Submodule in CICE    
+[**Final Notes**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#final-notes)
+* [Overall Workflow](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
+* [Submodule Problems](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodule-problems)
+* [Collaborating on Development](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#collaborating-on-development)
 
-[**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
-
-
-[**Information**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#information)   
-* Status    
-* Diff    
-* Log    
 
 [**Appendix A:** Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands--git-command)   
 [**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-b-best-practices)   
@@ -642,38 +637,6 @@ Collaboration on model development features is encouraged.  When collaborating, 
 * If working collaboratively on both CICE and Icepack at the same time, be particularly careful to communicate changes.  Try to avoid committing changes to the Icepack submodule in CICE unless it's well thought out.
 
 
-# Information
-
-There are many git commands to diagnose the status of your sandbox.
-
-## Status
-Status provides a summary of the status of your sandbox.  
-
-      git status
-
-will indicate which branch your sandbox is on and the changes that have been made.  This should be used often during development and before commits and pushes.
-
-## Diff
-Diff shows code changes.
-
-      git diff
-
-## Log
-Log summarizes the commits and pushes in your sandbox up to the current state.  The first entry will provide the id of the current model version.
-
-      git log
-
-If you want a useful graphical summary of the log, try
-
-      git log --graph --oneline --decorate
-
-## Remote
-Remote summarizes the remote repositories setup locally.
-
-      git remote -v
-
-`git remote add` is used to add name new remote repositories for use locally.
-
 ***
 
 # Appendix A: Table of Useful git Commands  (git [command])
@@ -698,6 +661,39 @@ Remote summarizes the remote repositories setup locally.
  | submodule | 	Many options, useful for working with submodules |
  | tag -a | Create a tag or list tags |
  | update | Pull updates into the local sandbox |
+
+## Further Information
+
+There are many git commands to diagnose the status of your sandbox.
+
+### Status
+Status provides a summary of the status of your sandbox.  
+
+      git status
+
+will indicate which branch your sandbox is on and the changes that have been made.  This should be used often during development and before commits and pushes.
+
+### Diff
+Diff shows code changes.
+
+      git diff
+
+### Log
+Log summarizes the commits and pushes in your sandbox up to the current state.  The first entry will provide the id of the current model version.
+
+      git log
+
+If you want a useful graphical summary of the log, try
+
+      git log --graph --oneline --decorate
+
+### Remote
+Remote summarizes the remote repositories setup locally.
+
+      git remote -v
+
+`git remote add` is used to add name new remote repositories for use locally.
+
 
 # Appendix B: Best Practices
 * Create a fresh clone and branch for each batch of changes that will be submitted in separate PRs, if a previous PR might not be executed before work begins on the next one.
