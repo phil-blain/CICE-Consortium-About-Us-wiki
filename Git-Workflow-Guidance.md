@@ -429,33 +429,6 @@ There are times where a PR is conflicting with the destination code, where the P
      git push origin feature2
      (create pull request for feature2 branch)
 
-# Overall Workflow
-
-To summarize, a typical workflow for development on a branch would be
-
-      git clone https://github.com/username/CICE cice.mybranch --recursive
-      cd cice.mybranch
-      git remote add upstream https://github.com/cice-consortium/CICE
-      git pull upstream master
-      git push origin master
-      git submodule update
-      git branch mybranch
-      git checkout mybranch
-         (develop and test)
-      git status
-      git add file1 file2     
-      git rm file3
-      git commit -m “developed something and tested on mybranch”
-         (develop and test)
-      git add file4
-      git commit -m "updated something again"
-      git pull --rebase upstream master
-         (test)
-      git commit -m "rebase to master"
-      git push origin mybranch
-      (create the Pull Request)
-
-
 # Submodules
 
 ## Overview
@@ -607,6 +580,54 @@ This is not something you should normally do, but it's another way to change the
       cd ../
       git add icepack
       git commit -m “switch to Icepack version xyz”
+
+# Final Notes
+
+## Overall Workflow
+
+To summarize, a typical workflow for development on a branch would be
+
+      git clone https://github.com/username/CICE cice.mybranch --recursive
+      cd cice.mybranch
+      git remote add upstream https://github.com/cice-consortium/CICE
+      git pull upstream master
+      git push origin master
+      git submodule update
+      git branch mybranch
+      git checkout mybranch
+         (develop and test)
+      git status
+      git add file1 file2     
+      git rm file3
+      git commit -m “developed something and tested on mybranch”
+         (develop and test)
+      git add file4
+      git commit -m "updated something again"
+      git pull --rebase upstream master
+         (test)
+      git commit -m "rebase to master"
+      git push origin mybranch
+      (create the Pull Request)
+
+## Submodule Problems
+
+It's easy to accidently update the Icepack submodule in CICE when you don't mean to.  If Icepack has been modified, updated, or switched in a CICE sandbox, that will show up as an Icepack difference in `git status`.  If you do `git commit -a` you will automatically change the Icepack submodule hash in CICE.  To undo that, the recommended procedure would be to formally [update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) to the correct version and then continue working.  That might involve moving your working Icepack directory, checking out a version of Icepack from the Consortium, switching to the correct version (hash), and then committing Icepack to CICE.  You can then move your working version of Icepack back into your sandbox.
+
+The other thing is to avoid using `git commit -a` if there are Icepack changes.  Use `git add` and `git commit` to explicitly add the set of changes that are desired.
+
+If you really get stuck, you can try to start with a new sandbox.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.
+
+## Collaborating on Development
+
+Collaboration on model development features is encouraged.  When collaborating, there are some things to consider
+
+* Communicate regularly regarding working branches, priorities, and pushes.
+* Define a prime repository for the work to exist and either provide write access to others or PR changes from other working repositories to the prime repository.
+* Use `git pull prime_repo branchname` frequently to ensure your local repository is up to date with the prime repository.
+* If a push is rejected, it's likely because your local repository is behind the prime repository.  Use `git pull prime_repo branchname` to fix this.
+* Conflicts can arise, you'll need to resolve them occasionally.
+* If working collaboratively on both CICE and Icepack at the same time, be particularly careful to communicate changes.  Try to avoid committing changes to the Icepack submodule in CICE unless it's well thought out.
+
 
 # Information
 
