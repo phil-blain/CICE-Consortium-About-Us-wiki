@@ -664,23 +664,23 @@ These commands are generally invoked by `git [command]` with some options.
  | tag -a | Create a tag or list tags |
  | update | Pull updates into the local sandbox |
 
-## Further Information
+### Further Information
 
 There are many git commands to diagnose the status of your sandbox.
 
-### Status
+#### Status
 Status provides a summary of the status of your sandbox.  
 
       git status
 
 will indicate which branch your sandbox is on and the changes that have been made.  This should be used often during development and before commits and pushes.
 
-### Diff
+#### Diff
 Diff shows code changes.
 
       git diff
 
-### Log
+#### Log
 Log summarizes the commits and pushes in your sandbox up to the current state.  The first entry will provide the id of the current model version.
 
       git log
@@ -689,13 +689,14 @@ If you want a useful graphical summary of the log, try
 
       git log --graph --oneline --decorate
 
-### Remote
+#### Remote
 Remote summarizes the remote repositories setup locally.
 
       git remote -v
 
 `git remote add` is used to add name new remote repositories for use locally.
 
+***
 
 # Appendix B: Best Practices
 * Create a fresh clone and branch for each batch of changes that will be submitted in separate PRs, if a previous PR might not be executed before work begins on the next one.
@@ -704,6 +705,8 @@ Remote summarizes the remote repositories setup locally.
 * Use “git status” often.
 * Use “git remote -v” often.
 * Always commit with a reasonably detailed and clear commit message.
+
+***
 
 # Appendix C: Terms
 _Branch_ - A pointer to a parallel development in a repository    
