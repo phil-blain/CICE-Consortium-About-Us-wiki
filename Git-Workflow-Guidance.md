@@ -402,7 +402,7 @@ This is useful in cases where you want to contribute to a remote repository but 
 
 # Pull Requests
 
-## Overview
+## PR Overview
 
 All modifications to the CICE-Consortium repositories will have to be done via a Pull Request (PR) from a fork.  These pull requests will be formally reviewed and tested before being accepted and pulled into the Consortium repository.  In general, the recommended process is to create a branch in a fork, develop and test, keep up to date with the CICE-Consortium master, document, and then when ready execute a pull request to the Consortium repository.
 
