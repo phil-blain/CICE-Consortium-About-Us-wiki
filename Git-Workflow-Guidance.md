@@ -1,7 +1,7 @@
 # Table of Contents
 [**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
-* [**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#general-recommendations)
-* [**Git Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-overview) 
+* [General Recommendations](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#general-recommendations)
+* [Git Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-overview) 
 
 [**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-github)
 * [Setup a Github Account](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setup-a-github-account)
