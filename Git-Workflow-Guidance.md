@@ -30,14 +30,20 @@
 * [PR Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#PR-overview)
 * [Refreshing your PR](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#refreshing-your-PR)
 
-[**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
-
 [**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodules)   
-* Overview    
-* Modify Icepack code inside CICE    
-* Modify and Commit Icepack Changes    
+* [Submodule Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodule-overview)
+* [Update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#update-icepack-in-cice)
+* [Resync Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#resync-icepack-in-cice)
+* [Development of Icepack under CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#development-of-icepack-under-cice)
+* [Develop Icepack and CICE Concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#develop-icepack-and-cice-concurrently)
+* [Switch the Icepack Submodule Repository](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#switch-the-icepack-submodule-repository)
+* [Remove and Replace the Icepack Submodule](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#remove-and-replace-the-icepack-submodule)
+
 * Update the Icepack Version in CICE    
 * Completely Remove and Replace the Icepack Submodule in CICE    
+
+[**Overall Workflow**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
+
 
 [**Information**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#information)   
 * Status    
@@ -438,7 +444,7 @@ There are times where a PR is conflicting with the destination code, where the P
 
 # Submodules
 
-## Overview
+## Submodule Overview
 
 Icepack is a submodule of CICE.  Submodules are pointers to specific versions in an external repository.  Working with Icepack in CICE is like working with a repository in a repository.  When Icepack is cloned by CICE as a submodule, a specific version of Icepack will be downloaded.  Without going into too much detail, Icepack will in a detached HEAD state which means it is a fixed version and cannot be modified easily.  
 
@@ -500,7 +506,7 @@ When you checkout CICE, a specific version of Icepack will also be cloned.  This
 
 You now have a copy of Icepack from your personal fork on a new branch in your CICE sandbox.  You can develop, test, commit, and push Icepack changes.  You can also test CICE in this sandbox.  Eventually, you can create an Icepack Pull Request.  In this mode of development, you will probably not be committing any changes to the CICE repository nor should you worry about anything related to the submodule in CICE.  You are just developing Icepack within a CICE sandbox.
 
-## Develop CICE and Icepack concurrently
+## Develop CICE and Icepack Concurrently
 
 There are a number of different ways to handle development of Icepack and CICE concurrently.  What we strongly recommend is that you checkout CICE and Icepack from your fork and develop each within a single sandbox but as independent repositories.  Eventually, you'll do a PR for Icepack.  Once that is accepted, you can [update the submodule in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) and create a CICE PR.  The basic steps are
 
@@ -572,7 +578,7 @@ The Icepack submodule in CICE is generally going to point to the CICE-Consortium
 
 Again, this should be avoided in most cases.  We recommend [Developing CICE and Icepack concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Develop-CICE-and-Icepack-concurrently) and treating the two repositories independently until the Icepack submodule in CICE can be easily updated from a version on the Consortium master.
 
-## Completely Remove and Replace the Icepack Submodule in CICE
+## Remove and Replace the Icepack Submodule
 
 This is not something you should normally do, but it's another way to change the Icepack submodule repository,
 
