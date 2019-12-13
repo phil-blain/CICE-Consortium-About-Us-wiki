@@ -499,7 +499,7 @@ This is the standard procedure for updating the Icepack submodule in CICE.
 
 ## Resync Icepack in CICE
 
-As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-rebase), you will want to update the Icepack submodule whenever you change branches or pull from another repository or branch.  You can do that with
+As indicated in the [pull and rebase section](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-rebase), you will want to update the Icepack submodule whenever you change branches or pull from another repository or branch.  You can do that with
 
       git submodule sync
       git submodule update --init
@@ -508,17 +508,17 @@ As indicated [above](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workfl
 
 ## Development of Icepack under CICE
 
-When you checkout CICE, you'll generally checkout the Icepack submodule as well.  As noted above, the origin of that version is probably from the CICE-Consortium and Icepack will be in a detached HEAD state.  It can be convenient to develop Icepack changes from a CICE sandbox to facilitate testing within CICE.  You can clone a separate version of Icepack to sit within CICE easily,
+When you checkout CICE, a specific version of Icepack will also be cloned.  This version is not ready for modifications, and it can be convenient to develop Icepack changes from a CICE sandbox to facilitate testing within CICE.  You can clone a working version of Icepack to sit within CICE easily as follows,
 
-      git clone https://github.com/username/CICE --recursive CICE.icepack.feature
+      git clone https://github.com/username/CICE --recursive CICE.icepack.feature   # checkout CICE
       cd CICE.icepack.feature
-      mv Icepack Icepack.00
-      git clone https://github.com/username/Icepack
+      mv Icepack Icepack.00                            # move the default Icepack
+      git clone https://github.com/username/Icepack    # clone Icepack separately
       cd Icepack
       git branch feature
       git checkout feature
 
-You now have a copy of Icepack from your personal fork on a new branch in your CICE sandbox.  You can develop, test, commit, and push Icepack changes.  You can test Icepack as well as CICE in this sandbox.  And eventually, you can create an Icepack Pull Request.  In this case, you will probably not be commiting any changes to the CICE repository nor should you worry about anything related to the submodule in CICE.  You are just developing Icepack within a CICE sandbox.
+You now have a copy of Icepack from your personal fork on a new branch in your CICE sandbox.  You can develop, test, commit, and push Icepack changes.  You can also test CICE in this sandbox.  Eventually, you can create an Icepack Pull Request.  In this mode of development, you will probably not be committing any changes to the CICE repository nor should you worry about anything related to the submodule in CICE.  You are just developing Icepack within a CICE sandbox.
 
 ## Develop CICE and Icepack concurrently
 
@@ -536,7 +536,7 @@ There are a number of different ways to handle development of Icepack and CICE c
 1.  update the CICE branch submodule to point to the appropriate Consortium Icepack version and commit/push that change to the CICE branch
 1.  execute a PR for the CICE branch to merge changes to the Consortium repository including the update to the Icepack submodule version
 
-By using this approach, the Icepack submodule in CICE is updated only as final step, using an existing version Icepack from the Consortium repository.  The above steps would look like
+By using this approach, the Icepack submodule in CICE is updated only as final step using an existing version of Icepack from the Consortium repository.  The above steps would look like
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
@@ -567,7 +567,9 @@ Basically, you are treating CICE and Icepack as separate repositories until the 
 
 ## Switch the Icepack Submodule Repository
 
-Two things define a specific version of a submodule, the repository of the submodule and the version (hash).  These two parameters are defined separately, and it's quite possible to end up with a repository and hash that are inconsistent.  The Icepack submodule in CICE is generally going to point to the CICE-Consortium Repository.  The [update Icepack in CICE section](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) documents how to update the Icepack submodule version (hash) in CICE.  This section will document how to change the submodule repository.  If you follow the recommended workflow, **you should NEVER do this**.  But for completeness, we include it in the documentation.  To update the submodule repository, you will execute some git config commands,
+Two things define a specific version of a submodule, the repository of the submodule and the version (hash).  These two parameters are defined separately, and it's quite possible to end up with a repository and hash that are inconsistent.  In that case, the Icepack submodule won't be valid.  
+
+The Icepack submodule in CICE is generally going to point to the CICE-Consortium Repository.  The [update Icepack in CICE section](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) documents how to update the Icepack submodule version (hash) in CICE.  This section will document how to change the submodule repository.  If you follow the recommended workflow, **you should NEVER do this**.  But for completeness, we include it in the documentation.  To update the submodule repository, you will execute some git config commands,
 
       git clone https://github.com/username/CICE cice.mybranch --recursive
       cd cice.mybranch
@@ -606,8 +608,6 @@ This is not something you should normally do, but it's another way to change the
       git add icepack
       git commit -m “switch to Icepack version xyz”
 
-and now you can push the change to CICE.  
-
 # Information
 
 There are many git commands to diagnose the status of your sandbox.
@@ -633,6 +633,12 @@ If you want a useful graphical summary of the log, try
 
       git log --graph --oneline --decorate
 
+## Remote
+Remote summarizes the remote repositories setup locally.
+
+      git remote -v
+
+`git remote add` is used to add name new remote repositories for use locally.
 
 ***
 
@@ -651,7 +657,7 @@ If you want a useful graphical summary of the log, try
  | merge | Merge changes from local repo to sandbox |
  | pull | Download changes to local sandbox (== fetch + merge) |
  | push | Upload changes |
- | rebase | like pull but updates the base version then replays local changes |
+ | rebase | like pull but updates the base version then replays local changes, same as pull --rebase |
  | remote [-v] [add] | 	Lists/Sets remote repositories in a sandbox |
  | rm | Removes a file from the repo |
  | status    | Provides summary of status of sandbox |
@@ -674,6 +680,7 @@ _Commit_ - When you copy changes into your local repository
 _Clone_ - When you copy a github repository into a local sandbox    
 _Fetch_ - When you update your local repository from an external repository    
 _Fork_ - When you copy a repository within github from one github project to another    
+_Hash_ - Particular version in git defined by a string of random characters generated by git
 _Master_ - The main or trunk branch in a github repository    
 _Merge_ - Merging changes from your local repository to your sandbox    
 _Pull_ - When you copy changes out of an external repository to your local repository and merge those changes into your local sandbox.  This is a combination of fetch and merge    
