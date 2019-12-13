@@ -325,7 +325,7 @@ When you pull, you are just integrating local and remote commits on a commit-by-
 
       git pull --rebase origin branchname
 
-A pull is the same thing as a fetch and a merge.  There are many cases where it’s better to do a fetch, review the changes (git diff), and then do a merge.  So
+A pull is the same thing as a fetch and a merge.  There are some cases where it may be better to do a fetch, review the changes (git diff), and then do a merge.  So
 
       git pull origin branchname
 
@@ -619,14 +619,6 @@ To summarize, a typical workflow for development on a branch would be
       git push origin mybranch
       (create the Pull Request)
 
-## Submodule Problems
-
-It's easy to accidently update the Icepack submodule in CICE when you don't mean to.  If Icepack has been modified, updated, or switched in a CICE sandbox, that will show up as an Icepack difference in `git status`.  If you do `git commit -a` you will automatically change the Icepack submodule hash in CICE.  To undo that, the recommended procedure would be to formally [update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) to the correct version and then continue working.  That might involve moving your working Icepack directory, checking out a version of Icepack from the Consortium, switching to the correct version (hash), and then committing Icepack to CICE.  You can then move your working version of Icepack back into your sandbox.
-
-The other thing is to avoid using `git commit -a` if there are Icepack changes.  Use `git add` and `git commit` to explicitly add the set of changes that are desired.
-
-If you really get stuck, you can try to start with a new sandbox.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.   Also, feel free to contact folks in the Consortium thru the bulletin board for help.  The bulletin board is linked on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
-
 ## Collaborating on Development
 
 Collaboration on model development features is encouraged.  When collaborating, there are some things to consider
@@ -637,6 +629,20 @@ Collaboration on model development features is encouraged.  When collaborating, 
 * If a push is rejected, it's likely because your local repository is behind the prime repository.  Use `git pull prime_repo branchname` to fix this.
 * Conflicts can arise, you'll need to resolve them occasionally.
 * If working collaboratively on both CICE and Icepack at the same time, be particularly careful to communicate changes.  Try to avoid committing changes to the Icepack submodule in CICE unless it's well thought out.
+
+## Submodule Problems
+
+It's easy to accidently update the Icepack submodule in CICE when you don't mean to.  If Icepack has been modified, updated, or switched in a CICE sandbox, that will show up as an Icepack difference in `git status`.  If you do `git commit -a` you will automatically change the Icepack submodule hash in CICE.  To undo that, the recommended procedure would be to formally [update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Update-Icepack-in-CICE) to the correct version and then continue working.  That might involve moving your working Icepack directory, checking out a version of Icepack from the Consortium, switching to the correct version (hash), and then committing Icepack to CICE.  You can then move your working version of Icepack back into your sandbox.
+
+The other thing is to avoid using `git commit -a` if there are Icepack changes.  Use `git add` and `git commit` to explicitly add the set of changes that are desired.
+
+If you really get stuck, you can try to start with a new sandbox.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.   Also, feel free to contact folks in the Consortium thru the bulletin board for help.  The bulletin board is linked on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
+
+## Problems with Pull Requests
+
+Sometimes a pull request will have conflicts with the current master.  Those conflicts will need to be resolved before the pull request can be executed.  In those cases, the development branch should be updated to any changes from the Consortium Master.  That process is documented in the section related to [updating a branch from the Consortium master](https://github.com/CICE-Consortium/About-Us/wiki/update-a-branch-from-consortium-master)
+
+Sometimes a pull request will reflect more than just the changes you've committed.  That can occur when the history of the branch and the history of the master become intertwined.  Git creates differences by looking at the git history, not at the code differences.  There are a few ways to correct this.  The method we recommend is to create a new branch off the current master, pull the changes from the prior branch to the new branch, then issue a new PR.  These steps are documented in the section on how to [refresh your PR](https://github.com/CICE-Consortium/About-Us/wiki/refreshing-your-pr)
 
 
 ***
