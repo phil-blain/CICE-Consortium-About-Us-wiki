@@ -1,14 +1,14 @@
 # Table of Contents
 [**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
 * [**General Recommendations**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#general-recommendations)
-* [**Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overview) 
+* [**Git Overview**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-overview) 
 
 [**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-github)
-* Setup a Github Account
-* Setting up Forks    
-* Local Git Initialization
-* Updating your Fork Master
-* Collaborators    
+* [Setup a Github Account](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setup-a-github-account)
+* [Local Git Initialization](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-git-initialization)
+* [Setting up Github Forks](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setting-up-github-forks)
+* Updating your Github Fork Master](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#updating-your-github-fork-master)
+* Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
 * Creating a Sandbox (clone)    
@@ -72,7 +72,7 @@ _Use ‘git status’ and ‘git remote -v’ frequently._
 
 See also our [Software Development Practices](https://github.com/CICE-Consortium/About-Us/wiki/Software-Development-Practices).
 
-## Overview
+## Git Overview
 CICE consists of a top level driver and dynamical core plus the Icepack code which is included as a git submodule.  Because Icepack is a submodule of CICE, Icepack and CICE development are handled somewhat independently with respect to the github repositories even though development and testing may be done together and in the same sandbox.  
 
 Only a limited number of users are able to push to the CICE-Consortium repositories.  Users will be working on personal forks and executing pull requests to merge their changes into the CICE-Consortium repositories.  If you plan to work within the CICE-Consortium project, create a github account (https://github.com) if you don’t have one already.
@@ -138,7 +138,7 @@ and for CICE
 
 This entire process clones your fork master which creates a local repo and sandbox, pulls changes from the CICE-Consortium (ie. upstream) master into your local sandbox (which commits those changes to your local repository), and pushes those changes to your fork (origin).  We encourage all users to NOT commit local changes to master (always work on a branch), and to keep the fork master up to date with the consortium master.
 
-## Collaborators
+## Git Collaborators
 
 In general, your forks are public, anyone can read, but nobody can write.  You can add collaborators to your fork by logging into github and going to the repository, e.g. https:// github.com/username/cice, clicking on Settings, then Collaborators.  Then add the collaborator at the bottom of the page.  When you do, that person will be invited to collaborate on your fork and you can give them write permission.
 
