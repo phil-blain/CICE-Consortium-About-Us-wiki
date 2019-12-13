@@ -54,6 +54,8 @@
 # Introduction
 This document provides a simplified overview of git and how to use it within CICE-Consortium development.  In most cases, it does not fully represent the details and complexity associated with git.  It should provide a starting point for working in the CICE-Consortium, and it will hopefully encourage users to look for more detailed documentation on the web.  This document is not a substitute for a proper and detailed git user guide.  
 
+If any information is confusing or missing, please provide feedback thru the bulletin board which can be found on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
+
 ## General Recommendations
 * _Create your own forks for each repository._
 
@@ -623,7 +625,7 @@ It's easy to accidently update the Icepack submodule in CICE when you don't mean
 
 The other thing is to avoid using `git commit -a` if there are Icepack changes.  Use `git add` and `git commit` to explicitly add the set of changes that are desired.
 
-If you really get stuck, you can try to start with a new sandbox.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.
+If you really get stuck, you can try to start with a new sandbox.  Do not delete the old sandbox in case you need to recover anything.  You can checkout things again from scratch and try to carefully step forward using the appropriate process.   Also, feel free to contact folks in the Consortium thru the bulletin board for help.  The bulletin board is linked on the [resource page](https://github.com/CICE-Consortium/About-Us/wiki/Resource-Index).
 
 ## Collaborating on Development
 
