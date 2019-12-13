@@ -11,7 +11,7 @@
 * [Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
-* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone)
+* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-(checkout-or-creating-a-sandbox)
 * [Branch](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#branch)  
 * [Commit](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#commit)
  
