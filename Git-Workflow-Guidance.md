@@ -574,7 +574,7 @@ The Icepack submodule in CICE is generally going to point to the CICE-Consortium
       git commit -m "switch icepack to different repository and hash"
       git push origin mybranch
 
-Again, this should be avoided in most cases.  We recommend [Developing CICE and Icepack concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Develop-CICE-and-Icepack-concurrently) and treating the two repositories independently until the Icepack submodule in CICE can be easily updated from a version on the Consortium master.
+Again, this should be avoided in most cases.  We recommend [developing CICE and Icepack concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#Develop-CICE-and-Icepack-concurrently) and treating the two repositories independently until the Icepack submodule in CICE can be easily updated from a version on the Consortium master.
 
 ## Remove and Replace the Icepack Submodule
 
