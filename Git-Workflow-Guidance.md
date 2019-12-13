@@ -11,7 +11,7 @@
 * [Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
-* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-(checkout-or-creating-a-sandbox))
+* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone)
 * [Branch](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#branch)  
 * [Commit](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#commit)
  
@@ -144,7 +144,8 @@ In general, your forks are public, anyone can read, but nobody can write.  You c
 
 # Clone, Commit, Branch
 
-## Clone (checkout or creating a Sandbox)
+## Clone 
+**(checkout or creating a Sandbox)**
 To create the initial sandbox, use git clone.
 
       git clone https://github.com/username/CICE --recursive
