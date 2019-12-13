@@ -1,48 +1,48 @@
 # Table of Contents
 [**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
-* [General Recommendations](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#general-recommendations)
-* [Git Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-overview) 
+* General Recommendations
+* Git Overview
 
-[**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-git)
-* [Setup a Github Account](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setup-a-github-account)
-* [Local Git Initialization](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#local-git-initialization)
-* [Setting up Github Forks](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#setting-up-github-forks)
-* [Updating your Github Fork Master](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#updating-your-github-fork-master)
-* [Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
+[**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-git) 
+* Setup a Github Account
+* Local Git Initialization
+* Setting up Github Forks
+* Updating your Github Fork Master
+* Git Collaborators
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
-* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone)
-* [Branch](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#branch)  
-* [Commit](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#commit)
+* Clone
+* Branch
+* Commit
  
 
 [**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
-* [Remotes](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#remotes)
-* [Push](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#push) 
-* [Pull, Rebase](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-rebase)
-* [Some examples](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#some-examples)
+* Remotes
+* Push
+* Pull, Rebase
+* Some examples
   * Update fork master from Consortium master
   * Update a branch from Consortium master
   * Rejected pushes
   * Push to a different repository
 
 [**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
-* [PR Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#PR-overview)
-* [Refreshing your PR](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#refreshing-your-PR)
+* PR Overview
+* Refreshing your PR
 
 [**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodules)   
-* [Submodule Overview](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodule-overview)
-* [Update Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#update-icepack-in-cice)
-* [Resync Icepack in CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#resync-icepack-in-cice)
-* [Development of Icepack under CICE](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#development-of-icepack-under-cice)
-* [Develop Icepack and CICE Concurrently](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#develop-cice-and-icepack-concurrently)
-* [Switch the Icepack Submodule Repository](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#switch-the-icepack-submodule-repository)
-* [Remove and Replace the Icepack Submodule](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#remove-and-replace-the-icepack-submodule)
+* Submodule Overview
+* Update Icepack in CICE
+* Resync Icepack in CICE
+* Development of Icepack under CICE
+* Develop Icepack and CICE Concurrently
+* Switch the Icepack Submodule Repository
+* Remove and Replace the Icepack Submodule
 
 [**Final Notes**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#final-notes)
-* [Overall Workflow](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#overall-workflow)
-* [Submodule Problems](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodule-problems)
-* [Collaborating on Development](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#collaborating-on-development)
+* Overall Workflow
+* Submodule Problems
+* Collaborating on Development
 
 
 [**Appendix A:** Table of useful git commands  (git [command])](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands--git-command)   
