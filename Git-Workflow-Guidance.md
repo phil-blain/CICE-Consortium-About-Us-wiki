@@ -21,10 +21,10 @@
 * [Push](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#push) 
 * [Pull, Rebase](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-rebase)
 * [Some examples](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#some-examples)
-** Update fork master from Consortium master
-** Update a branch from Consortium master
-** Rejected pushes
-** Push to a different repository
+  * Update fork master from Consortium master
+  * Update a branch from Consortium master
+  * Rejected pushes
+  * Push to a different repository
 
 [**Pull Requests (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-requests)
 * Overview
