@@ -11,9 +11,9 @@
 * [Git Collaborators](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#git-collaborators)
 
 [**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
-* Creating a Sandbox (clone)    
-* Branch   
-* Commit    
+* [Clone](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone)
+* [Branch](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#branch)  
+* [Commit](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#commit)
  
 
 [**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
