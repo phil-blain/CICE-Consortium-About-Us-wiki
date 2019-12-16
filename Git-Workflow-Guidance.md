@@ -1,22 +1,22 @@
 # Table of Contents
-[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#introduction) 
+[**Introduction**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#introduction) 
 * General Recommendations
 * Git Overview
 
-[**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#getting-started-with-git) 
+[**Getting Started with Git**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#getting-started-with-git) 
 * Setup a Github Account
 * Local Git Initialization
 * Setting up Github Forks
 * Updating your Github Fork Master
 * Git Collaborators
 
-[**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#clone-commit-branch)   
+[**Clone, Commit, Branch**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#clone-commit-branch)   
 * Clone
 * Branch
 * Commit
  
 
-[**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pushing-and-pulling)   
+[**Pushing and Pulling**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pushing-and-pulling)   
 * Remotes
 * Push
 * Pull, Rebase
@@ -26,11 +26,11 @@
   * Rejected pushes
   * Push to a different repository
 
-[**Pull Request (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#pull-request)
+[**Pull Request (PR)**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#pull-request)
 * PR Overview
 * Refreshing your PR
 
-[**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#submodules)   
+[**Submodules**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#submodules)   
 * Submodule Overview
 * Update Icepack in CICE
 * Resync Icepack in CICE
@@ -39,16 +39,16 @@
 * Switch the Icepack Submodule Repository
 * Remove and Replace the Icepack Submodule
 
-[**Final Notes**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#final-notes)
+[**Final Notes**](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#final-notes)
 * Overall Workflow
 * Collaborating on Development
 * Submodule Problems
 * Problems with Pull Requests
 
 
-[**Appendix A:** Table of useful git commands](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-a-table-of-useful-git-commands)   
-[**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-b-best-practices)   
-[**Appendix C:** Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/_#appendix-c-terms)   
+[**Appendix A:** Table of useful git commands](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#appendix-a-table-of-useful-git-commands)   
+[**Appendix B:** Best Practices](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#appendix-b-best-practices)   
+[**Appendix C:** Terms](https://github.com/CICE-Consortium/About-Us/wiki/Git-Workflow-Guidance/#appendix-c-terms)   
 
 ***
 
